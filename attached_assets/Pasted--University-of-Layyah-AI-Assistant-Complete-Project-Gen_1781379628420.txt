@@ -1,0 +1,259 @@
+# University of Layyah AI Assistant – Complete Project Generation Prompt
+
+
+
+Build a modern, intelligent, production-ready web-based AI Chatbot called "UL AI Assistant" for the University of Layyah.
+
+The chatbot must serve as a single unified AI assistant that can answer all university-related queries through one conversational interface. Do not create separate systems for Admissions, Campus Information, and Student Life. Everything must be integrated into a single AI chatbot experience where users simply ask questions in natural language and receive accurate answers instantly.
+
+## Core Objective
+
+Create an AI-powered university assistant capable of helping:
+
+* Prospective Students
+* Current Students
+* Parents
+* Faculty Visitors
+* Administrative Visitors
+
+The chatbot should understand user intent and provide accurate responses related to admissions, academic programs, campus information, faculty directories, student life, university regulations, and campus events.
+
+## Knowledge Areas
+
+### Admissions & Programs
+
+The AI chatbot must answer questions regarding:
+
+* BS Degree Programs
+* Eligibility Criteria
+* Admission Requirements
+* Fee Structures
+* Scholarships
+* Merit Information
+* Required Documents
+* Application Process
+* Admission Deadlines
+
+Example Questions:
+
+* What BS programs are offered at University of Layyah?
+* What is the eligibility for BS Information Technology?
+* What documents are required for admission?
+* What is the fee structure?
+
+### Campus Information
+
+The chatbot must provide:
+
+* Faculty Directory
+* Department Information
+* Office Locations
+* Building Locations
+* Desk Extensions
+* Contact Information
+* Administrative Offices
+* Campus Facilities
+
+Example Questions:
+
+* Where is the Computer Science Department?
+* Who is the Head of the IT Department?
+* Give me the contact information of the Admission Office.
+* Where is the Registrar Office located?
+
+### Student Life
+
+The chatbot must answer:
+
+* Examination Guidelines
+* Attendance Rules
+* Academic Policies
+* Student Regulations
+* Campus Events
+* Workshops
+* Seminars
+* Student Societies
+* General Student Support Information
+
+Example Questions:
+
+* What is the minimum attendance requirement?
+* What are the examination rules?
+* Tell me about upcoming events.
+* What student societies are available?
+
+## AI Features
+
+The chatbot must:
+
+* Understand natural language questions.
+* Maintain conversation history.
+* Handle follow-up questions.
+* Provide contextual answers.
+* Generate human-like responses.
+* Suggest related information when relevant.
+* Support English and Urdu languages.
+* Provide quick and accurate responses.
+
+## User Interface Requirements
+
+Design a modern and professional university-themed interface using University of Layyah branding.
+
+## University of Layyah Branding & Theme
+
+Use the official University of Layyah logo as the primary design inspiration.
+
+### Color Palette
+
+Primary Golden Orange:
+#E89B16
+
+Secondary Academic Green:
+#1F8A4D
+
+Dark Charcoal:
+#222222
+
+Light Gray:
+#F5F5F5
+
+Pure White:
+#FFFFFF
+
+### Design Language
+
+The interface should reflect a modern, innovative, and academic environment while maintaining a professional university identity.
+
+### Visual Style
+
+* Premium university website appearance
+* Clean and minimal design
+* Soft shadows and glassmorphism effects
+* Smooth animations and transitions
+* Rounded corners (12px–16px)
+* Spacious layouts
+* High readability
+* Mobile-first responsive design
+* Fast loading performance
+
+### Header Design
+
+* University of Layyah logo positioned on the left
+* "UL AI Assistant" branding beside the logo
+* Sticky navigation bar
+* Modern search and chat experience
+
+### Chatbot Design
+
+* Orange user message bubbles
+* Green AI response accents
+* White chat background
+* Animated typing indicator
+* Professional welcome screen
+* Floating chatbot widget
+* Full-screen chat mode
+* Suggested question cards
+
+### Dashboard & Components
+
+Use:
+
+* Orange for primary buttons
+* Green for success states
+* Dark charcoal for headings
+* Light gray backgrounds for cards
+* White content panels
+
+### User Experience Goals
+
+The chatbot should feel like an official digital representative of the University of Layyah rather than a generic AI assistant.
+
+The design must immediately communicate trust, professionalism, innovation, and academic excellence through the university's official branding colors and visual identity.
+
+
+UI Features:
+
+* Responsive Design
+* Mobile Friendly
+* Floating Chat Widget
+* Full-Screen Chat Mode
+* Typing Indicator
+* Message Timestamps
+* Quick Suggestion Buttons
+* Smooth Animations
+* Professional University Appearance
+
+## Quick Action Suggestions
+
+Display clickable suggestions such as:
+
+* Admissions
+* Programs
+* Fee Structure
+* Faculty Directory
+* Campus Map
+* Student Rules
+* Events
+* Contact Information
+
+## AI Knowledge Base
+
+Store university information in structured JSON format.
+
+Example Categories:
+
+* Programs
+* Fees
+* Faculty
+* Departments
+* Rules
+* Events
+* Contacts
+
+The chatbot should search this knowledge base first before generating responses.
+
+This reduces API usage and improves speed.
+
+## Technology Stack
+
+Frontend:
+
+* React.js
+* TypeScript
+* Tailwind CSS
+* ShadCN UI
+* Framer Motion
+
+Backend:
+
+* Node.js
+* Express.js
+
+Database:
+
+* PostgreSQL or Supabase
+
+AI:
+
+* Gemini API
+
+Knowledge Base:
+
+* JSON Data Files
+* Vector Search Support
+
+Deployment:
+
+* Replit Deployment
+* Vercel
+* Render
+
+## Important Implementation Rule
+
+The entire system must function as one intelligent AI chatbot.
+
+Users should never navigate between separate Admission, Campus Information, or Student Life modules.
+
+Instead, the chatbot should intelligently understand every question and provide answers from the integrated university knowledge base through a single conversational interface.
+
+The final product should feel like a Digital AI Representative of the University of Layyah capable of answering any university-related question naturally and professionally.
