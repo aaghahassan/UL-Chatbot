@@ -352,7 +352,6 @@ export default function ChatPage() {
 
         <div className="w-8 hidden sm:block" />
       </nav>
-
       {/* Body: sidebar + chat area */}
       <div className="flex flex-1 overflow-hidden">
         {/* Desktop Sidebar */}
@@ -369,7 +368,7 @@ export default function ChatPage() {
                 <Sparkles className="h-3.5 w-3.5 text-white" />
               </div>
               <div>
-                <p className="font-semibold text-sm leading-tight text-foreground">Digital AI Advisor</p>
+                <p className="font-semibold text-sm leading-tight text-foreground">AI Assistant</p>
                 <div className="flex items-center gap-1">
                   <div className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
                   <p className="text-[10px] text-muted-foreground">Online</p>
