@@ -4,8 +4,8 @@ import { useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 import {
   Home, Sparkles, LayoutDashboard, Save, RefreshCw, CheckCircle,
-  AlertCircle, ChevronDown, ChevronRight, Pencil, Database, X, Plus,
-  Trash2,
+  AlertCircle, ChevronDown, ChevronRight, Database, X, Plus,
+  Trash2, Lock, Eye, EyeOff, LogOut,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -17,6 +17,79 @@ import {
   getListKnowledgeSectionsQueryKey,
   type KnowledgeSection,
 } from "@workspace/api-client-react";
+
+const ADMIN_PASSCODE = import.meta.env.VITE_ADMIN_PASSCODE ?? "ul-admin-2026";
+const SESSION_KEY = "ul_admin_auth";
+
+function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
+  const [value, setValue] = useState("");
+  const [showPw, setShowPw] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (value === ADMIN_PASSCODE) {
+      sessionStorage.setItem(SESSION_KEY, "1");
+      onSuccess();
+    } else {
+      setError(true);
+      setValue("");
+    }
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-green-50">
+      <div className="w-full max-w-sm mx-4">
+        <div className="text-center mb-8">
+          <div className="h-16 w-16 rounded-2xl bg-secondary flex items-center justify-center mx-auto mb-4 shadow-lg">
+            <Lock className="h-8 w-8 text-white" />
+          </div>
+          <h1 className="text-2xl font-bold text-foreground">Admin Access</h1>
+          <p className="text-sm text-muted-foreground mt-1">University of Layyah — Knowledge Base</p>
+        </div>
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border shadow-sm p-6 space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-foreground mb-2">Admin Passcode</label>
+            <div className="relative">
+              <input
+                type={showPw ? "text" : "password"}
+                value={value}
+                onChange={(e) => { setValue(e.target.value); setError(false); }}
+                placeholder="Enter passcode"
+                className={`w-full border rounded-xl px-4 py-3 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors ${error ? "border-destructive" : "border-border focus:border-primary"}`}
+                autoFocus
+                data-testid="admin-passcode-input"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPw((v) => !v)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              >
+                {showPw ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              </button>
+            </div>
+            {error && (
+              <p className="mt-2 text-xs text-destructive flex items-center gap-1">
+                <AlertCircle className="h-3 w-3" />
+                Incorrect passcode. Please try again.
+              </p>
+            )}
+          </div>
+          <button
+            type="submit"
+            className="w-full py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-colors"
+            data-testid="admin-login-submit"
+          >
+            Sign In
+          </button>
+        </form>
+        <p className="text-center text-xs text-muted-foreground mt-4">
+          Staff only — University of Layyah Admin Portal
+        </p>
+      </div>
+    </div>
+  );
+}
 
 const SECTION_ICONS: Record<string, string> = {
   university: "🏛️",
@@ -302,7 +375,16 @@ export default function AdminPage() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
 
-  const { data: sections, isLoading } = useListKnowledgeSections();
+  const [isAuthed, setIsAuthed] = useState(() => sessionStorage.getItem(SESSION_KEY) === "1");
+
+  const handleSignOut = () => {
+    sessionStorage.removeItem(SESSION_KEY);
+    setIsAuthed(false);
+  };
+
+  const { data: sections, isLoading } = useListKnowledgeSections({
+    query: { enabled: isAuthed, queryKey: getListKnowledgeSectionsQueryKey() },
+  });
   const updateSection = useUpdateKnowledgeSection();
   const [savingKey, setSavingKey] = useState<string | null>(null);
   const [savedKey, setSavedKey] = useState<string | null>(null);
@@ -328,6 +410,10 @@ export default function AdminPage() {
       setSavingKey(null);
     }
   };
+
+  if (!isAuthed) {
+    return <AdminLogin onSuccess={() => setIsAuthed(true)} />;
+  }
 
   return (
     <div className="flex flex-col h-screen bg-background overflow-hidden">
@@ -359,6 +445,14 @@ export default function AdminPage() {
           >
             <LayoutDashboard className="h-4 w-4" />
             Admin Dashboard
+          </button>
+          <button
+            onClick={handleSignOut}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-muted-foreground rounded-lg hover:bg-red-50 hover:text-red-600 transition-colors ml-2"
+            title="Sign out of admin"
+          >
+            <LogOut className="h-4 w-4" />
+            Sign Out
           </button>
         </div>
         <div className="w-8 hidden sm:block" />

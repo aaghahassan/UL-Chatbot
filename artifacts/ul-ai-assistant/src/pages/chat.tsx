@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useParams, useLocation } from "wouter";
 import { useQueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import {
   Menu, X, Send, Plus, Sparkles, User, Info,
   Map, GraduationCap, BookOpen, Clock, Phone, BookMarked,
@@ -315,9 +317,15 @@ export default function ChatPage() {
                               : "bg-white border border-l-4 border-l-secondary text-foreground rounded-tl-sm"
                           }`}
                         >
-                          <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none whitespace-pre-wrap leading-relaxed">
-                            {msg.content}
-                          </div>
+                          {msg.role === "user" ? (
+                            <p className="text-sm leading-relaxed">{msg.content}</p>
+                          ) : (
+                            <div className="prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1 prose-ul:my-1 prose-li:my-0.5 prose-strong:text-foreground prose-a:text-primary prose-table:text-sm">
+                              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                {msg.content}
+                              </ReactMarkdown>
+                            </div>
+                          )}
                         </div>
                         <div className={`text-[10px] mt-1.5 text-muted-foreground ${msg.role === "user" ? "text-right mr-1" : "ml-1"}`}>
                           {msg.createdAt ? format(new Date(msg.createdAt), "h:mm a") : "Just now"}
@@ -334,8 +342,10 @@ export default function ChatPage() {
                       <div className="max-w-[85%] md:max-w-[75%]">
                         <div className="px-4 py-3 rounded-2xl shadow-sm bg-white border border-l-4 border-l-secondary text-foreground rounded-tl-sm">
                           {streamingText ? (
-                            <div className="prose prose-sm md:prose-base dark:prose-invert max-w-none whitespace-pre-wrap leading-relaxed">
-                              {streamingText}
+                            <div className="prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1 prose-ul:my-1 prose-li:my-0.5 prose-strong:text-foreground">
+                              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                {streamingText}
+                              </ReactMarkdown>
                               <span className="inline-block w-2 h-4 ml-1 bg-primary animate-pulse align-middle" />
                             </div>
                           ) : (

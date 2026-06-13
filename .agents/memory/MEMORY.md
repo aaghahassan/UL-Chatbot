@@ -1,0 +1,4 @@
+- [Admin auth pattern](admin-auth.md) — admin gate uses VITE_ADMIN_PASSCODE + sessionStorage; default passcode is "ul-admin-2026".
+- [Knowledge base in DB](knowledge-base-db.md) — KB is seeded once from JSON into `knowledge_sections` table; Gemini route rebuilds system prompt from DB on every request.
+- [SSE streaming pattern](sse-streaming.md) — Chat SSE consumed via raw fetch+ReadableStream on frontend; Orval hooks are NOT used for the streaming endpoint.
+- [Zod v4 in esbuild](zod-esbuild.md) — `zod/v4` subpath import breaks esbuild bundling in api-server; use plain validation or import via `@workspace/api-zod` instead.
