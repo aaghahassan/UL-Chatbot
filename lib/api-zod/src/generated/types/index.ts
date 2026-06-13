@@ -15,3 +15,5 @@ export * from './geminiImageOutput';
 export * from './geminiMessage';
 export * from './geminiMessageInput';
 export * from './healthStatus';
+export * from './knowledgeSection';
+export * from './knowledgeSectionInput';

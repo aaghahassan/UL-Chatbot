@@ -107,3 +107,53 @@ export const GenerateGeminiImageResponse = zod.object({
 })
 
 
+/**
+ * @summary List all knowledge base sections
+ */
+export const ListKnowledgeSectionsResponseItem = zod.object({
+  "id": zod.number(),
+  "sectionKey": zod.string(),
+  "title": zod.string(),
+  "data": zod.unknown(),
+  "updatedAt": zod.coerce.date()
+})
+export const ListKnowledgeSectionsResponse = zod.array(ListKnowledgeSectionsResponseItem)
+
+
+/**
+ * @summary Get a single knowledge section by key
+ */
+export const GetKnowledgeSectionParams = zod.object({
+  "key": zod.coerce.string()
+})
+
+export const GetKnowledgeSectionResponse = zod.object({
+  "id": zod.number(),
+  "sectionKey": zod.string(),
+  "title": zod.string(),
+  "data": zod.unknown(),
+  "updatedAt": zod.coerce.date()
+})
+
+
+/**
+ * @summary Update a knowledge section
+ */
+export const UpdateKnowledgeSectionParams = zod.object({
+  "key": zod.coerce.string()
+})
+
+export const UpdateKnowledgeSectionBody = zod.object({
+  "title": zod.string(),
+  "data": zod.unknown()
+})
+
+export const UpdateKnowledgeSectionResponse = zod.object({
+  "id": zod.number(),
+  "sectionKey": zod.string(),
+  "title": zod.string(),
+  "data": zod.unknown(),
+  "updatedAt": zod.coerce.date()
+})
+
+

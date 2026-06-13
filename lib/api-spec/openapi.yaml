@@ -12,6 +12,8 @@ tags:
     description: Health operations
   - name: gemini
     description: Gemini AI chat and image operations
+  - name: admin
+    description: Admin knowledge base management
 paths:
   /healthz:
     get:
@@ -159,6 +161,65 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/GeminiImageOutput"
+  /admin/knowledge-sections:
+    get:
+      operationId: listKnowledgeSections
+      tags: [admin]
+      summary: List all knowledge base sections
+      responses:
+        "200":
+          description: List of knowledge sections
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/KnowledgeSection"
+  /admin/knowledge-sections/{key}:
+    get:
+      operationId: getKnowledgeSection
+      tags: [admin]
+      summary: Get a single knowledge section by key
+      parameters:
+        - name: key
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Knowledge section
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/KnowledgeSection"
+        "404":
+          description: Not found
+    put:
+      operationId: updateKnowledgeSection
+      tags: [admin]
+      summary: Update a knowledge section
+      parameters:
+        - name: key
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/KnowledgeSectionInput"
+      responses:
+        "200":
+          description: Updated knowledge section
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/KnowledgeSection"
+        "404":
+          description: Not found
 components:
   schemas:
     HealthStatus:
@@ -259,3 +320,31 @@ components:
           type: string
       required:
         - error
+    KnowledgeSection:
+      type: object
+      properties:
+        id:
+          type: integer
+        sectionKey:
+          type: string
+        title:
+          type: string
+        data: {}
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - sectionKey
+        - title
+        - data
+        - updatedAt
+    KnowledgeSectionInput:
+      type: object
+      properties:
+        title:
+          type: string
+        data: {}
+      required:
+        - title
+        - data

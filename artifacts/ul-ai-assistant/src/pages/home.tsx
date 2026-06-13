@@ -52,7 +52,7 @@ export default function HomePage() {
             </div>
             <div>
               <span className="font-bold text-foreground text-sm leading-none block">University of Layyah</span>
-              <span className="text-[10px] text-muted-foreground">UL AI Assistant</span>
+              <span className="text-[10px] text-muted-foreground">AI Assistant</span>
             </div>
           </div>
           <div className="hidden sm:flex items-center gap-1">
@@ -84,7 +84,6 @@ export default function HomePage() {
           </Button>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 sm:py-28 px-4">
         {/* Background gradient blobs */}
@@ -116,7 +115,6 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
       {/* Chat Preview Section */}
       <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50/60">
         <div className="max-w-4xl mx-auto">
@@ -200,7 +198,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Features Section */}
       <section className="py-16 px-4 bg-gray-50/60">
         <div className="max-w-5xl mx-auto">
@@ -228,7 +225,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Vision & Mission Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
@@ -288,7 +284,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-14 px-4 bg-gradient-to-br from-secondary to-secondary/80">
         <div className="max-w-2xl mx-auto text-center">
@@ -307,7 +302,6 @@ export default function HomePage() {
           </Button>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-6 px-4 border-t bg-white">
         <div className="max-w-5xl mx-auto text-center">

@@ -51,3 +51,16 @@ export interface GeminiError {
   error: string;
 }
 
+export interface KnowledgeSection {
+  id: number;
+  sectionKey: string;
+  title: string;
+  data: unknown;
+  updatedAt: string;
+}
+
+export interface KnowledgeSectionInput {
+  title: string;
+  data: unknown;
+}
+

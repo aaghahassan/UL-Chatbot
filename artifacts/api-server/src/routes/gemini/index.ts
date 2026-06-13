@@ -1,8 +1,6 @@
 import { Router, type IRouter } from "express";
 import { eq } from "drizzle-orm";
-import path from "path";
-import fs from "fs";
-import { db, conversations, messages } from "@workspace/db";
+import { db, conversations, messages, knowledgeSections } from "@workspace/db";
 import {
   GetGeminiConversationParams,
   DeleteGeminiConversationParams,
@@ -16,20 +14,25 @@ import { logger } from "../../lib/logger";
 
 const router: IRouter = Router();
 
-const workspaceRoot = process.cwd().endsWith(path.join("artifacts", "api-server"))
-  ? path.resolve(process.cwd(), "../..")
-  : process.cwd();
+async function buildSystemPrompt(): Promise<string> {
+  try {
+    const sections = await db
+      .select()
+      .from(knowledgeSections)
+      .orderBy(knowledgeSections.sectionKey);
 
-let knowledgeBase: string = "";
-try {
-  const kbPath = path.resolve(workspaceRoot, "artifacts/api-server/data/university-knowledge.json");
-  const raw = fs.readFileSync(kbPath, "utf-8");
-  knowledgeBase = JSON.stringify(JSON.parse(raw), null, 2);
-} catch (err) {
-  logger.warn({ err }, "Could not load university knowledge base");
-}
+    let knowledgeBase: string;
+    if (sections.length > 0) {
+      const kb: Record<string, unknown> = {};
+      for (const s of sections) {
+        kb[s.sectionKey] = s.data;
+      }
+      knowledgeBase = JSON.stringify(kb, null, 2);
+    } else {
+      knowledgeBase = "{}";
+    }
 
-const SYSTEM_PROMPT = `You are the UL AI Assistant — the official AI-powered digital representative of the University of Layyah (UOL), located in Layyah, Punjab, Pakistan.
+    return `You are the UL AI Assistant — the official AI-powered digital representative of the University of Layyah (UOL), located in Layyah, Punjab, Pakistan.
 
 Your role is to assist prospective students, current students, parents, faculty, and visitors by answering questions about the university accurately and helpfully.
 
@@ -49,6 +52,11 @@ ${knowledgeBase}
 - Always end responses about admissions by mentioning the Admission Office contact: admissions@uol.edu.pk or +92-606-412340.
 - When users ask in Urdu, respond fully in Urdu.
 - You are proud to represent University of Layyah and its mission of providing quality education to southern Punjab.`;
+  } catch (err) {
+    logger.warn({ err }, "Could not load knowledge base from DB for system prompt");
+    return `You are the UL AI Assistant for the University of Layyah. Answer questions helpfully about the university.`;
+  }
+}
 
 router.get("/gemini/conversations", async (req, res): Promise<void> => {
   const result = await db
@@ -161,7 +169,7 @@ router.post("/gemini/conversations/:id/messages", async (req, res): Promise<void
     .orderBy(messages.createdAt);
 
   const chatMessages = history.map((m) => ({
-    role: m.role === "assistant" ? "model" as const : "user" as const,
+    role: m.role === "assistant" ? ("model" as const) : ("user" as const),
     parts: [{ text: m.content }],
   }));
 
@@ -173,11 +181,13 @@ router.post("/gemini/conversations/:id/messages", async (req, res): Promise<void
   let fullResponse = "";
 
   try {
+    const systemPrompt = await buildSystemPrompt();
+
     const stream = await ai.models.generateContentStream({
       model: "gemini-2.5-flash",
       contents: chatMessages,
       config: {
-        systemInstruction: SYSTEM_PROMPT,
+        systemInstruction: systemPrompt,
         maxOutputTokens: 8192,
       },
     });

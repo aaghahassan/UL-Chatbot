@@ -28,7 +28,9 @@ import type {
   GeminiImageOutput,
   GeminiMessage,
   GeminiMessageInput,
-  HealthStatus
+  HealthStatus,
+  KnowledgeSection,
+  KnowledgeSectionInput
 } from './api.schemas';
 
 import { customFetch } from '../custom-fetch';
@@ -634,5 +636,231 @@ export const useGenerateGeminiImage = <TError = ErrorType<unknown>,
         TContext
       > => {
       return useMutation(getGenerateGeminiImageMutationOptions(options));
+    }
+
+export const getListKnowledgeSectionsUrl = () => {
+
+
+
+
+  return `/api/admin/knowledge-sections`
+}
+
+/**
+ * @summary List all knowledge base sections
+ */
+export const listKnowledgeSections = async ( options?: RequestInit): Promise<KnowledgeSection[]> => {
+
+  return customFetch<KnowledgeSection[]>(getListKnowledgeSectionsUrl(),
+  {
+    ...options,
+    method: 'GET'
+
+
+  }
+);}
+
+
+
+
+
+export const getListKnowledgeSectionsQueryKey = () => {
+    return [
+    `/api/admin/knowledge-sections`
+    ] as const;
+    }
+
+
+export const getListKnowledgeSectionsQueryOptions = <TData = Awaited<ReturnType<typeof listKnowledgeSections>>, TError = ErrorType<unknown>>( options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof listKnowledgeSections>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+) => {
+
+const {query: queryOptions, request: requestOptions} = options ?? {};
+
+  const queryKey =  queryOptions?.queryKey ?? getListKnowledgeSectionsQueryKey();
+
+
+
+    const queryFn: QueryFunction<Awaited<ReturnType<typeof listKnowledgeSections>>> = ({ signal }) => listKnowledgeSections({ signal, ...requestOptions });
+
+
+
+
+
+   return  { queryKey, queryFn, ...queryOptions} as UseQueryOptions<Awaited<ReturnType<typeof listKnowledgeSections>>, TError, TData> & { queryKey: QueryKey }
+}
+
+export type ListKnowledgeSectionsQueryResult = NonNullable<Awaited<ReturnType<typeof listKnowledgeSections>>>
+export type ListKnowledgeSectionsQueryError = ErrorType<unknown>
+
+
+/**
+ * @summary List all knowledge base sections
+ */
+
+export function useListKnowledgeSections<TData = Awaited<ReturnType<typeof listKnowledgeSections>>, TError = ErrorType<unknown>>(
+  options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof listKnowledgeSections>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+
+ ):  UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+
+  const queryOptions = getListKnowledgeSectionsQueryOptions(options)
+
+  const query = useQuery(queryOptions) as  UseQueryResult<TData, TError> & { queryKey: QueryKey };
+
+  return { ...query, queryKey: queryOptions.queryKey };
+}
+
+
+
+
+
+
+
+export const getGetKnowledgeSectionUrl = (key: string,) => {
+
+
+
+
+  return `/api/admin/knowledge-sections/${key}`
+}
+
+/**
+ * @summary Get a single knowledge section by key
+ */
+export const getKnowledgeSection = async (key: string, options?: RequestInit): Promise<KnowledgeSection> => {
+
+  return customFetch<KnowledgeSection>(getGetKnowledgeSectionUrl(key),
+  {
+    ...options,
+    method: 'GET'
+
+
+  }
+);}
+
+
+
+
+
+export const getGetKnowledgeSectionQueryKey = (key: string,) => {
+    return [
+    `/api/admin/knowledge-sections/${key}`
+    ] as const;
+    }
+
+
+export const getGetKnowledgeSectionQueryOptions = <TData = Awaited<ReturnType<typeof getKnowledgeSection>>, TError = ErrorType<void>>(key: string, options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof getKnowledgeSection>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+) => {
+
+const {query: queryOptions, request: requestOptions} = options ?? {};
+
+  const queryKey =  queryOptions?.queryKey ?? getGetKnowledgeSectionQueryKey(key);
+
+
+
+    const queryFn: QueryFunction<Awaited<ReturnType<typeof getKnowledgeSection>>> = ({ signal }) => getKnowledgeSection(key, { signal, ...requestOptions });
+
+
+
+
+
+   return  { queryKey, queryFn, enabled: !!(key), ...queryOptions} as UseQueryOptions<Awaited<ReturnType<typeof getKnowledgeSection>>, TError, TData> & { queryKey: QueryKey }
+}
+
+export type GetKnowledgeSectionQueryResult = NonNullable<Awaited<ReturnType<typeof getKnowledgeSection>>>
+export type GetKnowledgeSectionQueryError = ErrorType<void>
+
+
+/**
+ * @summary Get a single knowledge section by key
+ */
+
+export function useGetKnowledgeSection<TData = Awaited<ReturnType<typeof getKnowledgeSection>>, TError = ErrorType<void>>(
+ key: string, options?: { query?:UseQueryOptions<Awaited<ReturnType<typeof getKnowledgeSection>>, TError, TData>, request?: SecondParameter<typeof customFetch>}
+
+ ):  UseQueryResult<TData, TError> & { queryKey: QueryKey } {
+
+  const queryOptions = getGetKnowledgeSectionQueryOptions(key,options)
+
+  const query = useQuery(queryOptions) as  UseQueryResult<TData, TError> & { queryKey: QueryKey };
+
+  return { ...query, queryKey: queryOptions.queryKey };
+}
+
+
+
+
+
+
+
+export const getUpdateKnowledgeSectionUrl = (key: string,) => {
+
+
+
+
+  return `/api/admin/knowledge-sections/${key}`
+}
+
+/**
+ * @summary Update a knowledge section
+ */
+export const updateKnowledgeSection = async (key: string,
+    knowledgeSectionInput: KnowledgeSectionInput, options?: RequestInit): Promise<KnowledgeSection> => {
+
+  return customFetch<KnowledgeSection>(getUpdateKnowledgeSectionUrl(key),
+  {
+    ...options,
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json', ...options?.headers },
+    body: JSON.stringify(
+      knowledgeSectionInput,)
+  }
+);}
+
+
+
+
+export const getUpdateKnowledgeSectionMutationOptions = <TError = ErrorType<void>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof updateKnowledgeSection>>, TError,{key: string;data: BodyType<KnowledgeSectionInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+): UseMutationOptions<Awaited<ReturnType<typeof updateKnowledgeSection>>, TError,{key: string;data: BodyType<KnowledgeSectionInput>}, TContext> => {
+
+const mutationKey = ['updateKnowledgeSection'];
+const {mutation: mutationOptions, request: requestOptions} = options ?
+      options.mutation && 'mutationKey' in options.mutation && options.mutation.mutationKey ?
+      options
+      : {...options, mutation: {...options.mutation, mutationKey}}
+      : {mutation: { mutationKey, }, request: undefined};
+
+
+
+
+      const mutationFn: MutationFunction<Awaited<ReturnType<typeof updateKnowledgeSection>>, {key: string;data: BodyType<KnowledgeSectionInput>}> = (props) => {
+          const {key,data} = props ?? {};
+
+          return  updateKnowledgeSection(key,data,requestOptions)
+        }
+
+
+
+
+
+
+  return  { mutationFn, ...mutationOptions }}
+
+    export type UpdateKnowledgeSectionMutationResult = NonNullable<Awaited<ReturnType<typeof updateKnowledgeSection>>>
+    export type UpdateKnowledgeSectionMutationBody = BodyType<KnowledgeSectionInput>
+    export type UpdateKnowledgeSectionMutationError = ErrorType<void>
+
+    /**
+ * @summary Update a knowledge section
+ */
+export const useUpdateKnowledgeSection = <TError = ErrorType<void>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof updateKnowledgeSection>>, TError,{key: string;data: BodyType<KnowledgeSectionInput>}, TContext>, request?: SecondParameter<typeof customFetch>}
+ ): UseMutationResult<
+        Awaited<ReturnType<typeof updateKnowledgeSection>>,
+        TError,
+        {key: string;data: BodyType<KnowledgeSectionInput>},
+        TContext
+      > => {
+      return useMutation(getUpdateKnowledgeSectionMutationOptions(options));
     }
 
