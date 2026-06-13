@@ -1,36 +1,54 @@
-# [Project name]
+# UL AI Assistant
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An AI-powered university chatbot for the University of Layyah — students, parents, and visitors can ask any university question in natural language and receive accurate, conversational answers instantly.
 
 ## Run & Operate
 
-- `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/api-server run dev` — run the API server (port 8080)
+- `pnpm --filter @workspace/ul-ai-assistant run dev` — run the frontend (port 22683)
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - Required env: `DATABASE_URL` — Postgres connection string
+- Required env: `GEMINI_API_KEY` — Google Gemini API key for AI responses
 
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
+- Frontend: React + Vite + Tailwind CSS + shadcn/ui + Framer Motion
 - API: Express 5
-- DB: PostgreSQL + Drizzle ORM
+- DB: PostgreSQL + Drizzle ORM (conversations + messages tables)
+- AI: Google Gemini 2.5 Flash via `@workspace/integrations-gemini-ai`
 - Validation: Zod (`zod/v4`), `drizzle-zod`
 - API codegen: Orval (from OpenAPI spec)
 - Build: esbuild (CJS bundle)
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `lib/api-spec/openapi.yaml` — API contract (source of truth)
+- `lib/db/src/schema/` — Drizzle DB schema (conversations.ts, messages.ts)
+- `lib/integrations-gemini-ai/` — Gemini AI client wrapper
+- `artifacts/api-server/src/routes/gemini/` — chat + conversation routes with SSE streaming
+- `artifacts/api-server/data/university-knowledge.json` — structured university knowledge base
+- `artifacts/ul-ai-assistant/src/` — React frontend
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Gemini AI client modified to accept `GEMINI_API_KEY` directly (falls back to AI Integrations env vars)
+- SSE streaming for AI responses — client uses `fetch` + `ReadableStream`, not generated hooks
+- System prompt injects full university knowledge base JSON at request time
+- Conversations and messages persisted to PostgreSQL for history
+- University branding: Golden Orange #E89B16 (primary), Academic Green #1F8A4D (secondary)
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Single conversational chat interface — no separate modules
+- Understands questions about admissions, programs, fees, scholarships, faculty, campus info, events, and student rules
+- Supports English and Urdu
+- Conversation history sidebar with "New Chat" support
+- 8 quick-action suggestion chips on welcome screen
+- Real-time streaming AI responses with typing indicator
 
 ## User preferences
 
@@ -38,7 +56,8 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- `lib/integrations-gemini-ai/src/client.ts` and `image/client.ts` were both patched to use `GEMINI_API_KEY` instead of requiring `AI_INTEGRATIONS_GEMINI_BASE_URL`
+- The `sendGeminiMessage` SSE endpoint must be consumed via raw fetch on the frontend — Orval cannot generate a typed hook for SSE streams
 
 ## Pointers
 

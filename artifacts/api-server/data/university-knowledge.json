@@ -1,0 +1,410 @@
+{
+  "university": {
+    "name": "University of Layyah",
+    "abbreviation": "UOL",
+    "established": 2012,
+    "location": "Layyah, Punjab, Pakistan",
+    "website": "https://uol.edu.pk",
+    "email": "info@uol.edu.pk",
+    "phone": "+92-606-412345",
+    "chancellor": "Governor of Punjab",
+    "vice_chancellor": "Prof. Dr. Muhammad Afzal",
+    "mission": "To provide quality education and research opportunities to students of southern Punjab"
+  },
+  "admissions": {
+    "process": [
+      "1. Check eligibility criteria for desired program",
+      "2. Fill out the online application form at uol.edu.pk",
+      "3. Upload required documents",
+      "4. Pay application fee",
+      "5. Appear for merit-based selection or entry test if required",
+      "6. Check merit list on the university portal",
+      "7. Complete enrollment if selected"
+    ],
+    "required_documents": [
+      "Matriculation (SSC) Certificate and Mark Sheet",
+      "Intermediate (HSSC) Certificate and Mark Sheet",
+      "CNIC / B-Form copy",
+      "Two passport-size photographs",
+      "Domicile Certificate",
+      "Character Certificate from previous institution",
+      "Migration Certificate (if applicable)",
+      "HEC recognized degree equivalency certificate (for foreign qualifications)"
+    ],
+    "eligibility": {
+      "BS_programs": "Minimum 45% marks in Intermediate (HSSC) or equivalent. Some programs require FSc Pre-Engineering or Pre-Medical.",
+      "general": "Pakistani national with valid matriculation and intermediate certificates"
+    },
+    "deadlines": {
+      "fall_semester": "July - August",
+      "spring_semester": "January - February",
+      "note": "Check the official website for exact dates each year"
+    },
+    "fee_note": "Fee structures are updated each academic year. Contact the Accounts Section for current fees."
+  },
+  "programs": {
+    "BS_programs": [
+      {
+        "name": "BS Computer Science",
+        "department": "Computer Science & IT",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Engineering) or FSc (Pre-Medical) or A-Levels with Mathematics",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 18,000 - 25,000"
+      },
+      {
+        "name": "BS Information Technology",
+        "department": "Computer Science & IT",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (any group) or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 18,000 - 25,000"
+      },
+      {
+        "name": "BS Mathematics",
+        "department": "Mathematics",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Engineering) or equivalent with Mathematics",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 15,000 - 20,000"
+      },
+      {
+        "name": "BS Physics",
+        "department": "Physics",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Engineering) or FSc (Pre-Medical)",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 15,000 - 20,000"
+      },
+      {
+        "name": "BS Chemistry",
+        "department": "Chemistry",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Medical) or FSc (Pre-Engineering)",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 15,000 - 20,000"
+      },
+      {
+        "name": "BS Botany",
+        "department": "Botany",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Medical) with at least 45%",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 14,000 - 18,000"
+      },
+      {
+        "name": "BS Zoology",
+        "department": "Zoology",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FSc (Pre-Medical) with at least 45%",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 14,000 - 18,000"
+      },
+      {
+        "name": "BS Economics",
+        "department": "Economics",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 14,000 - 18,000"
+      },
+      {
+        "name": "BS English",
+        "department": "English",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 13,000 - 17,000"
+      },
+      {
+        "name": "BS Urdu",
+        "department": "Urdu",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 13,000 - 17,000"
+      },
+      {
+        "name": "BS Pakistan Studies",
+        "department": "Pakistan Studies",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc or equivalent with at least 45%",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 13,000 - 17,000"
+      },
+      {
+        "name": "BS Islamic Studies",
+        "department": "Islamic Studies",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc or equivalent with at least 45%",
+        "seats": 40,
+        "fee_per_semester": "Approximately PKR 13,000 - 17,000"
+      },
+      {
+        "name": "BS Commerce",
+        "department": "Commerce",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "I.Com / FA / FSc or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 14,000 - 18,000"
+      },
+      {
+        "name": "BBA (Bachelor of Business Administration)",
+        "department": "Management Sciences",
+        "duration": "4 years (8 semesters)",
+        "eligibility": "FA/FSc/I.Com or equivalent with at least 45%",
+        "seats": 60,
+        "fee_per_semester": "Approximately PKR 18,000 - 25,000"
+      }
+    ],
+    "MS_MPhil_programs": [
+      "MS Computer Science",
+      "MS Mathematics",
+      "MPhil Physics",
+      "MPhil Chemistry",
+      "MPhil Urdu",
+      "MPhil English",
+      "MPhil Pakistan Studies"
+    ],
+    "PhD_programs": [
+      "PhD Mathematics",
+      "PhD Chemistry",
+      "PhD Urdu"
+    ]
+  },
+  "fee_structure": {
+    "admission_fee": "PKR 5,000 - 10,000 (one-time)",
+    "tuition_fee_per_semester": "PKR 13,000 - 25,000 (varies by program)",
+    "exam_fee": "PKR 2,000 - 5,000 per semester",
+    "library_fee": "PKR 500 per semester",
+    "sports_fee": "PKR 500 per semester",
+    "student_welfare_fund": "PKR 500 per semester",
+    "note": "Fees are subject to change. Confirm with the Accounts Section for the latest fee structure.",
+    "payment_methods": ["Bank Challan", "Online Transfer", "Bank Draft"]
+  },
+  "scholarships": [
+    {
+      "name": "HEC Need-Based Scholarships",
+      "provider": "Higher Education Commission (HEC)",
+      "eligibility": "Pakistani students with financial need, minimum 60% marks",
+      "amount": "Full tuition fee coverage",
+      "how_to_apply": "Apply online through HEC scholarship portal"
+    },
+    {
+      "name": "Prime Minister Fee Reimbursement Scheme",
+      "provider": "Government of Pakistan",
+      "eligibility": "Students from low-income families enrolled in recognized universities",
+      "amount": "Tuition fee reimbursement",
+      "how_to_apply": "Apply through HEC portal"
+    },
+    {
+      "name": "Punjab Educational Endowment Fund (PEEF)",
+      "provider": "Government of Punjab",
+      "eligibility": "Punjab domicile holders with financial need and good academic record",
+      "amount": "Varies",
+      "how_to_apply": "Apply through PEEF portal at www.peef.org.pk"
+    },
+    {
+      "name": "University Merit Scholarship",
+      "provider": "University of Layyah",
+      "eligibility": "Students securing top positions in their batch",
+      "amount": "25-100% fee waiver",
+      "how_to_apply": "Automatically awarded based on academic performance"
+    },
+    {
+      "name": "Ehsaas Undergraduate Scholarship",
+      "provider": "Government of Pakistan",
+      "eligibility": "Students from lower-income families (means-tested)",
+      "amount": "Monthly stipend + tuition fee",
+      "how_to_apply": "Apply through HEC Ehsaas portal"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Computer Science & Information Technology",
+      "location": "Main Academic Block, Ground Floor",
+      "hod": "Dr. [Name]",
+      "phone": "+92-606-412346",
+      "email": "cs@uol.edu.pk"
+    },
+    {
+      "name": "Mathematics",
+      "location": "Main Academic Block, First Floor",
+      "hod": "Prof. Dr. [Name]",
+      "phone": "+92-606-412347",
+      "email": "math@uol.edu.pk"
+    },
+    {
+      "name": "Physics",
+      "location": "Science Block",
+      "hod": "Prof. Dr. [Name]",
+      "phone": "+92-606-412348",
+      "email": "physics@uol.edu.pk"
+    },
+    {
+      "name": "Chemistry",
+      "location": "Science Block",
+      "hod": "Prof. Dr. [Name]",
+      "phone": "+92-606-412349",
+      "email": "chemistry@uol.edu.pk"
+    },
+    {
+      "name": "English",
+      "location": "Arts & Humanities Block",
+      "hod": "Dr. [Name]",
+      "phone": "+92-606-412350",
+      "email": "english@uol.edu.pk"
+    },
+    {
+      "name": "Management Sciences",
+      "location": "Management Block",
+      "hod": "Dr. [Name]",
+      "phone": "+92-606-412351",
+      "email": "management@uol.edu.pk"
+    }
+  ],
+  "administrative_offices": [
+    {
+      "name": "Admission Office",
+      "location": "Admin Block, Ground Floor, Room 101",
+      "phone": "+92-606-412340",
+      "email": "admissions@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    {
+      "name": "Registrar Office",
+      "location": "Admin Block, Ground Floor, Room 105",
+      "phone": "+92-606-412341",
+      "email": "registrar@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    {
+      "name": "Accounts Section",
+      "location": "Admin Block, First Floor, Room 201",
+      "phone": "+92-606-412342",
+      "email": "accounts@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 3:00 PM"
+    },
+    {
+      "name": "Examination Controller Office",
+      "location": "Admin Block, First Floor, Room 210",
+      "phone": "+92-606-412343",
+      "email": "exam@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    {
+      "name": "Library",
+      "location": "Library Block",
+      "phone": "+92-606-412344",
+      "email": "library@uol.edu.pk",
+      "hours": "Monday - Saturday: 8:00 AM - 6:00 PM"
+    },
+    {
+      "name": "IT Support / Computer Center",
+      "location": "IT Block, Ground Floor",
+      "phone": "+92-606-412352",
+      "email": "itsupport@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 5:00 PM"
+    },
+    {
+      "name": "Student Affairs Office",
+      "location": "Admin Block, Ground Floor, Room 108",
+      "phone": "+92-606-412353",
+      "email": "studentaffairs@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 4:00 PM"
+    },
+    {
+      "name": "Finance & Planning Office",
+      "location": "Admin Block, Second Floor",
+      "phone": "+92-606-412354",
+      "email": "finance@uol.edu.pk",
+      "hours": "Monday - Friday: 8:00 AM - 4:00 PM"
+    }
+  ],
+  "campus_facilities": [
+    "Central Library with digital access",
+    "Computer Labs (5 labs, 200+ computers)",
+    "Science Laboratories (Physics, Chemistry, Biology)",
+    "Sports Complex (Cricket Ground, Football Field, Indoor Sports)",
+    "Cafeteria",
+    "Prayer Hall / Mosque",
+    "Parking Area",
+    "Medical/First Aid Room",
+    "Generator Backup Power",
+    "Wi-Fi Campus",
+    "Transport Facility (select routes)",
+    "Student Hostel (limited capacity)"
+  ],
+  "student_life": {
+    "attendance_policy": {
+      "minimum_attendance": "75% of total lectures per subject",
+      "consequence": "Students with less than 75% attendance may be debarred from appearing in final examinations",
+      "medical_leave": "Medical leave requires a doctor's certificate submitted to the relevant department within 3 days"
+    },
+    "examination_rules": [
+      "Students must carry their University ID card to all examinations",
+      "Use of mobile phones is strictly prohibited in examination halls",
+      "No student is allowed to enter the examination hall 30 minutes after the start",
+      "Students must maintain silence and avoid any form of unfair means",
+      "Cheating or any unfair means results in immediate cancellation of the exam and disciplinary action",
+      "Coursework/assignments must be submitted by the deadline; late submissions may receive reduced marks",
+      "Mid-semester exams are typically held in the 8th-9th week of semester",
+      "Final exams are held at the end of the semester"
+    ],
+    "academic_policies": [
+      "GPA system: 4.0 scale",
+      "Minimum passing grade: D (GPA 1.0) in most programs",
+      "Students must maintain a minimum CGPA of 2.0 to remain in good academic standing",
+      "Academic probation for students with CGPA below 2.0",
+      "Maximum duration to complete BS degree: 6 years",
+      "Credit transfer is allowed from HEC-recognized institutions with department approval"
+    ],
+    "student_societies": [
+      "Literary & Debating Society",
+      "CS & IT Society",
+      "Science Society",
+      "Sports Club",
+      "Cultural Society",
+      "Business Club",
+      "Social Welfare Society",
+      "Photography & Media Club"
+    ],
+    "student_conduct": [
+      "Maintain a respectful and professional environment",
+      "Dress code: Formal/semi-formal attire is expected on campus",
+      "Students are responsible for the care of university property",
+      "Ragging of any form is strictly prohibited and punishable",
+      "Smoking is not allowed on campus premises",
+      "Students must carry their university identity cards at all times"
+    ]
+  },
+  "events_and_activities": {
+    "annual_events": [
+      "Annual Sports Week (typically in February)",
+      "Science & Technology Fair",
+      "Annual Cultural Festival",
+      "Convocation Ceremony",
+      "Orientation Week for new students (start of each semester)",
+      "Career Counseling & Job Fair",
+      "Alumni Reunion"
+    ],
+    "regular_activities": [
+      "Weekly seminars and guest lectures",
+      "Inter-departmental competitions",
+      "Workshop series on professional development",
+      "Community service initiatives"
+    ],
+    "note": "Check the university notice board and official website for current event schedules"
+  },
+  "contact_information": {
+    "main_office": "+92-606-412345",
+    "email": "info@uol.edu.pk",
+    "website": "https://uol.edu.pk",
+    "address": "University of Layyah, Layyah-Multan Road, Layyah, Punjab, Pakistan",
+    "postal_code": "31200",
+    "social_media": {
+      "facebook": "facebook.com/UOLayyah",
+      "twitter": "@UOLayyah"
+    }
+  }
+}
