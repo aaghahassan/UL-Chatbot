@@ -23,6 +23,7 @@ export const HealthCheckResponse = zod.object({
 export const ListGeminiConversationsResponseItem = zod.object({
   "id": zod.number(),
   "title": zod.string(),
+  "pinned": zod.boolean(),
   "createdAt": zod.coerce.date()
 })
 export const ListGeminiConversationsResponse = zod.array(ListGeminiConversationsResponseItem)
@@ -62,6 +63,26 @@ export const GetGeminiConversationResponse = zod.object({
  */
 export const DeleteGeminiConversationParams = zod.object({
   "id": zod.coerce.number()
+})
+
+
+/**
+ * @summary Rename or pin/unpin a conversation
+ */
+export const UpdateGeminiConversationParams = zod.object({
+  "id": zod.coerce.number()
+})
+
+export const UpdateGeminiConversationBody = zod.object({
+  "title": zod.string().optional(),
+  "pinned": zod.boolean().optional()
+})
+
+export const UpdateGeminiConversationResponse = zod.object({
+  "id": zod.number(),
+  "title": zod.string(),
+  "pinned": zod.boolean(),
+  "createdAt": zod.coerce.date()
 })
 
 

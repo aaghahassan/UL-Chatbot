@@ -1,5 +1,5 @@
 import { useLocation } from "wouter";
-import { GraduationCap, MessageCircle, Building, BookOpen, Users, Sparkles, ArrowRight, Eye, Target } from "lucide-react";
+import { GraduationCap, MessageCircle, Building, BookOpen, Sparkles, ArrowRight, Eye, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
@@ -113,89 +113,6 @@ export default function HomePage() {
             Chat with AI
             <ArrowRight className="h-5 w-5" />
           </Button>
-        </div>
-      </section>
-      {/* Chat Preview Section */}
-      <section className="py-16 px-4 bg-gradient-to-b from-white to-gray-50/60">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">See It In Action</h2>
-            <p className="text-muted-foreground">Real conversations, instant answers</p>
-          </div>
-
-          {/* Glassmorphism Chat Card */}
-          <div className="relative mx-auto max-w-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-white to-secondary/5 rounded-3xl blur-xl" />
-            <div className="relative bg-white/80 backdrop-blur-sm border border-gray-200 rounded-3xl shadow-2xl overflow-hidden">
-              {/* Card Header */}
-              <div className="flex items-center gap-3 px-5 py-4 border-b bg-white/90">
-                <div className="h-8 w-8 rounded-full bg-secondary flex items-center justify-center">
-                  <Sparkles className="h-4 w-4 text-white" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">UL AI Assistant</p>
-                  <div className="flex items-center gap-1">
-                    <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                    <p className="text-[11px] text-muted-foreground">Online — always ready to help</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Chat Bubbles */}
-              <div className="p-5 space-y-4">
-                {sampleChat.map((msg, i) => (
-                  <div
-                    key={i}
-                    className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"} animate-in fade-in slide-in-from-bottom-2`}
-                    style={{ animationDelay: `${i * 150}ms` }}
-                  >
-                    {msg.role === "ai" && (
-                      <div className="h-7 w-7 rounded-full bg-secondary shrink-0 flex items-center justify-center mr-2 mt-1">
-                        <Sparkles className="h-3.5 w-3.5 text-white" />
-                      </div>
-                    )}
-                    <div
-                      className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed shadow-sm ${
-                        msg.role === "user"
-                          ? "bg-primary text-white rounded-br-sm"
-                          : "bg-white border border-l-4 border-l-secondary text-foreground rounded-tl-sm"
-                      }`}
-                    >
-                      {msg.text}
-                    </div>
-                  </div>
-                ))}
-
-                {/* Typing indicator */}
-                <div className="flex justify-start">
-                  <div className="h-7 w-7 rounded-full bg-secondary shrink-0 flex items-center justify-center mr-2 mt-1">
-                    <Sparkles className="h-3.5 w-3.5 text-white" />
-                  </div>
-                  <div className="bg-white border border-l-4 border-l-secondary px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm">
-                    <div className="flex items-center gap-1">
-                      <span className="h-2 w-2 bg-secondary/50 rounded-full animate-bounce [animation-delay:-0.3s]" />
-                      <span className="h-2 w-2 bg-secondary/50 rounded-full animate-bounce [animation-delay:-0.15s]" />
-                      <span className="h-2 w-2 bg-secondary/50 rounded-full animate-bounce" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Fake input */}
-              <div className="px-5 pb-5">
-                <div
-                  onClick={() => setLocation("/chat")}
-                  className="flex items-center gap-3 border rounded-xl px-4 py-3 bg-gray-50 cursor-pointer hover:border-primary/40 transition-colors group"
-                  data-testid="button-fake-input"
-                >
-                  <span className="flex-1 text-sm text-muted-foreground">Ask your question...</span>
-                  <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center shadow-sm group-hover:bg-primary/90 transition-colors">
-                    <ArrowRight className="h-4 w-4 text-white" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
       {/* Features Section */}

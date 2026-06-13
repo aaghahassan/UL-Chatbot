@@ -8,6 +8,8 @@ import {
   SendGeminiMessageParams,
   SendGeminiMessageBody,
   CreateGeminiConversationBody,
+  UpdateGeminiConversationParams,
+  UpdateGeminiConversationBody,
 } from "@workspace/api-zod";
 import { ai } from "@workspace/integrations-gemini-ai";
 import { logger } from "../../lib/logger";
@@ -62,10 +64,11 @@ Format every response using clean Markdown so it renders beautifully:
 }
 
 router.get("/gemini/conversations", async (req, res): Promise<void> => {
+  const { desc, asc } = await import("drizzle-orm");
   const result = await db
     .select()
     .from(conversations)
-    .orderBy(conversations.createdAt);
+    .orderBy(desc(conversations.pinned), desc(conversations.createdAt));
   res.json(result);
 });
 
@@ -119,6 +122,36 @@ router.delete("/gemini/conversations/:id", async (req, res): Promise<void> => {
     return;
   }
   res.sendStatus(204);
+});
+
+router.patch("/gemini/conversations/:id", async (req, res): Promise<void> => {
+  const params = UpdateGeminiConversationParams.safeParse(req.params);
+  if (!params.success) {
+    res.status(400).json({ error: params.error.message });
+    return;
+  }
+  const body = UpdateGeminiConversationBody.safeParse(req.body);
+  if (!body.success) {
+    res.status(400).json({ error: body.error.message });
+    return;
+  }
+  const updates: { title?: string; pinned?: boolean } = {};
+  if (body.data.title !== undefined) updates.title = body.data.title;
+  if (body.data.pinned !== undefined) updates.pinned = body.data.pinned;
+  if (Object.keys(updates).length === 0) {
+    res.status(400).json({ error: "No fields to update" });
+    return;
+  }
+  const [conv] = await db
+    .update(conversations)
+    .set(updates)
+    .where(eq(conversations.id, params.data.id))
+    .returning();
+  if (!conv) {
+    res.status(404).json({ error: "Conversation not found" });
+    return;
+  }
+  res.json(conv);
 });
 
 router.get("/gemini/conversations/:id/messages", async (req, res): Promise<void> => {

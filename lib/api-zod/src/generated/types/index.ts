@@ -8,6 +8,7 @@
 
 export * from './geminiConversation';
 export * from './geminiConversationInput';
+export * from './geminiConversationUpdate';
 export * from './geminiConversationWithMessages';
 export * from './geminiError';
 export * from './geminiImageInput';

@@ -7,7 +7,7 @@ import remarkGfm from "remark-gfm";
 import {
   Menu, X, Send, Plus, Sparkles, User, Info,
   Map, GraduationCap, BookOpen, Clock, Phone, BookMarked,
-  Home, LayoutDashboard
+  Home, LayoutDashboard, MoreHorizontal, Pin, PinOff, Pencil, Trash2,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,9 +15,17 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
   useListGeminiConversations,
   useCreateGeminiConversation,
   useDeleteGeminiConversation,
+  useUpdateGeminiConversation,
   useListGeminiMessages,
   getListGeminiMessagesQueryKey,
   getListGeminiConversationsQueryKey,
@@ -45,6 +53,29 @@ export default function ChatPage() {
 
   const createConversation = useCreateGeminiConversation();
   const deleteConversation = useDeleteGeminiConversation();
+  const updateConversation = useUpdateGeminiConversation();
+
+  const [renamingId, setRenamingId] = useState<number | null>(null);
+  const [renameValue, setRenameValue] = useState("");
+
+  const handleRename = async (id: number) => {
+    const trimmed = renameValue.trim();
+    if (!trimmed) { setRenamingId(null); return; }
+    await updateConversation.mutateAsync({ id, data: { title: trimmed } });
+    queryClient.invalidateQueries({ queryKey: getListGeminiConversationsQueryKey() });
+    setRenamingId(null);
+  };
+
+  const handlePin = async (id: number, currentlyPinned: boolean) => {
+    await updateConversation.mutateAsync({ id, data: { pinned: !currentlyPinned } });
+    queryClient.invalidateQueries({ queryKey: getListGeminiConversationsQueryKey() });
+  };
+
+  const handleDelete = async (id: number) => {
+    await deleteConversation.mutateAsync({ id });
+    queryClient.invalidateQueries({ queryKey: getListGeminiConversationsQueryKey() });
+    if (conversationId === id) setLocation("/chat");
+  };
 
   useEffect(() => {
     if (bottomRef.current) {
@@ -130,59 +161,145 @@ export default function ChatPage() {
     { title: "Contact Info", icon: Phone },
   ];
 
-  const SidebarContent = () => (
-    <div className="flex flex-col h-full bg-white border-r">
-      <div className="p-4 border-b flex items-center justify-between">
-        <h2 className="font-semibold text-foreground flex items-center gap-2">
-          <Sparkles className="h-5 w-5 text-primary" />
-          UL AI Assistant
-        </h2>
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setSidebarOpen(false)}>
-          <X className="h-5 w-5" />
-        </Button>
-      </div>
-      <div className="p-4">
-        <Button
-          className="w-full justify-start gap-2 bg-primary/10 text-primary hover:bg-primary/20 border-0"
-          variant="outline"
-          onClick={() => { setLocation("/chat"); setSidebarOpen(false); }}
-          data-testid="button-new-chat"
+  const SidebarContent = () => {
+    const pinnedConvs = conversations?.filter((c) => c.pinned) ?? [];
+    const recentConvs = conversations?.filter((c) => !c.pinned) ?? [];
+
+    const ConvItem = ({ conv }: { conv: NonNullable<typeof conversations>[number] }) => {
+      const isActive = conversationId === conv.id;
+      const isRenaming = renamingId === conv.id;
+
+      if (isRenaming) {
+        return (
+          <div className="px-2 py-1">
+            <Input
+              autoFocus
+              value={renameValue}
+              onChange={(e) => setRenameValue(e.target.value)}
+              onBlur={() => handleRename(conv.id)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleRename(conv.id);
+                if (e.key === "Escape") setRenamingId(null);
+              }}
+              className="h-8 text-sm px-2"
+            />
+          </div>
+        );
+      }
+
+      return (
+        <div
+          className={`group relative flex items-center rounded-md transition-colors ${
+            isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent text-foreground"
+          }`}
         >
-          <Plus className="h-4 w-4" />
-          New Chat
-        </Button>
-      </div>
-      <ScrollArea className="flex-1">
-        <div className="p-4 space-y-2">
-          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3">
-            Recent Conversations
-          </p>
-          {isConversationsLoading ? (
-            Array.from({ length: 5 }).map((_, i) => (
-              <Skeleton key={i} className="h-10 w-full rounded-md" />
-            ))
-          ) : conversations?.length === 0 ? (
-            <p className="text-sm text-muted-foreground text-center py-4">No recent chats</p>
-          ) : (
-            conversations?.map((conv) => (
-              <button
-                key={conv.id}
-                onClick={() => { setLocation(`/c/${conv.id}`); setSidebarOpen(false); }}
-                className={`w-full text-left px-3 py-2 text-sm rounded-md transition-colors truncate ${
-                  conversationId === conv.id
-                    ? "bg-primary text-primary-foreground font-medium"
-                    : "hover:bg-accent text-foreground"
-                }`}
-                data-testid={`button-conversation-${conv.id}`}
-              >
-                {conv.title}
-              </button>
-            ))
+          {conv.pinned && (
+            <Pin className={`absolute left-2.5 h-2.5 w-2.5 shrink-0 ${isActive ? "text-primary-foreground/60" : "text-muted-foreground"}`} />
           )}
+          <button
+            onClick={() => { setLocation(`/c/${conv.id}`); setSidebarOpen(false); }}
+            className={`flex-1 text-left py-2 text-sm truncate min-w-0 ${conv.pinned ? "pl-7 pr-8" : "pl-3 pr-8"}`}
+            data-testid={`button-conversation-${conv.id}`}
+          >
+            {conv.title}
+          </button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                className={`absolute right-1 h-6 w-6 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0 ${
+                  isActive ? "hover:bg-primary-foreground/20" : "hover:bg-accent-foreground/10"
+                }`}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <MoreHorizontal className="h-3.5 w-3.5" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent side="right" align="start" className="w-44">
+              <DropdownMenuItem
+                onClick={() => handlePin(conv.id, conv.pinned)}
+                className="gap-2 cursor-pointer"
+              >
+                {conv.pinned ? <PinOff className="h-4 w-4" /> : <Pin className="h-4 w-4" />}
+                {conv.pinned ? "Unpin" : "Pin"}
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => { setRenamingId(conv.id); setRenameValue(conv.title); }}
+                className="gap-2 cursor-pointer"
+              >
+                <Pencil className="h-4 w-4" />
+                Rename
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem
+                onClick={() => handleDelete(conv.id)}
+                className="gap-2 cursor-pointer text-destructive focus:text-destructive"
+              >
+                <Trash2 className="h-4 w-4" />
+                Delete
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
-      </ScrollArea>
-    </div>
-  );
+      );
+    };
+
+    return (
+      <div className="flex flex-col h-full bg-white border-r">
+        <div className="p-4 border-b flex items-center justify-between">
+          <h2 className="font-semibold text-foreground flex items-center gap-2">
+            <Sparkles className="h-5 w-5 text-primary" />
+            UL AI Assistant
+          </h2>
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setSidebarOpen(false)}>
+            <X className="h-5 w-5" />
+          </Button>
+        </div>
+        <div className="p-4">
+          <Button
+            className="w-full justify-start gap-2 bg-primary/10 text-primary hover:bg-primary/20 border-0"
+            variant="outline"
+            onClick={() => { setLocation("/chat"); setSidebarOpen(false); }}
+            data-testid="button-new-chat"
+          >
+            <Plus className="h-4 w-4" />
+            New Chat
+          </Button>
+        </div>
+        <ScrollArea className="flex-1">
+          <div className="px-3 pb-4 space-y-1">
+            {isConversationsLoading ? (
+              <div className="space-y-1.5 pt-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Skeleton key={i} className="h-9 w-full rounded-md" />
+                ))}
+              </div>
+            ) : conversations?.length === 0 ? (
+              <p className="text-sm text-muted-foreground text-center py-6">No recent chats</p>
+            ) : (
+              <>
+                {pinnedConvs.length > 0 && (
+                  <>
+                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1 px-1">
+                      Pinned
+                    </p>
+                    {pinnedConvs.map((conv) => <ConvItem key={conv.id} conv={conv} />)}
+                  </>
+                )}
+                {recentConvs.length > 0 && (
+                  <>
+                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1 px-1">
+                      Recent
+                    </p>
+                    {recentConvs.map((conv) => <ConvItem key={conv.id} conv={conv} />)}
+                  </>
+                )}
+              </>
+            )}
+          </div>
+        </ScrollArea>
+      </div>
+    );
+  };
 
   return (
     <div className="flex flex-col h-screen w-full bg-background overflow-hidden">

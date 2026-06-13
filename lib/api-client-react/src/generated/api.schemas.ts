@@ -12,7 +12,13 @@ export interface HealthStatus {
 export interface GeminiConversation {
   id: number;
   title: string;
+  pinned: boolean;
   createdAt: string;
+}
+
+export interface GeminiConversationUpdate {
+  title?: string;
+  pinned?: boolean;
 }
 
 export interface GeminiMessage {

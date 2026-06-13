@@ -22,6 +22,7 @@ import type {
 import type {
   GeminiConversation,
   GeminiConversationInput,
+  GeminiConversationUpdate,
   GeminiConversationWithMessages,
   GeminiError,
   GeminiImageInput,
@@ -416,6 +417,78 @@ export const useDeleteGeminiConversation = <TError = ErrorType<GeminiError>,
         TContext
       > => {
       return useMutation(getDeleteGeminiConversationMutationOptions(options));
+    }
+
+export const getUpdateGeminiConversationUrl = (id: number,) => {
+
+
+
+
+  return `/api/gemini/conversations/${id}`
+}
+
+/**
+ * @summary Rename or pin/unpin a conversation
+ */
+export const updateGeminiConversation = async (id: number,
+    geminiConversationUpdate: GeminiConversationUpdate, options?: RequestInit): Promise<GeminiConversation> => {
+
+  return customFetch<GeminiConversation>(getUpdateGeminiConversationUrl(id),
+  {
+    ...options,
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json', ...options?.headers },
+    body: JSON.stringify(
+      geminiConversationUpdate,)
+  }
+);}
+
+
+
+
+export const getUpdateGeminiConversationMutationOptions = <TError = ErrorType<GeminiError>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof updateGeminiConversation>>, TError,{id: number;data: BodyType<GeminiConversationUpdate>}, TContext>, request?: SecondParameter<typeof customFetch>}
+): UseMutationOptions<Awaited<ReturnType<typeof updateGeminiConversation>>, TError,{id: number;data: BodyType<GeminiConversationUpdate>}, TContext> => {
+
+const mutationKey = ['updateGeminiConversation'];
+const {mutation: mutationOptions, request: requestOptions} = options ?
+      options.mutation && 'mutationKey' in options.mutation && options.mutation.mutationKey ?
+      options
+      : {...options, mutation: {...options.mutation, mutationKey}}
+      : {mutation: { mutationKey, }, request: undefined};
+
+
+
+
+      const mutationFn: MutationFunction<Awaited<ReturnType<typeof updateGeminiConversation>>, {id: number;data: BodyType<GeminiConversationUpdate>}> = (props) => {
+          const {id,data} = props ?? {};
+
+          return  updateGeminiConversation(id,data,requestOptions)
+        }
+
+
+
+
+
+
+  return  { mutationFn, ...mutationOptions }}
+
+    export type UpdateGeminiConversationMutationResult = NonNullable<Awaited<ReturnType<typeof updateGeminiConversation>>>
+    export type UpdateGeminiConversationMutationBody = BodyType<GeminiConversationUpdate>
+    export type UpdateGeminiConversationMutationError = ErrorType<GeminiError>
+
+    /**
+ * @summary Rename or pin/unpin a conversation
+ */
+export const useUpdateGeminiConversation = <TError = ErrorType<GeminiError>,
+    TContext = unknown>(options?: { mutation?:UseMutationOptions<Awaited<ReturnType<typeof updateGeminiConversation>>, TError,{id: number;data: BodyType<GeminiConversationUpdate>}, TContext>, request?: SecondParameter<typeof customFetch>}
+ ): UseMutationResult<
+        Awaited<ReturnType<typeof updateGeminiConversation>>,
+        TError,
+        {id: number;data: BodyType<GeminiConversationUpdate>},
+        TContext
+      > => {
+      return useMutation(getUpdateGeminiConversationMutationOptions(options));
     }
 
 export const getListGeminiMessagesUrl = (id: number,) => {

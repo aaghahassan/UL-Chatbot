@@ -6,9 +6,7 @@
  * OpenAPI spec version: 0.1.0
  */
 
-export interface GeminiConversation {
-  id: number;
-  title: string;
-  pinned: boolean;
-  createdAt: Date;
+export interface GeminiConversationUpdate {
+  title?: string;
+  pinned?: boolean;
 }
