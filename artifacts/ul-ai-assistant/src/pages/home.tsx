@@ -47,9 +47,7 @@ export default function HomePage() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-xl bg-secondary flex items-center justify-center shadow-sm">
-              <span className="text-white font-bold text-sm">UL</span>
-            </div>
+            <img src="/ul-logo.jpg" alt="University of Layyah" className="h-10 w-10 rounded-xl object-cover shadow-sm" />
             <div>
               <span className="font-bold text-foreground text-sm leading-none block">University of Layyah</span>
               <span className="text-[10px] text-muted-foreground">AI Assistant</span>

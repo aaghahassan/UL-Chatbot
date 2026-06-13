@@ -420,9 +420,7 @@ export default function AdminPage() {
       {/* Top Nav */}
       <nav className="h-14 flex items-center justify-between px-4 border-b bg-white shrink-0 shadow-sm z-20">
         <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-xl bg-secondary flex items-center justify-center shadow-sm">
-            <span className="text-white font-bold text-xs">UL</span>
-          </div>
+          <img src="/ul-logo.jpg" alt="University of Layyah" className="h-8 w-8 rounded-xl object-cover shadow-sm" />
           <span className="font-semibold text-sm text-foreground hidden sm:block">University of Layyah</span>
         </div>
         <div className="hidden sm:flex items-center gap-1">

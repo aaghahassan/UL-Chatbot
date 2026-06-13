@@ -161,88 +161,82 @@ export default function ChatPage() {
     { title: "Contact Info", icon: Phone },
   ];
 
+  const renderConvItem = (conv: NonNullable<typeof conversations>[number]) => {
+    const isActive = conversationId === conv.id;
+    if (renamingId === conv.id) {
+      return (
+        <div key={conv.id} className="px-2 py-1">
+          <Input
+            autoFocus
+            value={renameValue}
+            onChange={(e) => setRenameValue(e.target.value)}
+            onBlur={() => handleRename(conv.id)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") handleRename(conv.id);
+              if (e.key === "Escape") setRenamingId(null);
+            }}
+            className="h-8 text-sm px-2"
+          />
+        </div>
+      );
+    }
+    return (
+      <div
+        key={conv.id}
+        className={`group relative flex items-center rounded-md transition-colors ${
+          isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent text-foreground"
+        }`}
+      >
+        {conv.pinned && (
+          <Pin className={`absolute left-2.5 h-2.5 w-2.5 shrink-0 ${isActive ? "text-primary-foreground/60" : "text-muted-foreground"}`} />
+        )}
+        <button
+          onClick={() => { setLocation(`/c/${conv.id}`); setSidebarOpen(false); }}
+          className={`flex-1 text-left py-2 text-sm truncate min-w-0 ${conv.pinned ? "pl-7 pr-8" : "pl-3 pr-8"}`}
+          data-testid={`button-conversation-${conv.id}`}
+        >
+          {conv.title}
+        </button>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <button
+              className={`absolute right-1 h-6 w-6 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0 ${
+                isActive ? "hover:bg-primary-foreground/20" : "hover:bg-accent-foreground/10"
+              }`}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <MoreHorizontal className="h-3.5 w-3.5" />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent side="right" align="start" className="w-44">
+            <DropdownMenuItem onClick={() => handlePin(conv.id, conv.pinned)} className="gap-2 cursor-pointer">
+              {conv.pinned ? <PinOff className="h-4 w-4" /> : <Pin className="h-4 w-4" />}
+              {conv.pinned ? "Unpin" : "Pin"}
+            </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => { setRenamingId(conv.id); setRenameValue(conv.title); }}
+              className="gap-2 cursor-pointer"
+            >
+              <Pencil className="h-4 w-4" />
+              Rename
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem
+              onClick={() => handleDelete(conv.id)}
+              className="gap-2 cursor-pointer text-destructive focus:text-destructive"
+            >
+              <Trash2 className="h-4 w-4" />
+              Delete
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+    );
+  };
+
   const SidebarContent = () => {
     const pinnedConvs = conversations?.filter((c) => c.pinned) ?? [];
     const recentConvs = conversations?.filter((c) => !c.pinned) ?? [];
-
-    const ConvItem = ({ conv }: { conv: NonNullable<typeof conversations>[number] }) => {
-      const isActive = conversationId === conv.id;
-      const isRenaming = renamingId === conv.id;
-
-      if (isRenaming) {
-        return (
-          <div className="px-2 py-1">
-            <Input
-              autoFocus
-              value={renameValue}
-              onChange={(e) => setRenameValue(e.target.value)}
-              onBlur={() => handleRename(conv.id)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") handleRename(conv.id);
-                if (e.key === "Escape") setRenamingId(null);
-              }}
-              className="h-8 text-sm px-2"
-            />
-          </div>
-        );
-      }
-
-      return (
-        <div
-          className={`group relative flex items-center rounded-md transition-colors ${
-            isActive ? "bg-primary text-primary-foreground" : "hover:bg-accent text-foreground"
-          }`}
-        >
-          {conv.pinned && (
-            <Pin className={`absolute left-2.5 h-2.5 w-2.5 shrink-0 ${isActive ? "text-primary-foreground/60" : "text-muted-foreground"}`} />
-          )}
-          <button
-            onClick={() => { setLocation(`/c/${conv.id}`); setSidebarOpen(false); }}
-            className={`flex-1 text-left py-2 text-sm truncate min-w-0 ${conv.pinned ? "pl-7 pr-8" : "pl-3 pr-8"}`}
-            data-testid={`button-conversation-${conv.id}`}
-          >
-            {conv.title}
-          </button>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <button
-                className={`absolute right-1 h-6 w-6 rounded flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shrink-0 ${
-                  isActive ? "hover:bg-primary-foreground/20" : "hover:bg-accent-foreground/10"
-                }`}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <MoreHorizontal className="h-3.5 w-3.5" />
-              </button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent side="right" align="start" className="w-44">
-              <DropdownMenuItem
-                onClick={() => handlePin(conv.id, conv.pinned)}
-                className="gap-2 cursor-pointer"
-              >
-                {conv.pinned ? <PinOff className="h-4 w-4" /> : <Pin className="h-4 w-4" />}
-                {conv.pinned ? "Unpin" : "Pin"}
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => { setRenamingId(conv.id); setRenameValue(conv.title); }}
-                className="gap-2 cursor-pointer"
-              >
-                <Pencil className="h-4 w-4" />
-                Rename
-              </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem
-                onClick={() => handleDelete(conv.id)}
-                className="gap-2 cursor-pointer text-destructive focus:text-destructive"
-              >
-                <Trash2 className="h-4 w-4" />
-                Delete
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-      );
-    };
-
     return (
       <div className="flex flex-col h-full bg-white border-r">
         <div className="p-4 border-b flex items-center justify-between">
@@ -279,18 +273,14 @@ export default function ChatPage() {
               <>
                 {pinnedConvs.length > 0 && (
                   <>
-                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1 px-1">
-                      Pinned
-                    </p>
-                    {pinnedConvs.map((conv) => <ConvItem key={conv.id} conv={conv} />)}
+                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-2 pb-1 px-1">Pinned</p>
+                    {pinnedConvs.map(renderConvItem)}
                   </>
                 )}
                 {recentConvs.length > 0 && (
                   <>
-                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1 px-1">
-                      Recent
-                    </p>
-                    {recentConvs.map((conv) => <ConvItem key={conv.id} conv={conv} />)}
+                    <p className="text-[10px] font-semibold text-muted-foreground uppercase tracking-wider pt-3 pb-1 px-1">Recent</p>
+                    {recentConvs.map(renderConvItem)}
                   </>
                 )}
               </>
@@ -317,9 +307,7 @@ export default function ChatPage() {
               <SidebarContent />
             </SheetContent>
           </Sheet>
-          <div className="h-8 w-8 rounded-xl bg-secondary flex items-center justify-center shadow-sm">
-            <span className="text-white font-bold text-xs">UL</span>
-          </div>
+          <img src="/ul-logo.jpg" alt="University of Layyah" className="h-8 w-8 rounded-xl object-cover shadow-sm" />
           <span className="font-semibold text-sm text-foreground hidden sm:block">University of Layyah</span>
         </div>
 
