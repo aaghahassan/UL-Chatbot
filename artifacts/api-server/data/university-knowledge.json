@@ -19,6 +19,21 @@
     "facebook": "https://www.facebook.com/universityoflayah",
     "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent university in December 2022. It is the only public university in the Layyah region, serving southern Punjab."
   },
+  "vision_mission": {
+    "motto": "Distinctive Learning",
+    "vision": "The University of Layyah aims to exponentially grow with each passing day, besides ensuring quality education in market-oriented degree programs. It strengthens graduates through distinctive learning in education, social norms, economics, and technology through national and international collaboration.",
+    "mission": "Support University of Layyah into becoming a center of innovation, high impact applied research, and entrepreneurship.",
+    "values": [
+      "Academic Excellence",
+      "Innovation and Research",
+      "Inclusivity — serving students of southern Punjab regardless of background",
+      "Community Engagement and Social Responsibility",
+      "National and International Collaboration",
+      "Entrepreneurship and Skills Development",
+      "HEC-recognized quality standards"
+    ],
+    "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent public university in December 2022. It is the only public university in Layyah district, bringing higher education access to southern Punjab."
+  },
   "administration": {
     "chancellor": "Governor of Punjab",
     "vice_chancellor": {

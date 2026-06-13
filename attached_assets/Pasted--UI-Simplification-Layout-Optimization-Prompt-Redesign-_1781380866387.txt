@@ -1,0 +1,157 @@
+# UI Simplification & Layout Optimization Prompt
+
+Redesign the University of Layyah AI Assistant homepage to be cleaner, more focused, and chatbot-centric.
+
+## Navigation Bar
+
+Keep only the following menu items:
+
+* Home
+* AI Chat
+* Admin Dashboard
+
+Remove completely:
+
+* Programs
+* Fee Structure
+* Faculty
+* Events
+* FAQs
+
+The chatbot itself will handle all queries related to programs, fees, faculty, events, admissions, campus information, and student life.
+
+## Hero Section
+
+Keep the modern green and orange University of Layyah branding.
+
+Main Heading:
+
+"Your Smart Campus Companion"
+
+Subheading:
+
+"Ask anything about admissions, programs, faculty, campus information, student life, events, fees, and university policies through one intelligent AI assistant."
+
+## Hero Buttons
+
+Keep only one primary button:
+
+"Chat with AI"
+
+Remove:
+
+* Explore Programs
+
+The chatbot should be the central focus of the entire platform.
+
+## Remove Statistics Section
+
+Delete completely:
+
+* Programs Offered
+* Faculty Members
+* Students Enrolled
+* Years of Excellence
+
+The homepage should not look like a university marketing website.
+
+## Remove Vision & Mission Section
+
+Delete completely:
+
+* Our Vision
+* Our Mission
+* HEC Recognized
+* Distinctive Learning
+
+These details are unnecessary for the AI assistant platform.
+
+## Homepage Structure
+
+The homepage should contain only:
+
+1. Navigation Bar
+2. Hero Section
+3. AI Chat Preview Section
+4. Features Section
+5. Footer
+
+Nothing else.
+
+## AI Chat Preview Section
+
+Add a modern chatbot preview card showing sample conversations:
+
+User:
+"What BS programs are available?"
+
+AI:
+"The University of Layyah offers BS Computer Science, BS Information Technology, BS Mathematics, and other programs."
+
+User:
+"What is the admission fee?"
+
+AI:
+"Here is the latest fee structure information..."
+
+Include:
+
+* Chat bubble design
+* Typing animation
+* Modern glassmorphism card
+
+## Features Section
+
+Display only 4 feature cards:
+
+### Admissions & Programs
+
+Get information about admissions, eligibility, scholarships, and fee structures.
+
+### Campus Information
+
+Find faculty directories, departments, locations, and office contacts.
+
+### Student Life
+
+Learn about exam rules, attendance policies, and student activities.
+
+### AI Assistant
+
+Receive instant answers 24/7 through natural conversation.
+
+## Footer
+
+Simplify the footer.
+
+Remove completely:
+
+* University logo
+* University name
+* Address block
+* Contact card
+* Ask the AI button inside footer
+
+Footer should contain only:
+
+© 2026 University of Layyah. All Rights Reserved.
+
+Privacy Policy | Terms of Service
+
+Centered and minimal.
+
+## Design Guidelines
+
+* Maintain University of Layyah green and orange theme.
+* Modern and premium UI.
+* Responsive design.
+* Smooth animations.
+* Clean spacing.
+* Focus entirely on the AI chatbot experience.
+* The website should feel like an AI-powered university assistant, not a traditional university information portal.
+
+## Important Rule
+
+All university information (Programs, Admissions, Fee Structure, Faculty, Events, Campus Information, Student Life) must be accessible only through the AI Chat Assistant.
+
+Do not create separate pages or navigation links for these sections.
