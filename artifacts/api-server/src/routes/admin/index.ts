@@ -1,14 +1,8 @@
 import { Router, type IRouter } from "express";
 import { eq } from "drizzle-orm";
 import { db, knowledgeSections } from "@workspace/db";
-import { z } from "zod/v4";
 
 const router: IRouter = Router();
-
-const UpdateSectionBody = z.object({
-  title: z.string().min(1),
-  data: z.unknown(),
-});
 
 router.get("/admin/knowledge-sections", async (req, res): Promise<void> => {
   const result = await db
@@ -34,9 +28,14 @@ router.get("/admin/knowledge-sections/:key", async (req, res): Promise<void> => 
 
 router.put("/admin/knowledge-sections/:key", async (req, res): Promise<void> => {
   const { key } = req.params;
-  const parsed = UpdateSectionBody.safeParse(req.body);
-  if (!parsed.success) {
-    res.status(400).json({ error: parsed.error.message });
+  const { title, data } = req.body ?? {};
+
+  if (typeof title !== "string" || title.trim() === "") {
+    res.status(400).json({ error: "title is required" });
+    return;
+  }
+  if (data === undefined) {
+    res.status(400).json({ error: "data is required" });
     return;
   }
 
@@ -53,11 +52,7 @@ router.put("/admin/knowledge-sections/:key", async (req, res): Promise<void> => 
 
   const [updated] = await db
     .update(knowledgeSections)
-    .set({
-      title: parsed.data.title,
-      data: parsed.data.data as any,
-      updatedAt: new Date(),
-    })
+    .set({ title: title.trim(), data: data as any, updatedAt: new Date() })
     .where(eq(knowledgeSections.sectionKey, key))
     .returning();
 
