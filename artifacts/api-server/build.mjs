@@ -13,7 +13,9 @@ const artifactDir = path.dirname(fileURLToPath(import.meta.url));
 async function buildAll() {
   const distDir = path.resolve(artifactDir, "dist");
   await rm(distDir, { recursive: true, force: true });
+  const isVercel = process.env.VERCEL === "1";
 
+  if (!isVercel) {
   await esbuild({
     entryPoints: [path.resolve(artifactDir, "src/index.ts")],
     platform: "node",
@@ -135,6 +137,7 @@ if (!process.env.PORT) process.env.PORT = '8080';
     `,
     },
   });
+  }
 
   await esbuild({
     entryPoints: [path.resolve(artifactDir, "src/vercel-handler.ts")],
@@ -143,13 +146,14 @@ if (!process.env.PORT) process.env.PORT = '8080';
     format: "esm",
     outfile: path.resolve(artifactDir, "dist/vercel-handler.mjs"),
     logLevel: "info",
+    minify: isVercel,
+    sourcemap: isVercel ? false : "linked",
     external: [
       "*.node",
       "@electric-sql/pglite",
       "@electric-sql/pglite/*",
       "pg-native",
     ],
-    sourcemap: "linked",
     banner: {
       js: `import { createRequire as __bannerCrReq } from 'node:module';
 import __bannerPath from 'node:path';

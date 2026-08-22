@@ -10,7 +10,7 @@
   "functions": {
     "api/index.ts": {
       "maxDuration": 10,
-      "includeFiles": "{artifacts/api-server/dist/**,artifacts/api-server/data/**}"
+      "includeFiles": "{artifacts/api-server/dist/vercel-handler.mjs,artifacts/api-server/data/**}"
     }
   }
 }
