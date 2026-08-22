@@ -20,3 +20,5 @@
 export * from "./conversations";
 export * from "./messages";
 export * from "./knowledge-sections";
+export * from "./users";
+export * from "./sessions";

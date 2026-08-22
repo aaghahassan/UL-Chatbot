@@ -5,7 +5,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import HomePage from "@/pages/home";
 import ChatPage from "@/pages/chat";
-import AdminPage from "@/pages/admin";
+import CampusesPage from "@/pages/campuses";
+import { LoginPage, SignupPage } from "@/pages/auth";
+import AccountPage from "@/pages/account";
+import { AuthProvider } from "@/lib/auth";
+import { ChatAuthProvider } from "@/components/auth-dialog";
+import { ThemeProvider } from "next-themes";
 
 const queryClient = new QueryClient();
 
@@ -13,9 +18,12 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
+      <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component={SignupPage} />
+      <Route path="/account" component={AccountPage} />
       <Route path="/chat" component={ChatPage} />
       <Route path="/c/:id" component={ChatPage} />
-      <Route path="/admin" component={AdminPage} />
+      <Route path="/campuses" component={CampusesPage} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -24,12 +32,18 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
+      <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} storageKey="ul-theme">
+      <AuthProvider>
+        <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
+          <ChatAuthProvider>
+            <Router />
+          </ChatAuthProvider>
         </WouterRouter>
         <Toaster />
-      </TooltipProvider>
+        </TooltipProvider>
+      </AuthProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

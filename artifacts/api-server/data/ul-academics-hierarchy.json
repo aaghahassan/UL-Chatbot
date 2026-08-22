@@ -1,0 +1,486 @@
+{
+  "source": "https://ul.edu.pk homepage Academics menu",
+  "scraped_at": "2026-07-31T22:34:48.677Z",
+  "faculties": [
+    {
+      "name": "Faculty of Computing & Engineering",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNA==/faculty-of-computing-engineering",
+      "slug": "faculty-of-computing-engineering",
+      "departments": [
+        {
+          "id": "1950",
+          "name": "Department of Computer Engineering",
+          "url": "https://ul.edu.pk/department-detail/MTk1MA==/department-of-computer-engineering",
+          "slug": "department-of-computer-engineering",
+          "programs": [
+            {
+              "name": "B.Sc Computer Engineering",
+              "url": "https://ul.edu.pk/program-detail/NDU2Nw==/bsc-computer-engineering",
+              "slug": "bsc-computer-engineering"
+            }
+          ]
+        },
+        {
+          "id": "1237",
+          "name": "Department of Computer Science",
+          "url": "https://ul.edu.pk/department-detail/MTIzNw==/department-of-computer-science",
+          "slug": "department-of-computer-science",
+          "programs": [
+            {
+              "name": "BS Computer Science",
+              "url": "https://ul.edu.pk/program-detail/MTM4OQ==/bs-computer-science",
+              "slug": "bs-computer-science"
+            },
+            {
+              "name": "BSCS - Artificial Intelligence",
+              "url": "https://ul.edu.pk/program-detail/MTk1Nw==/bscs-artificial-intelligence",
+              "slug": "bscs-artificial-intelligence"
+            }
+          ]
+        },
+        {
+          "id": "1951",
+          "name": "Department of Information Technology",
+          "url": "https://ul.edu.pk/department-detail/MTk1MQ==/department-of-information-technology",
+          "slug": "department-of-information-technology",
+          "programs": [
+            {
+              "name": "BSCS - Information Technology",
+              "url": "https://ul.edu.pk/program-detail/MTQwMQ==/bscs-information-technology",
+              "slug": "bscs-information-technology"
+            },
+            {
+              "name": "BSCS - Data Science",
+              "url": "https://ul.edu.pk/program-detail/MTk1Ng==/bscs-data-science",
+              "slug": "bscs-data-science"
+            }
+          ]
+        },
+        {
+          "id": "2014",
+          "name": "E-Rozgaar Program",
+          "url": "https://ul.edu.pk/department-detail/MjAxNA==/e-rozgaar-program",
+          "slug": "e-rozgaar-program",
+          "programs": [
+            {
+              "name": "Freelancing & Soft Skills",
+              "url": "https://ul.edu.pk/program-detail/MTY1Nw==/freelancing-soft-skills",
+              "slug": "freelancing-soft-skills"
+            },
+            {
+              "name": "SEO & Digital Marketing",
+              "url": "https://ul.edu.pk/program-detail/MTY1OA==/seo-digital-marketing",
+              "slug": "seo-digital-marketing"
+            },
+            {
+              "name": "Graphic Design",
+              "url": "https://ul.edu.pk/program-detail/MTY1OQ==/graphic-design",
+              "slug": "graphic-design"
+            },
+            {
+              "name": "YouTube Automation",
+              "url": "https://ul.edu.pk/program-detail/MTkxNQ==/youtube-automation",
+              "slug": "youtube-automation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Veterinary and Animal Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwOQ==/faculty-of-veterinary-and-animal-sciences",
+      "slug": "faculty-of-veterinary-and-animal-sciences",
+      "departments": [
+        {
+          "id": "1217",
+          "name": "Department of Biosciences",
+          "url": "https://ul.edu.pk/department-detail/MTIxNw==/department-of-biosciences",
+          "slug": "department-of-biosciences",
+          "programs": [
+            {
+              "name": "Livestock Assistant Diploma",
+              "url": "https://ul.edu.pk/program-detail/MTM5Mg==/livestock-assistant-diploma",
+              "slug": "livestock-assistant-diploma"
+            }
+          ]
+        },
+        {
+          "id": "1242",
+          "name": "Department of Livestock and Poultry Sciences",
+          "url": "https://ul.edu.pk/department-detail/MTI0Mg==/department-of-livestock-and-poultry-sciences",
+          "slug": "department-of-livestock-and-poultry-sciences",
+          "programs": [
+            {
+              "name": "BS Poultry Sciences",
+              "url": "https://ul.edu.pk/program-detail/MTU2Mw==/bs-poultry-sciences",
+              "slug": "bs-poultry-sciences"
+            },
+            {
+              "name": "BS Dairy Technology",
+              "url": "https://ul.edu.pk/program-detail/NDUyNA==/bs-dairy-technology",
+              "slug": "bs-dairy-technology"
+            }
+          ]
+        },
+        {
+          "id": "1243",
+          "name": "Department of Pathobiology",
+          "url": "https://ul.edu.pk/department-detail/MTI0Mw==/department-of-pathobiology",
+          "slug": "department-of-pathobiology",
+          "programs": [
+            {
+              "name": "BS Microbiology",
+              "url": "https://ul.edu.pk/program-detail/MTM5Nw==/bs-microbiology",
+              "slug": "bs-microbiology"
+            },
+            {
+              "name": "POST-ADP (MICROBIOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMQ==/post-adp-microbiology",
+              "slug": "post-adp-microbiology"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Agricultural Sciences and Technology",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNQ==/faculty-of-agricultural-sciences-and-technology",
+      "slug": "faculty-of-agricultural-sciences-and-technology",
+      "departments": [
+        {
+          "id": "1415",
+          "name": "Faculty of Agricultural Sciences and Technology",
+          "url": "https://ul.edu.pk/department-detail/MTQxNQ==/faculty-of-agricultural-sciences-and-technology",
+          "slug": "faculty-of-agricultural-sciences-and-technology",
+          "programs": [
+            {
+              "name": "B.Sc. (Hons) Agriculture",
+              "url": "https://ul.edu.pk/program-detail/MTQxMw==/bsc-hons-agriculture",
+              "slug": "bsc-hons-agriculture"
+            }
+          ]
+        },
+        {
+          "id": "1210",
+          "name": "Department of Plant Production & Biotechnology",
+          "url": "https://ul.edu.pk/department-detail/MTIxMA==/department-of-plant-production-biotechnology",
+          "slug": "department-of-plant-production-biotechnology",
+          "programs": [
+            {
+              "name": "BS Biotechnology",
+              "url": "https://ul.edu.pk/program-detail/MTM5OQ==/bs-biotechnology",
+              "slug": "bs-biotechnology"
+            }
+          ]
+        },
+        {
+          "id": "1213",
+          "name": "Department of Entomology & Food Science",
+          "url": "https://ul.edu.pk/department-detail/MTIxMw==/department-of-entomology-food-science",
+          "slug": "department-of-entomology-food-science",
+          "programs": [
+            {
+              "name": "BS Food Science & Technology",
+              "url": "https://ul.edu.pk/program-detail/MTU2NQ==/bs-food-science-technology",
+              "slug": "bs-food-science-technology"
+            }
+          ]
+        },
+        {
+          "id": "1216",
+          "name": "Department of Horticulture & Plant Pathology",
+          "url": "https://ul.edu.pk/department-detail/MTIxNg==/department-of-horticulture-plant-pathology",
+          "slug": "department-of-horticulture-plant-pathology",
+          "programs": [
+            {
+              "name": "M.Sc. (Hons) Agriculture (Horticulture)",
+              "url": "https://ul.edu.pk/program-detail/MTU4NQ==/msc-hons-agriculture-horticulture",
+              "slug": "msc-hons-agriculture-horticulture"
+            },
+            {
+              "name": "BS Horticulture & Plant Pathology",
+              "url": "https://ul.edu.pk/program-detail/NDU2NQ==/bs-horticulture-plant-pathology",
+              "slug": "bs-horticulture-plant-pathology"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Management, Humanities & Social Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNw==/faculty-of-management-humanities-social-sciences",
+      "slug": "faculty-of-management-humanities-social-sciences",
+      "departments": [
+        {
+          "id": "1220",
+          "name": "Department of Behavioral Sciences",
+          "url": "https://ul.edu.pk/department-detail/MTIyMA==/department-of-behavioral-sciences",
+          "slug": "department-of-behavioral-sciences",
+          "programs": [
+            {
+              "name": "BS Education",
+              "url": "https://ul.edu.pk/program-detail/MTM3Nw==/bs-education",
+              "slug": "bs-education"
+            },
+            {
+              "name": "BS Applied Psychology",
+              "url": "https://ul.edu.pk/program-detail/MTM4MQ==/bs-applied-psychology",
+              "slug": "bs-applied-psychology"
+            },
+            {
+              "name": "BS Sociology",
+              "url": "https://ul.edu.pk/program-detail/MTM4Mg==/bs-sociology",
+              "slug": "bs-sociology"
+            },
+            {
+              "name": "BS Sports Science",
+              "url": "https://ul.edu.pk/program-detail/MTM4Mw==/bs-sports-science",
+              "slug": "bs-sports-science"
+            },
+            {
+              "name": "B.Ed (1.5)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0MQ==/bed-15",
+              "slug": "bed-15"
+            },
+            {
+              "name": "B.Ed (Hons)",
+              "url": "https://ul.edu.pk/program-detail/MTk2Mg==/bed-hons",
+              "slug": "bed-hons"
+            },
+            {
+              "name": "POST-ADP (PSYCHOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0Nw==/post-adp-psychology",
+              "slug": "post-adp-psychology"
+            },
+            {
+              "name": "POST-ADP (SPORTS SCIENCE)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMg==/post-adp-sports-science",
+              "slug": "post-adp-sports-science"
+            },
+            {
+              "name": "POST-ADP (EDUCATION)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0Ng==/post-adp-education",
+              "slug": "post-adp-education"
+            },
+            {
+              "name": "POST-ADP (SOCIOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0OA==/post-adp-sociology",
+              "slug": "post-adp-sociology"
+            }
+          ]
+        },
+        {
+          "id": "1221",
+          "name": "Department of Islamic Studies and Languages",
+          "url": "https://ul.edu.pk/department-detail/MTIyMQ==/department-of-islamic-studies-and-languages",
+          "slug": "department-of-islamic-studies-and-languages",
+          "programs": [
+            {
+              "name": "BS English",
+              "url": "https://ul.edu.pk/program-detail/MTM3Ng==/bs-english",
+              "slug": "bs-english"
+            },
+            {
+              "name": "BS Islamic Studies",
+              "url": "https://ul.edu.pk/program-detail/MTM3OA==/bs-islamic-studies",
+              "slug": "bs-islamic-studies"
+            },
+            {
+              "name": "BS Urdu",
+              "url": "https://ul.edu.pk/program-detail/MTM4MA==/bs-urdu",
+              "slug": "bs-urdu"
+            },
+            {
+              "name": "POST-ADP (ENGLISH)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0NQ==/post-adp-english",
+              "slug": "post-adp-english"
+            },
+            {
+              "name": "POST-ADP (ISLAMIC STUDIES)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNA==/post-adp-islamic-studies",
+              "slug": "post-adp-islamic-studies"
+            },
+            {
+              "name": "POST-ADP (URDU)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMw==/post-adp-urdu",
+              "slug": "post-adp-urdu"
+            }
+          ]
+        },
+        {
+          "id": "1232",
+          "name": "Department of Economics & Business Administration",
+          "url": "https://ul.edu.pk/department-detail/MTIzMg==/department-of-economics-business-administration",
+          "slug": "department-of-economics-business-administration",
+          "programs": [
+            {
+              "name": "BS Internatinal Relations",
+              "url": "https://ul.edu.pk/program-detail/MTM3OQ==/bs-internatinal-relations",
+              "slug": "bs-internatinal-relations"
+            },
+            {
+              "name": "BBA",
+              "url": "https://ul.edu.pk/program-detail/MTM4NA==/bba",
+              "slug": "bba"
+            },
+            {
+              "name": "BS Economics",
+              "url": "https://ul.edu.pk/program-detail/MTM4NQ==/bs-economics",
+              "slug": "bs-economics"
+            },
+            {
+              "name": "BS Public Administration & Governance",
+              "url": "https://ul.edu.pk/program-detail/MTM4Ng==/bs-public-administration-governance",
+              "slug": "bs-public-administration-governance"
+            },
+            {
+              "name": "BBA-IT",
+              "url": "https://ul.edu.pk/program-detail/MTk2MQ==/bba-it",
+              "slug": "bba-it"
+            },
+            {
+              "name": "POST-ADP (INTERNATIONAL RELATIONS)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNQ==/post-adp-international-relations",
+              "slug": "post-adp-international-relations"
+            },
+            {
+              "name": "POST-ADP (PUBLIC ADMINISTRATION)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNg==/post-adp-public-administration",
+              "slug": "post-adp-public-administration"
+            },
+            {
+              "name": "POST-ADP (ECONOMICS)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0OQ==/post-adp-economics",
+              "slug": "post-adp-economics"
+            },
+            {
+              "name": "POST-ADP (BBA)",
+              "url": "https://ul.edu.pk/program-detail/MjA2Mg==/post-adp-bba",
+              "slug": "post-adp-bba"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Faculty of Natural Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwOA==/faculty-of-natural-sciences",
+      "slug": "faculty-of-natural-sciences",
+      "departments": [
+        {
+          "id": "1236",
+          "name": "Deparmtent of Chemistry",
+          "url": "https://ul.edu.pk/department-detail/MTIzNg==/deparmtent-of-chemistry",
+          "slug": "deparmtent-of-chemistry",
+          "programs": [
+            {
+              "name": "BS Chemistry",
+              "url": "https://ul.edu.pk/program-detail/MTM4OA==/bs-chemistry",
+              "slug": "bs-chemistry"
+            },
+            {
+              "name": "BS Environmental Sciences",
+              "url": "https://ul.edu.pk/program-detail/MTM5OA==/bs-environmental-sciences",
+              "slug": "bs-environmental-sciences"
+            },
+            {
+              "name": "POST-ADP (ENVIRONMENTAL SCIENCE)",
+              "url": "https://ul.edu.pk/program-detail/MjA2NA==/post-adp-environmental-science",
+              "slug": "post-adp-environmental-science"
+            },
+            {
+              "name": "POST-ADP (CHEMISTRY)",
+              "url": "https://ul.edu.pk/program-detail/MjAxOA==/post-adp-chemistry",
+              "slug": "post-adp-chemistry"
+            }
+          ]
+        },
+        {
+          "id": "1238",
+          "name": "Department of Mathematics",
+          "url": "https://ul.edu.pk/department-detail/MTIzOA==/department-of-mathematics",
+          "slug": "department-of-mathematics",
+          "programs": [
+            {
+              "name": "BS Mathematics",
+              "url": "https://ul.edu.pk/program-detail/MTM5MA==/bs-mathematics",
+              "slug": "bs-mathematics"
+            },
+            {
+              "name": "POST-ADP (MATHEMATICS)",
+              "url": "https://ul.edu.pk/program-detail/MjAxOQ==/post-adp-mathematics",
+              "slug": "post-adp-mathematics"
+            }
+          ]
+        },
+        {
+          "id": "1239",
+          "name": "Department of Physics",
+          "url": "https://ul.edu.pk/department-detail/MTIzOQ==/department-of-physics",
+          "slug": "department-of-physics",
+          "programs": [
+            {
+              "name": "BS Physics",
+              "url": "https://ul.edu.pk/program-detail/MTk1OA==/bs-physics",
+              "slug": "bs-physics"
+            }
+          ]
+        },
+        {
+          "id": "1240",
+          "name": "Department of Zoology",
+          "url": "https://ul.edu.pk/department-detail/MTI0MA==/department-of-zoology",
+          "slug": "department-of-zoology",
+          "programs": [
+            {
+              "name": "BS Zoology",
+              "url": "https://ul.edu.pk/program-detail/MTM5MQ==/bs-zoology",
+              "slug": "bs-zoology"
+            },
+            {
+              "name": "POST-ADP (ZOOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMA==/post-adp-zoology",
+              "slug": "post-adp-zoology"
+            }
+          ]
+        },
+        {
+          "id": "1235",
+          "name": "Department of Botany",
+          "url": "https://ul.edu.pk/department-detail/MTIzNQ==/department-of-botany",
+          "slug": "department-of-botany",
+          "programs": [
+            {
+              "name": "BS Botany",
+              "url": "https://ul.edu.pk/program-detail/MTM4Nw==/bs-botany",
+              "slug": "bs-botany"
+            },
+            {
+              "name": "POST-ADP (BOTANY)",
+              "url": "https://ul.edu.pk/program-detail/MjAxNw==/post-adp-botany",
+              "slug": "post-adp-botany"
+            }
+          ]
+        },
+        {
+          "id": "4530",
+          "name": "Department of Biotechnology",
+          "url": "https://ul.edu.pk/department-detail/NDUzMA==/department-of-biotechnology",
+          "slug": "department-of-biotechnology",
+          "programs": [
+            {
+              "name": "POST-ADP (BIOTECHNOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjA2Mw==/post-adp-biotechnology",
+              "slug": "post-adp-biotechnology"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "faculties": 5,
+    "departments": 20,
+    "programs": 56
+  }
+}

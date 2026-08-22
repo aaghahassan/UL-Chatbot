@@ -1,85 +1,76 @@
 import { useLocation } from "wouter";
-import { GraduationCap, MessageCircle, Building, BookOpen, Sparkles, ArrowRight, Eye, Target } from "lucide-react";
+import { GraduationCap, MessageCircle, Sparkles, ArrowRight, Eye, Target, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AccountMenu } from "@/components/account-menu";
+import { useGoToChat } from "@/components/auth-dialog";
 
 export default function HomePage() {
-  const [_, setLocation] = useLocation();
+  const [, setLocation] = useLocation();
+  const goToChat = useGoToChat();
 
   const features = [
     {
       icon: GraduationCap,
       title: "Admissions & Programs",
-      description: "Get information about admissions, eligibility, scholarships, and fee structures.",
+      description: "56 programs across 5 faculties - eligibility, scholarships, and fees from ul.edu.pk.",
     },
     {
-      icon: Building,
-      title: "Campus Information",
-      description: "Find faculty directories, departments, locations, and office contacts.",
+      icon: MapPin,
+      title: "Campus Maps",
+      description: "Accurate locations and maps for City Campus and Main Campus.",
     },
     {
-      icon: BookOpen,
-      title: "Student Life",
-      description: "Learn about exam rules, attendance policies, and student activities.",
+      icon: Users,
+      title: "Visitors & Students",
+      description: "Guidance for visitors, parents, and current students - contacts, rules, and facilities.",
     },
     {
       icon: Sparkles,
-      title: "AI Assistant",
-      description: "Receive instant answers 24/7 through natural conversation.",
-    },
-  ];
-
-  const sampleChat = [
-    { role: "user", text: "What BS programs are available?" },
-    {
-      role: "ai",
-      text: "The University of Layyah offers BS Computer Science, BS Information Technology, BS Mathematics, BS Chemistry, BSc (Hons) Agriculture, BBA, and many more — 23 undergraduate programs in total.",
-    },
-    { role: "user", text: "What is the admission fee?" },
-    {
-      role: "ai",
-      text: "Here is the latest fee structure information. Programs are grouped into tiers (A–E). Visit ul.edu.pk/page/Fee-Structure for exact amounts, or I can guide you through the process.",
+      title: "Live Updates",
+      description: "Announcements auto-sync from the official University of Layyah website.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+      <nav className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center">
+          <div className="flex items-center gap-3 shrink-0">
             <img src="/ul-logo.jpg" alt="University of Layyah" className="h-10 w-10 rounded-xl object-cover shadow-sm" />
-            <div>
+            <div className="hidden lg:block">
               <span className="font-bold text-foreground text-sm leading-none block">University of Layyah</span>
               <span className="text-[10px] text-muted-foreground">AI Assistant</span>
             </div>
           </div>
-          <div className="hidden sm:flex items-center gap-1">
+          <div className="flex-1 flex items-center justify-center min-w-0 px-1 lg:hidden">
             <button
-              onClick={() => setLocation("/")}
-              className="px-4 py-2 text-sm font-medium text-foreground rounded-lg hover:bg-accent transition-colors"
+              onClick={() => setLocation("/campuses")}
+              className="px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium text-foreground rounded-lg hover:bg-accent transition-colors"
             >
-              Home
-            </button>
-            <button
-              onClick={() => setLocation("/chat")}
-              className="px-4 py-2 text-sm font-medium text-foreground rounded-lg hover:bg-accent transition-colors"
-            >
-              AI Chat
-            </button>
-            <button
-              onClick={() => setLocation("/admin")}
-              className="px-4 py-2 text-sm font-medium text-muted-foreground rounded-lg hover:bg-accent transition-colors"
-            >
-              Admin Dashboard
+              Campuses
             </button>
           </div>
-          <Button
-            onClick={() => setLocation("/chat")}
-            className="bg-primary hover:bg-primary/90 text-white rounded-xl px-5 h-9 text-sm font-semibold shadow-sm"
-            data-testid="button-chat-nav"
-          >
-            Chat with AI
-          </Button>
+          <div className="hidden lg:flex items-center gap-1 ml-auto">
+            <button
+              onClick={() => setLocation("/campuses")}
+              className="px-4 py-2 text-sm font-medium text-foreground rounded-lg hover:bg-accent transition-colors"
+            >
+              Campuses
+            </button>
+          </div>
+          <div className="ml-2 shrink-0">
+            <Button
+              onClick={() => goToChat("/chat")}
+              className="bg-primary hover:bg-primary/90 text-white rounded-xl px-5 h-9 text-sm font-semibold shadow-sm"
+              data-testid="button-chat-nav"
+            >
+              Chat with AI
+            </Button>
+          </div>
+          <div className="ml-2 shrink-0">
+            <AccountMenu />
+          </div>
         </div>
       </nav>
       {/* Hero Section */}
@@ -90,9 +81,8 @@ export default function HomePage() {
           <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary rounded-full px-4 py-1.5 text-sm font-semibold mb-6 border border-secondary/20">
-            <Sparkles className="h-3.5 w-3.5" />
-            Powered by Gemini AI
+          <div className="inline-flex items-center bg-secondary/10 text-secondary rounded-full px-4 py-1.5 text-sm font-semibold mb-6 border border-secondary/20">
+            University of Layyah
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-foreground mb-6 tracking-tight leading-[1.1]">
             Your Smart{" "}
@@ -100,17 +90,28 @@ export default function HomePage() {
             Companion
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            Ask anything about admissions, programs, faculty, campus information, student life, events, fees, and university policies through one intelligent AI assistant.
+            Built for visitors, parents, and students of the University of Layyah. Ask about admissions, programs, fees, announcements, and both campus locations - with suggestions as you type.
           </p>
-          <Button
-            onClick={() => setLocation("/chat")}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-white rounded-2xl px-8 h-14 text-base font-bold shadow-lg hover:shadow-primary/20 transition-all gap-2"
-            data-testid="button-chat-hero"
-          >
-            Chat with AI
-            <ArrowRight className="h-5 w-5" />
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <Button
+              onClick={() => goToChat("/chat")}
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white rounded-2xl px-8 h-14 text-base font-bold shadow-lg hover:shadow-primary/20 transition-all gap-2"
+              data-testid="button-chat-hero"
+            >
+              Chat with AI
+              <ArrowRight className="h-5 w-5" />
+            </Button>
+            <Button
+              onClick={() => setLocation("/campuses")}
+              size="lg"
+              variant="outline"
+              className="rounded-2xl px-8 h-14 text-base font-bold gap-2"
+            >
+              <MapPin className="h-5 w-5" />
+              View Campus Maps
+            </Button>
+          </div>
         </div>
       </section>
       {/* Features Section */}
@@ -126,8 +127,8 @@ export default function HomePage() {
             {features.map((f, i) => (
               <div
                 key={i}
-                onClick={() => setLocation("/chat")}
-                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md hover:border-primary/20 transition-all cursor-pointer group"
+                onClick={() => goToChat("/chat")}
+                className="bg-card rounded-2xl p-6 border border-border shadow-sm hover:shadow-md hover:border-primary/20 transition-all cursor-pointer group"
                 data-testid={`card-feature-${i}`}
               >
                 <div className="h-11 w-11 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
@@ -141,13 +142,13 @@ export default function HomePage() {
         </div>
       </section>
       {/* Vision & Mission Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-card">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">Our Vision & Mission</h2>
             <p className="text-muted-foreground">Guiding principles of the University of Layyah</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Vision */}
             <div className="relative bg-gradient-to-br from-secondary/5 to-secondary/10 border border-secondary/20 rounded-2xl p-7 overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-1/2 translate-x-1/2" />
@@ -159,7 +160,7 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold text-foreground">Vision</h3>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To exponentially grow with each passing day, ensuring quality education in market-oriented degree programs — strengthening graduates through distinctive learning in education, social norms, economics, and technology through national and international collaboration.
+                  To exponentially grow with each passing day, ensuring quality education in market-oriented degree programs - strengthening graduates through distinctive learning in education, social norms, economics, and technology through national and international collaboration.
                 </p>
               </div>
             </div>
@@ -175,28 +176,12 @@ export default function HomePage() {
                   <h3 className="text-lg font-bold text-foreground">Mission</h3>
                 </div>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To support University of Layyah into becoming a center of innovation, high impact applied research, and entrepreneurship — serving the students of southern Punjab with accessible, world-class higher education.
+                  To support University of Layyah into becoming a center of innovation, high impact applied research, and entrepreneurship - serving the students of southern Punjab with accessible, world-class higher education.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Values row */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {[
-              { label: "HEC Recognized", desc: "Nationally accredited university" },
-              { label: "Distinctive Learning", desc: "Official university motto" },
-              { label: "23 Departments", desc: "Across 5 faculties" },
-              { label: "2 Campuses", desc: "125 acres + 13 acres" },
-              { label: "Innovation Focus", desc: "Research & entrepreneurship" },
-              { label: "Southern Punjab", desc: "Serving the local community" },
-            ].map((v, i) => (
-              <div key={i} className="bg-gray-50 rounded-xl p-4 border border-gray-100">
-                <p className="font-semibold text-sm text-foreground">{v.label}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{v.desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
       {/* CTA */}
@@ -207,9 +192,9 @@ export default function HomePage() {
             Ask any university question and get an instant, accurate answer.
           </p>
           <Button
-            onClick={() => setLocation("/chat")}
+            onClick={() => goToChat("/chat")}
             size="lg"
-            className="bg-white text-secondary hover:bg-white/90 rounded-2xl px-8 h-12 text-sm font-bold shadow-lg gap-2"
+            className="bg-card text-secondary hover:bg-card/90 rounded-2xl px-8 h-12 text-sm font-bold shadow-lg gap-2"
             data-testid="button-chat-cta"
           >
             <MessageCircle className="h-5 w-5" />
@@ -218,7 +203,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="py-6 px-4 border-t bg-white">
+      <footer className="py-6 px-4 border-t bg-card">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-sm text-muted-foreground">
             &copy; 2026 University of Layyah. All Rights Reserved.

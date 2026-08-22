@@ -1,27 +1,31 @@
+import "./env";
 import app from "./app";
 import { logger } from "./lib/logger";
 import { seedKnowledgeBase } from "./lib/seed-knowledge";
+import { startWebsiteSyncScheduler } from "./lib/sync-website";
+import { ensureSchema, databaseKind } from "@workspace/db";
+import { warmOllama } from "./lib/chat-provider";
 
-const rawPort = process.env["PORT"];
-
-if (!rawPort) {
-  throw new Error(
-    "PORT environment variable is required but was not provided.",
-  );
-}
-
+const rawPort = process.env["PORT"] ?? "8080";
 const port = Number(rawPort);
 
 if (Number.isNaN(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-seedKnowledgeBase().then(() => {
-  app.listen(port, (err) => {
-    if (err) {
-      logger.error({ err }, "Error listening on port");
-      process.exit(1);
-    }
+async function main() {
+  await ensureSchema();
+  logger.info({ database: databaseKind() }, "Database ready");
+  await seedKnowledgeBase({ force: true });
+  startWebsiteSyncScheduler();
+  void warmOllama();
+
+  app.listen(port, () => {
     logger.info({ port }, "Server listening");
   });
+}
+
+main().catch((err) => {
+  logger.error({ err }, "Failed to start API server");
+  process.exit(1);
 });

@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ul-assistant-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ul
+      POSTGRES_PASSWORD: ulpass
+      POSTGRES_DB: ul_assistant
+    ports:
+      - "5432:5432"
+    volumes:
+      - ul_pg_data:/var/lib/postgresql/data
+
+volumes:
+  ul_pg_data:

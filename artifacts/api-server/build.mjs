@@ -29,6 +29,8 @@ async function buildAll() {
     // - use path traversal to read files (e.g. @google-cloud/secret-manager loads sibling .proto files)
     external: [
       "*.node",
+      "@electric-sql/pglite",
+      "@electric-sql/pglite/*",
       "sharp",
       "better-sqlite3",
       "sqlite3",
@@ -111,10 +113,25 @@ async function buildAll() {
       js: `import { createRequire as __bannerCrReq } from 'node:module';
 import __bannerPath from 'node:path';
 import __bannerUrl from 'node:url';
+import __bannerFs from 'node:fs';
+import { config as __loadDotenv } from 'dotenv';
 
 globalThis.require = __bannerCrReq(import.meta.url);
 globalThis.__filename = __bannerUrl.fileURLToPath(import.meta.url);
 globalThis.__dirname = __bannerPath.dirname(globalThis.__filename);
+
+for (const __envPath of [
+  process.env.DOTENV_CONFIG_PATH,
+  __bannerPath.resolve(process.cwd(), '.env'),
+  __bannerPath.resolve(process.cwd(), '../../.env'),
+  __bannerPath.resolve(globalThis.__dirname, '../../../.env'),
+].filter(Boolean)) {
+  if (__bannerFs.existsSync(__envPath)) {
+    __loadDotenv({ path: __envPath, override: false });
+    break;
+  }
+}
+if (!process.env.PORT) process.env.PORT = '8080';
     `,
     },
   });

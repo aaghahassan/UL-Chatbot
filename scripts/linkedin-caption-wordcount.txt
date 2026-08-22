@@ -1,0 +1,113 @@
+What if every visitor, parent, and student at University of Layyah could get accurate campus answers in seconds, without digging through menus or waiting for an office to open?
+
+That question became our project for the IEEE South Punjab Hackathon 2026 (Generative AI Coding Challenge): UL AI Assistant, a campus companion built for real people at University of Layyah, not a generic chatbot demo.
+
+This post is our story. The demo, the stack, the bugs that almost broke us, and the lessons that made the product stronger.
+
+What we built
+UL AI Assistant helps visitors, parents, and students with:
+Admissions guidance and how to apply
+Full faculties, departments, and 56 programs aligned with ul.edu.pk
+Campus locations and maps (City Campus and Main Campus)
+Fees guidance, scholarships, labs, libraries, and bus routes
+Live announcements synced from the official website
+Chat suggestions while typing, plus pin, rename, and delete chat history
+
+Official source of truth: https://ul.edu.pk
+
+Tech stack
+Frontend: React, TypeScript, Vite, Tailwind CSS, Wouter, TanStack Query
+Backend: Node.js, Express, TypeScript
+Data: Drizzle ORM with PGlite (local Postgres-compatible DB, no Docker required)
+AI layer: started with Gemini Flash, explored GORG API, then settled on Ollama (local LLM) with offline knowledge fallback
+Knowledge system: structured university KB, RAG-style section retrieval, intent-based professional answers
+Website intelligence: scrapers and auto-sync from ul.edu.pk (homepage Academics hierarchy, departments, staff, stories)
+Tooling: pnpm monorepo, SSE streaming chat, Windows-friendly local setup
+
+Development journey (and what went wrong)
+
+Phase 1: Idea to working chat
+We started with a campus assistant vision. Early builds looked fine, but answers were incomplete or wrong. Spelling mistakes like Layyeh and even University of Lahore slipped in. Computing departments were sometimes shown on the wrong campus. That taught us a hard rule: for university products, accuracy beats clever wording.
+
+How we tackled it: spelling locks, campus location rules, and factual paths for questions like programs, staff, buses, labs, and fees.
+
+Phase 2: The AI provider rollercoaster
+This was one of the hardest parts of the project.
+
+We first integrated Gemini Flash API. It worked in early tests, then reality hit:
+Free quota exhaustion during repeated demos and testing
+Tokens-per-minute (TPM) limits that throttled or blocked replies mid-conversation
+Auto-sync and chat load amplifying token usage because too much knowledge was sent with every request
+
+So we switched to GORG API, hoping for a more stable path. That introduced a new wall:
+Serious data compression and payload-size pressure
+Our university knowledge base was far beyond what we could reliably push through in one go
+Large context meant failed or degraded responses, even when the model itself was fine
+
+That forced us to rethink the architecture. We tried multiple alternatives, compared tradeoffs, and stopped treating one big API call with the full KB as a solution.
+
+What finally worked:
+Local AI with Ollama for free, unlimited conversational use
+Offline knowledge answers when the model is unavailable
+Retrieval so only relevant sections enter the prompt
+Intent-based replies for factual campus questions
+
+Lesson: generative AI product design is also quota design, context design, and failure-mode design.
+
+Phase 3: Real data from the official website
+Manual admin entry was fragile. The site structure (faculties to departments to programs to staff) had to match ul.edu.pk exactly.
+
+Challenges:
+Scrapers failed on messy HTML and undefined name parsing
+Department pages did not always expose program links cleanly
+Fee pages are interactive filters, so inventing fee numbers would have been dishonest
+Staff cards needed careful extraction (names, emails, designations)
+Auto-sync had to refresh news and stats without wiping carefully structured academic data
+
+How we tackled it: homepage Academics menu parsing for hierarchy, department page staff extraction, rebuild scripts into structured JSON, and clear fee guidance that points users to the official Fee Structure page.
+
+Phase 4: UX that feels professional
+A big bug was knowledge dump mode. Asking for all programs returned a wall of raw fields, staff emails, sync timestamps, and visitor tips. It looked unfinished.
+
+How we tackled it: intent-based answer composition. Ask for programs, get programs. Ask for CS location, get location. Clean Markdown, short and useful.
+
+Phase 5: Product polish under pressure
+Windows setup issues (ports, PGlite corruption after forced process kills), Vite serving old cached UI, sidebar truncation, and missing pin/rename/delete controls all showed up late.
+
+How we tackled it: clearer run scripts, safe DB reset guidance, forced frontend reloads, and a redesigned chat history with full titles and always-visible Pin, Rename, and Delete.
+
+Key learning points
+1. Generative AI is only as good as the grounding data. Ground it in official sources.
+2. Free tiers, TPM limits, and payload size are core product constraints, not side notes.
+3. When one API fails, do not only swap providers. Redesign how knowledge is retrieved and compressed.
+4. Retrieval and intent routing matter more than dumping everything into the prompt.
+5. UX bugs destroy trust faster than model quality issues.
+6. Scraping real university sites means incomplete HTML, source typos, and pages that cannot be scraped cleanly.
+7. Local-first architecture (PGlite + Ollama) makes demos reproducible for students without cloud spend.
+8. Team clarity beats solo speed when the problem spans data, backend, frontend, and AI behavior.
+
+Huge thanks to my co-teammate, Maniha Meeral
+Maniha, thank you. Your ideas, feedback, and steady support shaped this project at every step. From product direction and user perspective to pressure-testing answers and keeping the vision focused on real campus needs, your contribution made this achievable. When APIs failed and the knowledge base felt too large to handle, your support and ideas helped us stay practical and keep shipping. This is our work, and I am genuinely grateful for the partnership.
+
+Our vision
+A trusted digital front desk for University of Layyah: accurate, accessible, bilingual-ready over time, and always aligned with official information. Not hype. Help.
+
+Future development
+Stronger live sync for notices, schedules, and program updates
+Multilingual support (Urdu + English) for parents and visitors
+Deeper admissions workflows and document checklists
+Verified staff directory updates with department-level ownership
+Smarter context compression and retrieval for larger knowledge growth
+Analytics for common student questions to help the university improve services
+Mobile-first packaging and optional campus WhatsApp integration
+Accessibility improvements and offline campus guide packs
+
+If you watch the demo, you will see more than a chatbot. You will see a student-built system fighting real engineering constraints: Gemini Flash quota and TPM limits, GORG compression walls, oversized knowledge payloads, messy website data, wrong answers, broken UI, and the discipline to redesign until it worked for students.
+
+Proud to represent this work for IEEE South Punjab Hackathon 2026, Generative AI Coding Challenge, for University of Layyah.
+
+Built with care. Grounded in truth. Designed for students, parents, and visitors.
+
+Team: Your Name and Maniha Meeral
+
+IEEE Hackathon2026 GenerativeAI UniversityOfLayyah SouthPunjab StudentBuilders CampusTech Gemini Ollama React TypeScript AIforGood ULAIAssistant

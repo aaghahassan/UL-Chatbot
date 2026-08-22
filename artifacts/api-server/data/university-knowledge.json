@@ -3,36 +3,44 @@
     "name": "University of Layyah",
     "abbreviation": "UL",
     "motto": "Distinctive Learning",
+    "tagline": "A Place of Innovation, Growth & Excellence",
     "established_as_subcampus": 2009,
     "established_as_university": "December 2022",
     "type": "Non-profit Public University",
     "recognition": "Higher Education Commission (HEC) of Pakistan",
     "co_education": true,
-    "student_count": "Approximately 1,700 students",
-    "total_departments": 23,
+    "student_count": 5462,
+    "total_departments": 21,
     "total_faculties": 5,
+    "total_programs": 56,
     "website": "https://ul.edu.pk",
     "admission_portal": "https://ul.edu.pk/admissions",
     "eportal": "https://eportal.ul.edu.pk",
+    "ums_login": "https://ul.edu.pk",
     "email": "info@ul.edu.pk",
     "phone": "+92-0606-920247",
+    "phone_alt": "+92-0606-920238 / +92-0606-920239",
     "facebook": "https://www.facebook.com/universityoflayah",
-    "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent university in December 2022. It is the only public university in the Layyah region, serving southern Punjab."
+    "source": "https://ul.edu.pk (scraped 2026-08-14T14:30:03.016Z)",
+    "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent university in December 2022. It is the only public university in the Layyah region, serving southern Punjab.",
+    "spelling_note": "Always spell as Layyah (NOT Layyeh, NOT Lahore). Official website: https://ul.edu.pk"
   },
   "vision_mission": {
     "motto": "Distinctive Learning",
     "vision": "The University of Layyah aims to exponentially grow with each passing day, besides ensuring quality education in market-oriented degree programs. It strengthens graduates through distinctive learning in education, social norms, economics, and technology through national and international collaboration.",
     "mission": "Support University of Layyah into becoming a center of innovation, high impact applied research, and entrepreneurship.",
+    "vc_message_summary": "Prof. Dr. Muhammad Zubair Abu Bakar welcomes students of all genders and areas to learn, explore and grow with updated, sustainability-oriented knowledge and skills.",
+    "vice_chancellor": "Prof. Dr. Muhammad Zubair Abu Bakar",
     "values": [
       "Academic Excellence",
       "Innovation and Research",
-      "Inclusivity — serving students of southern Punjab regardless of background",
+      "Inclusivity - serving students of southern Punjab regardless of background",
       "Community Engagement and Social Responsibility",
       "National and International Collaboration",
       "Entrepreneurship and Skills Development",
       "HEC-recognized quality standards"
     ],
-    "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent public university in December 2022. It is the only public university in Layyah district, bringing higher education access to southern Punjab."
+    "history": "Originally established as BZU Bahadur Sub-Campus Layyah in 2009. Upgraded to a full independent public university in December 2022."
   },
   "administration": {
     "chancellor": "Governor of Punjab",
@@ -47,505 +55,2692 @@
       "name": "Dr. Zeshan Hassan",
       "note": "Office of Research, Innovation & Commercialization"
     },
-    "treasurer": "Position under recruitment (as of 2025)",
-    "controller_of_examinations": "Position under recruitment (as of 2025)",
-    "note": "For verified current officer details, visit ul.edu.pk/administration"
+    "note": "For verified current officer details, visit https://ul.edu.pk"
   },
   "campuses": [
     {
       "name": "City Campus",
-      "location": "Katchehry Road, Layyah, Punjab, Pakistan",
-      "area": "13 acres",
-      "type": "Administrative / Main Contact Campus",
+      "location": "Katchehry Road (also spelled Kachehry / Katchery Road), Layyah, Punjab, Pakistan",
       "postal_code": "31200",
-      "note": "Primary administrative and teaching campus currently in use"
+      "area": "13 acres",
+      "type": "Administrative campus, Central Library, offices, and several teaching blocks",
+      "distance_note": "About 5 km from the Main Campus",
+      "latitude": 30.987317,
+      "longitude": 70.969524,
+      "map_query": "University of Layyah City Campus Katchehry Road Layyah",
+      "google_maps_url": "https://www.google.com/maps?q=30.987317,70.969524",
+      "google_maps_embed": "https://www.google.com/maps?q=30.987317,70.969524&z=16&output=embed",
+      "osm_embed": "https://www.openstreetmap.org/export/embed.html?bbox=70.959524%2C30.977317%2C70.979524%2C30.997317&layer=mapnik&marker=30.987317%2C70.969524",
+      "facilities": [
+        "Administrative Block",
+        "Academic Teaching Halls and Classrooms",
+        "Computer Labs",
+        "Science Laboratories",
+        "Central Library with digital resources",
+        "Cafeteria",
+        "Prayer Hall / Mosque",
+        "Sports Facilities",
+        "Parking Area",
+        "Medical / First Aid Room",
+        "Auditorium",
+        "Guest House",
+        "Wi-Fi Campus",
+        "Day Care Center"
+      ],
+      "key_facilities_note": "University Central Library is at City Campus. Many admin offices are here."
     },
     {
       "name": "Main Campus",
-      "location": "Karor Road (Hafiz Abad), Layyah, Punjab, Pakistan",
+      "location": "Karor Road (Hafiz Abad / Karor Lal-Bhakkar Road), Layyah, Punjab, Pakistan",
       "area": "125 acres",
-      "type": "Under construction / Future Main Campus",
-      "note": "New buildings, dormitories, and academic structures are under construction"
+      "type": "Main academic campus including Faculty of Computing & Engineering building",
+      "distance_note": "About 5 km from the City Campus",
+      "latitude": 31.020032,
+      "longitude": 70.958295,
+      "map_query": "University of Layyah Main Campus Karor Road Hafiz Abad Layyah",
+      "google_maps_url": "https://www.google.com/maps?q=31.020032,70.958295",
+      "google_maps_embed": "https://www.google.com/maps?q=31.020032,70.958295&z=15&output=embed",
+      "osm_embed": "https://www.openstreetmap.org/export/embed.html?bbox=70.948295%2C31.010032%2C70.968295%2C31.030032&layer=mapnik&marker=31.020032%2C70.958295",
+      "facilities": [
+        "Academic Buildings",
+        "Student Dormitories / Hostels (expanding)",
+        "Sports Complex",
+        "Labs and Research Facilities",
+        "Open campus grounds (125 acres)"
+      ],
+      "key_facilities_note": "Faculty of Computing & Engineering (CS, IT, Computer Engineering, AI, Data Science, E-Rozgaar labs) is at Main Campus.",
+      "faculties_primarily_here": [
+        "Faculty of Computing & Engineering"
+      ]
     }
   ],
   "faculties": [
-    "Faculty of Computing & Engineering",
-    "Faculty of Natural Sciences",
-    "Faculty of Agricultural Sciences and Technology",
-    "Faculty of Veterinary and Animal Sciences",
-    "Faculty of Management, Humanities & Social Sciences"
+    {
+      "name": "Faculty of Computing & Engineering",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNA==/faculty-of-computing-engineering",
+      "campus": "Main Campus",
+      "building": "Faculty of Computing and Engineering building, Main Campus, Karor Road (Hafiz Abad), Layyah",
+      "dean": {
+        "name": "Dr. Muhammad Amjad",
+        "designation": "Dean (Electrical Engineering)",
+        "email": "muhammad.amjad@iub.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk2/dr-muhammad-amjad",
+        "role": "Dean"
+      },
+      "departments": [
+        {
+          "name": "Department of Computer Engineering",
+          "official_name": "Department of Computer Engineering",
+          "url": "https://ul.edu.pk/department-detail/MTk1MA==/department-of-computer-engineering",
+          "campus": "Main Campus",
+          "location": "Faculty of Computing and Engineering building, Main Campus",
+          "staff": [
+            {
+              "name": "Engr. Dr. Muhammad Faheem Khalil Paracha",
+              "designation": "Lecturer",
+              "discipline": "Computer Engineering",
+              "email": "faheemparacha.uettaxila@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjg1/engr-dr-muhammad-faheem-khalil-paracha"
+            },
+            {
+              "name": "Faria Malik",
+              "designation": "Lecturer",
+              "email": "fariamalik0022@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjEx/faria-malik"
+            },
+            {
+              "name": "Amjad Riaz",
+              "designation": "Lecturer",
+              "email": "engr.amjadriaz@yahoo.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjkz/amjad-riaz"
+            },
+            {
+              "name": "Muhammad Bilal",
+              "designation": "Lecturer",
+              "email": "bilalmirani125@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjk1/muhammad-bilal"
+            },
+            {
+              "name": "Rameez Farooq",
+              "designation": "Lecturer",
+              "email": "rameezfarooq9@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjk0/rameez-farooq"
+            },
+            {
+              "name": "Ghulam Qadir",
+              "designation": "Lecturer",
+              "discipline": "Computer Engineering",
+              "email": "qadirsahib14@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTU1/ghulam-qadir"
+            }
+          ],
+          "programs": [
+            {
+              "name": "B.Sc Computer Engineering",
+              "url": "https://ul.edu.pk/program-detail/NDU2Nw==/bsc-computer-engineering",
+              "slug": "bsc-computer-engineering"
+            }
+          ],
+          "description": "Department of Computer Engineering University of Layyah You are being redirected to the official website. If not redirected automatically, click the button below. Continue to Website Redirecting instantly..."
+        },
+        {
+          "name": "Department of Computer Science",
+          "official_name": "Department of Computer Science",
+          "url": "https://ul.edu.pk/department-detail/MTIzNw==/department-of-computer-science",
+          "campus": "Main Campus",
+          "location": "Faculty of Computing and Engineering building, Main Campus (NOT City Campus)",
+          "staff": [
+            {
+              "name": "Abdul Qayoom",
+              "designation": "Assistant Professor",
+              "discipline": "Computer Science",
+              "email": "aqayumbuzdar@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjky/abdul-qayoom"
+            },
+            {
+              "name": "Faisal Hafeez",
+              "designation": "Visiting Lecturer",
+              "email": "faisalhafeezfaisal786@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez"
+            },
+            {
+              "name": "Muhammad Asif Aziz",
+              "designation": "Visiting Lecturer",
+              "email": "asifaziz4855@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjEw/muhammad-asif-aziz"
+            },
+            {
+              "name": "Muhammad Shakeel",
+              "designation": "Visiting Lecturer",
+              "email": "ms352230@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTUw/muhammad-shakeel"
+            },
+            {
+              "name": "Dr. ABDULQAYOOM",
+              "role": "Program Incharge",
+              "program": "BS Computer Science"
+            },
+            {
+              "name": "Dr. Ashir Javeed",
+              "role": "Program Incharge",
+              "qualification": "Ph.D. in Software Engineering from the University of Electronic Science and Technology of China",
+              "program": "BS Computer Science"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Computer Science",
+              "url": "https://ul.edu.pk/program-detail/MTM4OQ==/bs-computer-science",
+              "slug": "bs-computer-science"
+            },
+            {
+              "name": "BSCS - Artificial Intelligence",
+              "url": "https://ul.edu.pk/program-detail/MTk1Nw==/bscs-artificial-intelligence",
+              "slug": "bscs-artificial-intelligence"
+            }
+          ],
+          "description": "Department of Computer Science The Department of Computer Science at the University of Layyah is committed to delivering high-quality education that integrates strong theoretical foundations with practical, industry-relevant skills. The Department aims to prepare students to thrive in the fast-evolving digital world by fostering innovation, critical thinking, and problem-solving abilities. The Department offers a comprehensive 4-year Bachelor of Science in Computer Science (BSCS) program, officially launched on September 18, 2023 , designed to equip students with a solid understanding of core computer science principles along with hands-on experience in emerging and advanced computing technologies. Students gain in-depth knowledge and practical training in key areas, including: Artificial Intelligence (AI) Algorithms and Data Structures Computer Networks Cybersecurity Database Systems Computer Graphics Human-Computer Interaction (HCI) Academic Programs Offered: BS Computer Science (BSCS) BS Artificial Intelligence (BSAI) Both programs are structured in accordance with HEC guidelines and reflect current industry demands. The curriculum emphasizes practical learning, research engagem"
+        },
+        {
+          "name": "Department of Information Technology",
+          "official_name": "Department of Information Technology",
+          "url": "https://ul.edu.pk/department-detail/MTk1MQ==/department-of-information-technology",
+          "campus": "Main Campus",
+          "location": "Faculty of Computing and Engineering building, Main Campus",
+          "staff": [
+            {
+              "name": "Dr. Nasrullah",
+              "designation": "Assistant Professor",
+              "role": "Program Incharge",
+              "discipline": "Information Technology",
+              "email": "nasrullah.ce@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjk5/dr-nasrullah",
+              "qualification": "PhD - Software Engineering Chongqing University, China MS – Computer Engineering University of Engineering and Technology- Taxila (CASE)",
+              "program": "BSCS Information Technology"
+            },
+            {
+              "name": "Faisal Hafeez",
+              "designation": "Visiting Lecturer",
+              "email": "faisalhafeezfaisal786@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez"
+            },
+            {
+              "name": "Dr. M. Rehan Abbas",
+              "designation": "Assistant Professor",
+              "role": "Program Incharge",
+              "qualification": "PhD- Computer Science · University of Azad Jammu and Kashmir Muzaffarabad.",
+              "program": "BSCS Information Technology"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BSCS - Information Technology",
+              "url": "https://ul.edu.pk/program-detail/MTQwMQ==/bscs-information-technology",
+              "slug": "bscs-information-technology"
+            },
+            {
+              "name": "BSCS - Data Science",
+              "url": "https://ul.edu.pk/program-detail/MTk1Ng==/bscs-data-science",
+              "slug": "bscs-data-science"
+            }
+          ],
+          "description": "Department of Information Technology The Department of Information Technology at the University of Layyah is committed to preparing professionals who can manage, develop, and secure modern information systems that support digital transformation across organizations. The Department focuses on equipping students with practical skills and technological expertise to meet the evolving demands of the information-driven world. By integrating core computing concepts, applied technologies, and industry-relevant practices , the Department enables students to design, implement, and maintain efficient IT solutions. Emphasis is placed on system administration, networking, database management, cybersecurity, and emerging digital technologies. Academic Program Offered BS Information Technology The BS Information Technology program follows HEC-approved guidelines , offering comprehensive training in computer networks, operating systems, databases, web technologies, information security, cloud computing, and IT project management. Practical laboratories and project-based learning ensure students gain hands-on experience aligned with industry standards. Vision and Mission The vision of the Departmen"
+        },
+        {
+          "name": "E-Rozgaar Program",
+          "official_name": "E-Rozgaar Program",
+          "url": "https://ul.edu.pk/department-detail/MjAxNA==/e-rozgaar-program",
+          "campus": "Main Campus",
+          "location": "Faculty of Computing and Engineering building, Main Campus",
+          "staff": [
+            {
+              "name": "Dr. Muhammad Ali",
+              "designation": "Assistant Professor",
+              "email": "alibuzdar@bzu.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+            }
+          ],
+          "programs": [
+            {
+              "name": "Freelancing & Soft Skills",
+              "url": "https://ul.edu.pk/program-detail/MTY1Nw==/freelancing-soft-skills",
+              "slug": "freelancing-soft-skills"
+            },
+            {
+              "name": "SEO & Digital Marketing",
+              "url": "https://ul.edu.pk/program-detail/MTY1OA==/seo-digital-marketing",
+              "slug": "seo-digital-marketing"
+            },
+            {
+              "name": "Graphic Design",
+              "url": "https://ul.edu.pk/program-detail/MTY1OQ==/graphic-design",
+              "slug": "graphic-design"
+            },
+            {
+              "name": "YouTube Automation",
+              "url": "https://ul.edu.pk/program-detail/MTkxNQ==/youtube-automation",
+              "slug": "youtube-automation"
+            }
+          ],
+          "description": "No Discription Available"
+        }
+      ],
+      "source": "https://ul.edu.pk Academics menu"
+    },
+    {
+      "name": "Faculty of Veterinary and Animal Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwOQ==/faculty-of-veterinary-and-animal-sciences",
+      "campus": "Confirm with department (Layyah campuses)",
+      "dean": {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean (Veterinary Sciences)",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza",
+        "role": "Dean"
+      },
+      "departments": [
+        {
+          "name": "Department of Biosciences",
+          "official_name": "Department of Biosciences",
+          "url": "https://ul.edu.pk/department-detail/MTIxNw==/department-of-biosciences",
+          "staff": [
+            {
+              "name": "Prof. Dr. Muhammad Asif Raza",
+              "designation": "Dean",
+              "discipline": "Veterinary Sciences",
+              "email": "asif.raza@mnsuam.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+            },
+            {
+              "name": "Dr. Muhammad Ali",
+              "designation": "Assistant Professor",
+              "email": "alibuzdar@bzu.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+            }
+          ],
+          "programs": [
+            {
+              "name": "Livestock Assistant Diploma",
+              "url": "https://ul.edu.pk/program-detail/MTM5Mg==/livestock-assistant-diploma",
+              "slug": "livestock-assistant-diploma"
+            }
+          ],
+          "description": "The Department of Biosciences at the University of Layyah is a thriving center of biological education and research, dedicated to understanding life at molecular, cellular, organismal, and ecological levels. The Department is committed to nurturing scientific curiosity, critical thinking, and research excellence, empowering students to explore the vast and dynamic world of biological sciences. As biosciences form the foundation of modern healthcare, biotechnology, environmental science, and agricultural innovation, the Department emphasizes a balanced blend of theoretical concepts, laboratory training, and research-based learning . Students engage with cutting-edge scientific techniques and develop the analytical skills required to address real-world biological challenges. Academic Program Offered: BS Biosciences The BS Biosciences program follows the HEC-approved curriculum , offering an in-depth study of genetics, microbiology, biochemistry, molecular biology, ecology, physiology, and biotechnology. With a strong emphasis on laboratory competence, the program equips students to understand biological processes and apply scientific methods within research and industrial settings. V"
+        },
+        {
+          "name": "Department of Clinical Sciences",
+          "official_name": "Department of Clinical Sciences",
+          "url": "https://ul.edu.pk/department-detail/MTI0MQ==/department-of-clinical-sciences",
+          "staff": [
+            {
+              "name": "Prof. Dr. Muhammad Asif Raza",
+              "designation": "Dean",
+              "discipline": "Veterinary Sciences",
+              "email": "asif.raza@mnsuam.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+            },
+            {
+              "name": "Dr. Muhammad Ali",
+              "designation": "Assistant Professor",
+              "email": "alibuzdar@bzu.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+            }
+          ],
+          "programs": [],
+          "description": "The Department of Clinical Sciences at the University of Layyah plays a pivotal role in the education and training of future veterinary professionals. Focused on the diagnosis, treatment, and prevention of animal diseases, the department offers clinical teaching through state-of-the-art veterinary hospitals and diagnostic labs. Areas of specialization include medicine, surgery, theriogenology, and clinical pathology. Faculty members are experienced clinicians and researchers committed to excellence in animal healthcare and clinical research. Through hands-on training, fieldwork, and community outreach programs, the department ensures that students gain practical skills to meet the challenges of modern veterinary practice."
+        },
+        {
+          "name": "Department of Livestock and Poultry Sciences",
+          "official_name": "Department of Livestock and Poultry Sciences",
+          "url": "https://ul.edu.pk/department-detail/MTI0Mg==/department-of-livestock-and-poultry-sciences",
+          "staff": [
+            {
+              "name": "Prof. Dr. Muhammad Asif Raza",
+              "designation": "Dean",
+              "discipline": "Veterinary Sciences",
+              "email": "asif.raza@mnsuam.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+            },
+            {
+              "name": "Dr. Muhammad Ali",
+              "designation": "Assistant Professor",
+              "email": "alibuzdar@bzu.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Poultry Sciences",
+              "url": "https://ul.edu.pk/program-detail/MTU2Mw==/bs-poultry-sciences",
+              "slug": "bs-poultry-sciences"
+            },
+            {
+              "name": "BS Dairy Technology",
+              "url": "https://ul.edu.pk/program-detail/NDUyNA==/bs-dairy-technology",
+              "slug": "bs-dairy-technology"
+            }
+          ],
+          "description": "The Department of Livestock and Poultry Sciences at the University of Layyah is dedicated to advancing animal production, health, and management practices through education, research, and innovation. The department focuses on key areas such as animal nutrition, breeding and genetics, farm management, and poultry production. With a commitment to improving livestock productivity and food security, it offers students practical exposure through modern research farms and field-based learning. Our faculty strives to produce skilled professionals capable of addressing the challenges in the livestock and poultry sectors, contributing to rural development and the national economy."
+        },
+        {
+          "name": "Department of Pathobiology",
+          "official_name": "Department of Pathobiology",
+          "url": "https://ul.edu.pk/department-detail/MTI0Mw==/department-of-pathobiology",
+          "staff": [
+            {
+              "name": "Prof. Dr. Muhammad Asif Raza",
+              "designation": "Dean",
+              "discipline": "Veterinary Sciences",
+              "email": "asif.raza@mnsuam.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+            },
+            {
+              "name": "Dr. Muhammad Ali",
+              "designation": "Assistant Professor",
+              "email": "alibuzdar@bzu.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Microbiology",
+              "url": "https://ul.edu.pk/program-detail/MTM5Nw==/bs-microbiology",
+              "slug": "bs-microbiology"
+            },
+            {
+              "name": "POST-ADP (MICROBIOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMQ==/post-adp-microbiology",
+              "slug": "post-adp-microbiology"
+            }
+          ],
+          "description": "Department of Pathobiology The Department of Pathobiology at the University of Layyah stands as a vital academic unit dedicated to understanding the mechanisms of disease in animals, microorganisms, and the environment. The Department plays a central role in advancing knowledge in veterinary sciences, diagnostics, epidemiology, and public health by preparing students to analyze, identify, and manage infectious and non-infectious diseases. With a strong focus on laboratory excellence, scientific inquiry, and applied research , the Department equips students with the academic and practical skills necessary to address emerging challenges in animal health, zoonotic diseases, and modern disease diagnostics. Students learn the foundational and advanced concepts that support careers in veterinary pathology, microbiology, immunology, and public health. Academic Program Offered: BS Pathobiology The BS Pathobiology program follows HEC and veterinary education standards , offering comprehensive training in animal diseases, microbial pathogens, host&ndash;pathogen interactions, immunological responses, and disease-control strategies. The curriculum blends classroom learning, laboratory experim"
+        }
+      ],
+      "source": "https://ul.edu.pk Academics menu"
+    },
+    {
+      "name": "Faculty of Agricultural Sciences and Technology",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNQ==/faculty-of-agricultural-sciences-and-technology",
+      "campus": "Confirm with department (Layyah campuses)",
+      "departments": [
+        {
+          "name": "Faculty of Agricultural Sciences and Technology",
+          "official_name": "Faculty of Agricultural Sciences and Technology",
+          "url": "https://ul.edu.pk/department-detail/MTQxNQ==/faculty-of-agricultural-sciences-and-technology",
+          "staff": [],
+          "programs": [
+            {
+              "name": "B.Sc. (Hons) Agriculture",
+              "url": "https://ul.edu.pk/program-detail/MTQxMw==/bsc-hons-agriculture",
+              "slug": "bsc-hons-agriculture"
+            }
+          ],
+          "description": "No Discription Available"
+        },
+        {
+          "name": "Department of Plant Production & Biotechnology",
+          "official_name": "Department of Plant Production & Biotechnology",
+          "url": "https://ul.edu.pk/department-detail/MTIxMA==/department-of-plant-production-biotechnology",
+          "staff": [
+            {
+              "name": "Dr. Zeshan Hassan",
+              "designation": "Associate Professor",
+              "email": "zeshan.hassan@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MzE=/dr-zeshan-hassan"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Biotechnology",
+              "url": "https://ul.edu.pk/program-detail/MTM5OQ==/bs-biotechnology",
+              "slug": "bs-biotechnology"
+            }
+          ],
+          "description": "Department Overview The Department of Plant Production & Biotechnology at the University of Layyah is committed to advancing agricultural innovation through world-class education, research, and technology integration. Drawing inspiration from global leaders in agricultural sciences such as UC Davis and Wageningen University, the department merges the disciplines of Plant Breeding and Genetics, Agronomy, and Biotechnology to address the challenges of climate change, food security, and sustainable crop production. Our programs emphasize a balanced combination of theoretical foundation, applied research, and experiential learning . Through modern laboratories, field stations, and greenhouse facilities, students gain the technical proficiency and research insight necessary to develop climate-resilient, high-yielding, and resource-efficient crop systems. The department follows the Higher Education Commission (HEC) of Pakistan&rsquo;s curriculum standards, ensuring that our academic programs meet both national agricultural priorities and international scientific excellence ."
+        },
+        {
+          "name": "Department of Entomology & Food Science",
+          "official_name": "Department of Entomology & Food Science",
+          "url": "https://ul.edu.pk/department-detail/MTIxMw==/department-of-entomology-food-science",
+          "staff": [
+            {
+              "name": "Dr. Azhar Abbas Khan",
+              "designation": "Associate Professor (Entomology)",
+              "discipline": "Entomology",
+              "email": "azharkhan@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+            },
+            {
+              "name": "Dr. Muhammad Faisal Shahzad",
+              "designation": "Assistant Professor (Entomology)",
+              "discipline": "Entomology",
+              "email": "faisal.shahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjk3/dr-muhammad-faisal-shahzad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Food Science & Technology",
+              "url": "https://ul.edu.pk/program-detail/MTU2NQ==/bs-food-science-technology",
+              "slug": "bs-food-science-technology"
+            }
+          ],
+          "description": "Department Overview The Department of Entomology & Food Science at the University of Layyah is committed to advancing education, research, and innovation in the vital areas of insect science, food safety, and sustainable agriculture . This department offers a unique interdisciplinary approach that combines the study of insects, crop protection, and food quality management , preparing students to address the challenges of food security and agricultural sustainability in Pakistan and beyond. Insects play a crucial role in ecosystem balance, pollination, pest management, and food production . At the same time, maintaining food quality and safety is a national priority for health and economic growth. The Department of Entomology & Food Science integrates these two domains  -  understanding insect biology and managing food systems  -  to ensure sustainable agricultural productivity and safe, nutritious food supplies for society. The curriculum is developed in line with the Higher Education Commission (HEC) of Pakistan&rsquo;s academic framework , ensuring that students receive a rigorous education rooted in scientific research, laboratory practice, and real-world application. De"
+        },
+        {
+          "name": "Department of Horticulture & Plant Pathology",
+          "official_name": "Department of Horticulture & Plant Pathology",
+          "url": "https://ul.edu.pk/department-detail/MTIxNg==/department-of-horticulture-plant-pathology",
+          "staff": [
+            {
+              "name": "Dr. Umbreen Shahzad",
+              "designation": "Associate Professor",
+              "email": "umbreenshahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+            },
+            {
+              "name": "Dr. Tahira Abbas",
+              "designation": "Associate Professor",
+              "email": "tahiraabbas@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjY=/dr-tahira-abbas"
+            },
+            {
+              "name": "Dr. Waqas Ahmad",
+              "designation": "Assistant Professor",
+              "email": "waqas@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MzA1/dr-waqas-ahmad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "M.Sc. (Hons) Agriculture (Horticulture)",
+              "url": "https://ul.edu.pk/program-detail/MTU4NQ==/msc-hons-agriculture-horticulture",
+              "slug": "msc-hons-agriculture-horticulture"
+            },
+            {
+              "name": "BS Horticulture & Plant Pathology",
+              "url": "https://ul.edu.pk/program-detail/NDU2NQ==/bs-horticulture-plant-pathology",
+              "slug": "bs-horticulture-plant-pathology"
+            }
+          ],
+          "description": "The Department of Horticulture & Plant Pathology at the University of Layyah is dedicated to advancing scientific knowledge, research, and innovation in the fields of crop production, plant health, and sustainable agriculture. The Department plays a vital role in developing solutions to enhance crop productivity, improve plant disease management, and promote environmentally responsible agricultural practices. Through a balanced combination of theoretical learning, laboratory work, and field research , the Department aims to produce graduates who are skilled, analytical, and capable of addressing the challenges faced by modern agriculture. Students gain in-depth knowledge of horticultural crops, pest and disease control, plant breeding, and sustainable farming systems  -  essential components for ensuring food security and agricultural sustainability. Academic Program Offered: BS Horticulture & Plant Pathology The program follows the HEC-approved curriculum , designed to provide a comprehensive understanding of both horticultural production and plant pathology. Students receive hands-on training through practical fieldwork, experimental trials, greenhouse management, and crop di"
+        }
+      ],
+      "source": "https://ul.edu.pk Academics menu"
+    },
+    {
+      "name": "Faculty of Management, Humanities & Social Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwNw==/faculty-of-management-humanities-social-sciences",
+      "campus": "Confirm with department (Layyah campuses)",
+      "departments": [
+        {
+          "name": "Department of Behavioral Sciences",
+          "official_name": "Department of Behavioral Sciences",
+          "url": "https://ul.edu.pk/department-detail/MTIyMA==/department-of-behavioral-sciences",
+          "staff": [
+            {
+              "name": "Dr. Umbreen Shahzad",
+              "designation": "Associate Professor",
+              "email": "umbreenshahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Education",
+              "url": "https://ul.edu.pk/program-detail/MTM3Nw==/bs-education",
+              "slug": "bs-education"
+            },
+            {
+              "name": "BS Applied Psychology",
+              "url": "https://ul.edu.pk/program-detail/MTM4MQ==/bs-applied-psychology",
+              "slug": "bs-applied-psychology"
+            },
+            {
+              "name": "BS Sociology",
+              "url": "https://ul.edu.pk/program-detail/MTM4Mg==/bs-sociology",
+              "slug": "bs-sociology"
+            },
+            {
+              "name": "BS Sports Science",
+              "url": "https://ul.edu.pk/program-detail/MTM4Mw==/bs-sports-science",
+              "slug": "bs-sports-science"
+            },
+            {
+              "name": "B.Ed (1.5)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0MQ==/bed-15",
+              "slug": "bed-15"
+            },
+            {
+              "name": "B.Ed (Hons)",
+              "url": "https://ul.edu.pk/program-detail/MTk2Mg==/bed-hons",
+              "slug": "bed-hons"
+            },
+            {
+              "name": "POST-ADP (PSYCHOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0Nw==/post-adp-psychology",
+              "slug": "post-adp-psychology"
+            },
+            {
+              "name": "POST-ADP (SPORTS SCIENCE)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMg==/post-adp-sports-science",
+              "slug": "post-adp-sports-science"
+            },
+            {
+              "name": "POST-ADP (EDUCATION)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0Ng==/post-adp-education",
+              "slug": "post-adp-education"
+            },
+            {
+              "name": "POST-ADP (SOCIOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0OA==/post-adp-sociology",
+              "slug": "post-adp-sociology"
+            }
+          ],
+          "description": "Department of Behavioral Sciences The Department of Behavioral Sciences at the University of Layyah serves as an academic hub for understanding human behavior, cognition, emotions, and social interaction. The Department is committed to developing professionals who can analyze, interpret, and address psychological and social challenges across diverse contexts. Through a blend of scientific inquiry and applied practice, the Department prepares students to make meaningful contributions to mental health services, counseling, social development, and research. The curriculum emphasizes critical thinking, ethical practice, research competence, and practical engagement , ensuring that students gain a holistic understanding of individual and group behavior. With a strong foundation in psychological theories, behavioral research, and real-world applications, graduates are equipped to support communities and institutions through evidence-based approaches. Academic Program Offered: BS Psychology The BS Psychology program follows HEC standards and offers a comprehensive study of human behavior, personality, developmental processes, abnormal psychology, cognitive science, and research methodolog"
+        },
+        {
+          "name": "Department of Islamic Studies and Languages",
+          "official_name": "Department of Islamic Studies and Languages",
+          "url": "https://ul.edu.pk/department-detail/MTIyMQ==/department-of-islamic-studies-and-languages",
+          "staff": [
+            {
+              "name": "Dr. Sadia Anjum",
+              "designation": "Assistant Professor",
+              "email": "sadiaanjum@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS English",
+              "url": "https://ul.edu.pk/program-detail/MTM3Ng==/bs-english",
+              "slug": "bs-english"
+            },
+            {
+              "name": "BS Islamic Studies",
+              "url": "https://ul.edu.pk/program-detail/MTM3OA==/bs-islamic-studies",
+              "slug": "bs-islamic-studies"
+            },
+            {
+              "name": "BS Urdu",
+              "url": "https://ul.edu.pk/program-detail/MTM4MA==/bs-urdu",
+              "slug": "bs-urdu"
+            },
+            {
+              "name": "POST-ADP (ENGLISH)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0NQ==/post-adp-english",
+              "slug": "post-adp-english"
+            },
+            {
+              "name": "POST-ADP (ISLAMIC STUDIES)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNA==/post-adp-islamic-studies",
+              "slug": "post-adp-islamic-studies"
+            },
+            {
+              "name": "POST-ADP (URDU)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMw==/post-adp-urdu",
+              "slug": "post-adp-urdu"
+            }
+          ],
+          "description": "Department of Islamic Studies and Languages The Department of Islamic Studies and Languages at the University of Layyah is dedicated to fostering intellectual growth, moral development, and cultural understanding through the study of Islam and linguistic heritage. The Department serves as a center for academic excellence where students explore the foundations of Islamic thought, classical scholarship, contemporary issues, and the rich traditions of language and literature. Through a balanced combination of theoretical learning, analytical inquiry, and practical engagement , the Department aims to prepare graduates who can contribute meaningfully to religious education, research, social guidance, and cultural preservation. Students are encouraged to develop strong ethical values, critical reasoning, and a deep appreciation for linguistic and spiritual heritage. Academic Programs Offered BS Islamic Studies This program follows HEC guidelines and focuses on Quranic studies, Hadith, Islamic jurisprudence, Islamic history, comparative religion, and Islamic philosophy, along with coursework in Arabic and other classical languages. The curriculum is designed to strengthen students&rsquo; "
+        },
+        {
+          "name": "Department of Economics & Business Administration",
+          "official_name": "Department of Economics & Business Administration",
+          "url": "https://ul.edu.pk/department-detail/MTIzMg==/department-of-economics-business-administration",
+          "staff": [
+            {
+              "name": "Dr. Sadia Anjum",
+              "designation": "Assistant Professor",
+              "email": "sadiaanjum@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+            },
+            {
+              "name": "Rameez Tariq",
+              "designation": "Visiting Lecturer",
+              "email": "rameeztariq20@yahoo.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mzk=/rameez-tariq"
+            },
+            {
+              "name": "Dr. Muhammad Asghar",
+              "designation": "Assistant Professor (Economics)",
+              "discipline": "Economics",
+              "email": "masghar@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjg2/dr-muhammad-asghar"
+            },
+            {
+              "name": "Dr. Uqba Saeed Ahmad",
+              "designation": "Assistant Professor",
+              "email": "uqbaahmed@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MjU2/dr-uqba-saeed-ahmad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Internatinal Relations",
+              "url": "https://ul.edu.pk/program-detail/MTM3OQ==/bs-internatinal-relations",
+              "slug": "bs-internatinal-relations"
+            },
+            {
+              "name": "BBA",
+              "url": "https://ul.edu.pk/program-detail/MTM4NA==/bba",
+              "slug": "bba"
+            },
+            {
+              "name": "BS Economics",
+              "url": "https://ul.edu.pk/program-detail/MTM4NQ==/bs-economics",
+              "slug": "bs-economics"
+            },
+            {
+              "name": "BS Public Administration & Governance",
+              "url": "https://ul.edu.pk/program-detail/MTM4Ng==/bs-public-administration-governance",
+              "slug": "bs-public-administration-governance"
+            },
+            {
+              "name": "BBA-IT",
+              "url": "https://ul.edu.pk/program-detail/MTk2MQ==/bba-it",
+              "slug": "bba-it"
+            },
+            {
+              "name": "POST-ADP (INTERNATIONAL RELATIONS)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNQ==/post-adp-international-relations",
+              "slug": "post-adp-international-relations"
+            },
+            {
+              "name": "POST-ADP (PUBLIC ADMINISTRATION)",
+              "url": "https://ul.edu.pk/program-detail/MjAyNg==/post-adp-public-administration",
+              "slug": "post-adp-public-administration"
+            },
+            {
+              "name": "POST-ADP (ECONOMICS)",
+              "url": "https://ul.edu.pk/program-detail/MTQ0OQ==/post-adp-economics",
+              "slug": "post-adp-economics"
+            },
+            {
+              "name": "POST-ADP (BBA)",
+              "url": "https://ul.edu.pk/program-detail/MjA2Mg==/post-adp-bba",
+              "slug": "post-adp-bba"
+            }
+          ],
+          "description": "Department Overview The Department of Economics and Business Administration at the University of Layyah is a dynamic and progressive academic unit committed to excellence in teaching, research, and professional development . The department&rsquo;s mission is to cultivate a generation of economists, entrepreneurs, and administrators equipped with the analytical, managerial, and leadership skills required to navigate and succeed in an increasingly globalized world. Our programs are designed to blend economic theory, business principles, and practical applications , ensuring that graduates possess the intellectual foundation and professional competence to contribute effectively to both the public and private sectors . The department fosters critical thinking, ethical decision-making, innovation, and social responsibility , preparing students to become effective leaders, policymakers, and change agents in their respective fields. Programs Offered The Department currently offers a diverse range of undergraduate programs to meet the evolving educational and professional needs of society: BS Economics (1st and 5th Semester Admissions) Bachelor of Business Administration (BBA) BBA in Infor"
+        }
+      ],
+      "source": "https://ul.edu.pk Academics menu"
+    },
+    {
+      "name": "Faculty of Natural Sciences",
+      "url": "https://ul.edu.pk/faculty-detail/MTIwOA==/faculty-of-natural-sciences",
+      "campus": "Confirm with department (Layyah campuses)",
+      "departments": [
+        {
+          "name": "Department of Chemistry",
+          "official_name": "Deparmtent of Chemistry",
+          "url": "https://ul.edu.pk/department-detail/MTIzNg==/deparmtent-of-chemistry",
+          "staff": [
+            {
+              "name": "Dr. Umbreen Shahzad",
+              "designation": "Associate Professor",
+              "email": "umbreenshahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+            },
+            {
+              "name": "Iqra Ahmad Malik",
+              "designation": "Visiting Lecturer",
+              "email": "iqraahmedmalik23@gmail.com",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAy/iqra-ahmad-malik"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Chemistry",
+              "url": "https://ul.edu.pk/program-detail/MTM4OA==/bs-chemistry",
+              "slug": "bs-chemistry"
+            },
+            {
+              "name": "BS Environmental Sciences",
+              "url": "https://ul.edu.pk/program-detail/MTM5OA==/bs-environmental-sciences",
+              "slug": "bs-environmental-sciences"
+            },
+            {
+              "name": "POST-ADP (ENVIRONMENTAL SCIENCE)",
+              "url": "https://ul.edu.pk/program-detail/MjA2NA==/post-adp-environmental-science",
+              "slug": "post-adp-environmental-science"
+            },
+            {
+              "name": "POST-ADP (CHEMISTRY)",
+              "url": "https://ul.edu.pk/program-detail/MjAxOA==/post-adp-chemistry",
+              "slug": "post-adp-chemistry"
+            }
+          ],
+          "description": "Department of Chemistry Department Overview The Department of Chemistry at the University of Layyah is dedicated to excellence in teaching, research, and innovation in the field of chemical sciences. Chemistry, often referred to as the central science , explores the nature of matter, its composition, structure, properties, and the transformations it undergoes. It serves as the foundation for understanding processes across physics, biology, medicine, and engineering. Our department provides students with a comprehensive understanding of chemical principles , ranging from molecular structures and reactions to nanotechnology, medicinal chemistry, environmental chemistry, and industrial applications . The study of chemistry enables students to understand and influence the material world, paving the way for advancements in pharmaceuticals, green chemistry, materials science, biotechnology, and sustainable technologies . Vision and Mission The vision of the Department of Chemistry is to produce skilled, ethical, and innovative chemists who contribute to scientific progress, industry, and national development. Our mission is to: Deliver a high-quality educational experience grounded in bo"
+        },
+        {
+          "name": "Department of Mathematics",
+          "official_name": "Department of Mathematics",
+          "url": "https://ul.edu.pk/department-detail/MTIzOA==/department-of-mathematics",
+          "staff": [
+            {
+              "name": "Dr. Umbreen Shahzad",
+              "designation": "Associate Professor",
+              "email": "umbreenshahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Mathematics",
+              "url": "https://ul.edu.pk/program-detail/MTM5MA==/bs-mathematics",
+              "slug": "bs-mathematics"
+            },
+            {
+              "name": "POST-ADP (MATHEMATICS)",
+              "url": "https://ul.edu.pk/program-detail/MjAxOQ==/post-adp-mathematics",
+              "slug": "post-adp-mathematics"
+            }
+          ],
+          "description": "No Discription Available"
+        },
+        {
+          "name": "Department of Physics",
+          "official_name": "Department of Physics",
+          "url": "https://ul.edu.pk/department-detail/MTIzOQ==/department-of-physics",
+          "staff": [],
+          "programs": [
+            {
+              "name": "BS Physics",
+              "url": "https://ul.edu.pk/program-detail/MTk1OA==/bs-physics",
+              "slug": "bs-physics"
+            }
+          ],
+          "description": "The Department of Physics at the University of Layyah stands as a center of scientific learning and innovation, dedicated to exploring the fundamental principles that govern the natural world. The Department is committed to excellence in teaching, research, and experimentation  -  fostering curiosity, analytical thinking, and creativity among students. Physics serves as the foundation of modern science and technology. Through a balanced blend of theoretical knowledge, laboratory practice, and research engagement , the Department aims to equip students with a deep understanding of physical laws and their applications in various scientific and engineering fields. Academic Program Offered: BS Physics The BS Physics program follows the HEC-approved curriculum , designed to provide a solid grounding in classical mechanics, electromagnetism, thermodynamics, quantum mechanics, and modern physics. Alongside theoretical studies, students gain hands-on experience in advanced laboratory experiments, data analysis, and computational physics , preparing them for both academic and professional success. Vision and Mission: The vision of the Department is to cultivate a community of learners a"
+        },
+        {
+          "name": "Department of Zoology",
+          "official_name": "Department of Zoology",
+          "url": "https://ul.edu.pk/department-detail/MTI0MA==/department-of-zoology",
+          "staff": [
+            {
+              "name": "Dr. Umbreen Shahzad",
+              "designation": "Associate Professor",
+              "email": "umbreenshahzad@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Zoology",
+              "url": "https://ul.edu.pk/program-detail/MTM5MQ==/bs-zoology",
+              "slug": "bs-zoology"
+            },
+            {
+              "name": "POST-ADP (ZOOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjAyMA==/post-adp-zoology",
+              "slug": "post-adp-zoology"
+            }
+          ],
+          "description": "No Discription Available"
+        },
+        {
+          "name": "Department of Botany",
+          "official_name": "Department of Botany",
+          "url": "https://ul.edu.pk/department-detail/MTIzNQ==/department-of-botany",
+          "staff": [
+            {
+              "name": "Dr. Azhar Abbas Khan",
+              "designation": "Associate Professor (Entomology)",
+              "discipline": "Entomology",
+              "email": "azharkhan@ul.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+            },
+            {
+              "name": "Amir Shahbaz",
+              "designation": "Visiting Lecturer",
+              "email": "ashahbaz@bs.qau.edu.pk",
+              "profile_url": "https://ul.edu.pk/staff-profile/NjY=/amir-shahbaz"
+            }
+          ],
+          "programs": [
+            {
+              "name": "BS Botany",
+              "url": "https://ul.edu.pk/program-detail/MTM4Nw==/bs-botany",
+              "slug": "bs-botany"
+            },
+            {
+              "name": "POST-ADP (BOTANY)",
+              "url": "https://ul.edu.pk/program-detail/MjAxNw==/post-adp-botany",
+              "slug": "post-adp-botany"
+            }
+          ],
+          "description": "Department of Botany The Department of Botany at the University of Layyah is committed to advancing scientific understanding of plant life and its vital role in sustaining ecosystems, agriculture, and human well-being. As a dynamic academic unit, the Department focuses on developing knowledgeable professionals who can address contemporary challenges related to plant biology, conservation, environmental sustainability, and biotechnology. Through an integrated approach combining theoretical knowledge, laboratory skills, fieldwork, and research , the Department prepares students to explore the diversity, structure, physiology, ecology, and applied uses of plants. The curriculum is aligned with HEC guidelines , ensuring that students gain a comprehensive foundation in plant sciences along with practical exposure to modern scientific techniques. Academic Program Offered BS Botany The BS Botany program provides in-depth study of plant taxonomy, genetics, ecology, plant physiology, mycology, phycology, and biotechnology. Students also receive hands-on training in laboratories, greenhouses, and field research sites, enabling them to understand plant systems in both natural and controlled e"
+        },
+        {
+          "name": "Department of Biotechnology",
+          "official_name": "Department of Biotechnology",
+          "url": "https://ul.edu.pk/department-detail/NDUzMA==/department-of-biotechnology",
+          "staff": [],
+          "programs": [
+            {
+              "name": "POST-ADP (BIOTECHNOLOGY)",
+              "url": "https://ul.edu.pk/program-detail/MjA2Mw==/post-adp-biotechnology",
+              "slug": "post-adp-biotechnology"
+            }
+          ],
+          "description": "No Discription Available"
+        }
+      ],
+      "source": "https://ul.edu.pk Academics menu"
+    }
   ],
   "programs": {
-    "total_undergraduate_programs": 23,
-    "diploma_programs": 1,
-    "all_programs": [
+    "total_programs_on_website": 56,
+    "spelling": "University of Layyah",
+    "note": "Program names and hierarchy match the Academics menu on https://ul.edu.pk",
+    "all_program_names": [
+      "B.Sc Computer Engineering",
+      "BS Computer Science",
+      "BSCS - Artificial Intelligence",
+      "BSCS - Information Technology",
+      "BSCS - Data Science",
+      "Freelancing & Soft Skills",
+      "SEO & Digital Marketing",
+      "Graphic Design",
+      "YouTube Automation",
+      "Livestock Assistant Diploma",
+      "BS Poultry Sciences",
+      "BS Dairy Technology",
+      "BS Microbiology",
+      "POST-ADP (MICROBIOLOGY)",
+      "B.Sc. (Hons) Agriculture",
+      "BS Biotechnology",
+      "BS Food Science & Technology",
+      "M.Sc. (Hons) Agriculture (Horticulture)",
+      "BS Horticulture & Plant Pathology",
+      "BS Education",
+      "BS Applied Psychology",
+      "BS Sociology",
+      "BS Sports Science",
+      "B.Ed (1.5)",
+      "B.Ed (Hons)",
+      "POST-ADP (PSYCHOLOGY)",
+      "POST-ADP (SPORTS SCIENCE)",
+      "POST-ADP (EDUCATION)",
+      "POST-ADP (SOCIOLOGY)",
+      "BS English",
+      "BS Islamic Studies",
+      "BS Urdu",
+      "POST-ADP (ENGLISH)",
+      "POST-ADP (ISLAMIC STUDIES)",
+      "POST-ADP (URDU)",
+      "BS Internatinal Relations",
+      "BBA",
+      "BS Economics",
+      "BS Public Administration & Governance",
+      "BBA-IT",
+      "POST-ADP (INTERNATIONAL RELATIONS)",
+      "POST-ADP (PUBLIC ADMINISTRATION)",
+      "POST-ADP (ECONOMICS)",
+      "POST-ADP (BBA)",
+      "BS Chemistry",
+      "BS Environmental Sciences",
+      "POST-ADP (ENVIRONMENTAL SCIENCE)",
+      "POST-ADP (CHEMISTRY)",
+      "BS Mathematics",
+      "POST-ADP (MATHEMATICS)",
+      "BS Physics",
+      "BS Zoology",
+      "POST-ADP (ZOOLOGY)",
+      "BS Botany",
+      "POST-ADP (BOTANY)",
+      "POST-ADP (BIOTECHNOLOGY)"
+    ],
+    "by_department": [
       {
-        "name": "BS Computer Science (BSCS)",
+        "name": "B.Sc Computer Engineering",
+        "url": "https://ul.edu.pk/program-detail/NDU2Nw==/bsc-computer-engineering",
+        "department": "Department of Computer Engineering",
         "faculty": "Faculty of Computing & Engineering",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group A",
-        "eligibility": "FSc Pre-Engineering / ICS / A-Levels with Mathematics. Minimum 50% marks.",
-        "launched": "September 18, 2023",
-        "note": "Integrates strong theoretical foundations with practical, industry-relevant skills"
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Information Technology (BSIT)",
+        "name": "BS Computer Science",
+        "url": "https://ul.edu.pk/program-detail/MTM4OQ==/bs-computer-science",
+        "department": "Department of Computer Science",
         "faculty": "Faculty of Computing & Engineering",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group A",
-        "eligibility": "FSc (any group) or equivalent. Minimum 50% marks."
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Mathematics",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Engineering with Mathematics. Minimum 50% marks."
+        "name": "BSCS - Artificial Intelligence",
+        "url": "https://ul.edu.pk/program-detail/MTk1Nw==/bscs-artificial-intelligence",
+        "department": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Physics",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Engineering or Pre-Medical. Minimum 50% marks."
+        "name": "BSCS - Information Technology",
+        "url": "https://ul.edu.pk/program-detail/MTQwMQ==/bscs-information-technology",
+        "department": "Department of Information Technology",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Chemistry",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical or Pre-Engineering. Minimum 50%. Previous closing merit: 89.69%"
+        "name": "BSCS - Data Science",
+        "url": "https://ul.edu.pk/program-detail/MTk1Ng==/bscs-data-science",
+        "department": "Department of Information Technology",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Botany",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical. Minimum 50% marks."
+        "name": "Freelancing & Soft Skills",
+        "url": "https://ul.edu.pk/program-detail/MTY1Nw==/freelancing-soft-skills",
+        "department": "E-Rozgaar Program",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Zoology",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical. Minimum 50% marks."
+        "name": "SEO & Digital Marketing",
+        "url": "https://ul.edu.pk/program-detail/MTY1OA==/seo-digital-marketing",
+        "department": "E-Rozgaar Program",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Microbiology",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical. Minimum 50% marks."
+        "name": "Graphic Design",
+        "url": "https://ul.edu.pk/program-detail/MTY1OQ==/graphic-design",
+        "department": "E-Rozgaar Program",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BS Environmental Sciences",
-        "faculty": "Faculty of Natural Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical or Pre-Engineering. Minimum 50% marks."
+        "name": "YouTube Automation",
+        "url": "https://ul.edu.pk/program-detail/MTkxNQ==/youtube-automation",
+        "department": "E-Rozgaar Program",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
       },
       {
-        "name": "BSc (Hons) Agriculture",
-        "faculty": "Faculty of Agricultural Sciences and Technology",
-        "degree": "BSc Hons (4 Years / 8 Semesters)",
-        "fee_group": "Group C",
-        "eligibility": "FSc Pre-Medical or Agriculture. Minimum 50% marks."
-      },
-      {
-        "name": "BS Agricultural Biotechnology",
-        "faculty": "Faculty of Agricultural Sciences and Technology",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group C",
-        "eligibility": "FSc Pre-Medical or Agriculture. Minimum 50% marks."
-      },
-      {
-        "name": "BS Food Science & Technology",
-        "faculty": "Faculty of Agricultural Sciences and Technology",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group C",
-        "eligibility": "FSc Pre-Medical or Pre-Engineering. Minimum 50% marks."
+        "name": "Livestock Assistant Diploma",
+        "url": "https://ul.edu.pk/program-detail/MTM5Mg==/livestock-assistant-diploma",
+        "department": "Department of Biosciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
         "name": "BS Poultry Sciences",
+        "url": "https://ul.edu.pk/program-detail/MTU2Mw==/bs-poultry-sciences",
+        "department": "Department of Livestock and Poultry Sciences",
         "faculty": "Faculty of Veterinary and Animal Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical or Agriculture. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "Doctor of Veterinary Medicine (DVM)",
+        "name": "BS Dairy Technology",
+        "url": "https://ul.edu.pk/program-detail/NDUyNA==/bs-dairy-technology",
+        "department": "Department of Livestock and Poultry Sciences",
         "faculty": "Faculty of Veterinary and Animal Sciences",
-        "degree": "DVM (5 Years)",
-        "fee_group": "Group B",
-        "eligibility": "FSc Pre-Medical. Minimum 50% marks.",
-        "note": "Offered through the College of Veterinary Sciences. Confirm enrollment at ul.edu.pk."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BBA (Bachelor of Business Administration)",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BBA Hons (4 Years / 8 Semesters)",
-        "fee_group": "Group B",
-        "eligibility": "FA / FSc / I.Com or equivalent. Minimum 50% marks."
+        "name": "BS Microbiology",
+        "url": "https://ul.edu.pk/program-detail/MTM5Nw==/bs-microbiology",
+        "department": "Department of Pathobiology",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS Public Administration & Governance",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group C",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "POST-ADP (MICROBIOLOGY)",
+        "url": "https://ul.edu.pk/program-detail/MjAyMQ==/post-adp-microbiology",
+        "department": "Department of Pathobiology",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS Economics",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "B.Sc. (Hons) Agriculture",
+        "url": "https://ul.edu.pk/program-detail/MTQxMw==/bsc-hons-agriculture",
+        "department": "Faculty of Agricultural Sciences and Technology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS International Relations",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "BS Biotechnology",
+        "url": "https://ul.edu.pk/program-detail/MTM5OQ==/bs-biotechnology",
+        "department": "Department of Plant Production & Biotechnology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS Sociology",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "BS Food Science & Technology",
+        "url": "https://ul.edu.pk/program-detail/MTU2NQ==/bs-food-science-technology",
+        "department": "Department of Entomology & Food Science",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS Psychology",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "M.Sc. (Hons) Agriculture (Horticulture)",
+        "url": "https://ul.edu.pk/program-detail/MTU4NQ==/msc-hons-agriculture-horticulture",
+        "department": "Department of Horticulture & Plant Pathology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "BS Sports Sciences",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
-      },
-      {
-        "name": "BS English",
-        "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "name": "BS Horticulture & Plant Pathology",
+        "url": "https://ul.edu.pk/program-detail/NDU2NQ==/bs-horticulture-plant-pathology",
+        "department": "Department of Horticulture & Plant Pathology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
         "name": "BS Education",
+        "url": "https://ul.edu.pk/program-detail/MTM3Nw==/bs-education",
+        "department": "Department of Behavioral Sciences",
         "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group D",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Applied Psychology",
+        "url": "https://ul.edu.pk/program-detail/MTM4MQ==/bs-applied-psychology",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Sociology",
+        "url": "https://ul.edu.pk/program-detail/MTM4Mg==/bs-sociology",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Sports Science",
+        "url": "https://ul.edu.pk/program-detail/MTM4Mw==/bs-sports-science",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "B.Ed (1.5)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0MQ==/bed-15",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "B.Ed (Hons)",
+        "url": "https://ul.edu.pk/program-detail/MTk2Mg==/bed-hons",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (PSYCHOLOGY)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0Nw==/post-adp-psychology",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (SPORTS SCIENCE)",
+        "url": "https://ul.edu.pk/program-detail/MjAyMg==/post-adp-sports-science",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (EDUCATION)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0Ng==/post-adp-education",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (SOCIOLOGY)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0OA==/post-adp-sociology",
+        "department": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS English",
+        "url": "https://ul.edu.pk/program-detail/MTM3Ng==/bs-english",
+        "department": "Department of Islamic Studies and Languages",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
         "name": "BS Islamic Studies",
+        "url": "https://ul.edu.pk/program-detail/MTM3OA==/bs-islamic-studies",
+        "department": "Department of Islamic Studies and Languages",
         "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group E",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
         "name": "BS Urdu",
+        "url": "https://ul.edu.pk/program-detail/MTM4MA==/bs-urdu",
+        "department": "Department of Islamic Studies and Languages",
         "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "BS (4 Years / 8 Semesters)",
-        "fee_group": "Group E",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "B.Ed (Hons) — 4 Year",
+        "name": "POST-ADP (ENGLISH)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0NQ==/post-adp-english",
+        "department": "Department of Islamic Studies and Languages",
         "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "B.Ed Hons (4 Years)",
-        "fee_group": "Group E",
-        "eligibility": "FA / FSc or equivalent. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "B.Ed — 1.5 Year",
+        "name": "POST-ADP (ISLAMIC STUDIES)",
+        "url": "https://ul.edu.pk/program-detail/MjAyNA==/post-adp-islamic-studies",
+        "department": "Department of Islamic Studies and Languages",
         "faculty": "Faculty of Management, Humanities & Social Sciences",
-        "degree": "B.Ed (1.5 Years)",
-        "eligibility": "Already holding a BS/BA degree. Minimum 50% marks."
+        "campus": "Confirm with department (Layyah campuses)"
       },
       {
-        "name": "Livestock Assistant Diploma (LAD)",
-        "faculty": "Faculty of Veterinary and Animal Sciences",
-        "degree": "Diploma",
-        "note": "Separate fee structure. For capacity building in veterinary/livestock sector."
+        "name": "POST-ADP (URDU)",
+        "url": "https://ul.edu.pk/program-detail/MjAyMw==/post-adp-urdu",
+        "department": "Department of Islamic Studies and Languages",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Internatinal Relations",
+        "url": "https://ul.edu.pk/program-detail/MTM3OQ==/bs-internatinal-relations",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BBA",
+        "url": "https://ul.edu.pk/program-detail/MTM4NA==/bba",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Economics",
+        "url": "https://ul.edu.pk/program-detail/MTM4NQ==/bs-economics",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Public Administration & Governance",
+        "url": "https://ul.edu.pk/program-detail/MTM4Ng==/bs-public-administration-governance",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BBA-IT",
+        "url": "https://ul.edu.pk/program-detail/MTk2MQ==/bba-it",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (INTERNATIONAL RELATIONS)",
+        "url": "https://ul.edu.pk/program-detail/MjAyNQ==/post-adp-international-relations",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (PUBLIC ADMINISTRATION)",
+        "url": "https://ul.edu.pk/program-detail/MjAyNg==/post-adp-public-administration",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (ECONOMICS)",
+        "url": "https://ul.edu.pk/program-detail/MTQ0OQ==/post-adp-economics",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (BBA)",
+        "url": "https://ul.edu.pk/program-detail/MjA2Mg==/post-adp-bba",
+        "department": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Chemistry",
+        "url": "https://ul.edu.pk/program-detail/MTM4OA==/bs-chemistry",
+        "department": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Environmental Sciences",
+        "url": "https://ul.edu.pk/program-detail/MTM5OA==/bs-environmental-sciences",
+        "department": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (ENVIRONMENTAL SCIENCE)",
+        "url": "https://ul.edu.pk/program-detail/MjA2NA==/post-adp-environmental-science",
+        "department": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (CHEMISTRY)",
+        "url": "https://ul.edu.pk/program-detail/MjAxOA==/post-adp-chemistry",
+        "department": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Mathematics",
+        "url": "https://ul.edu.pk/program-detail/MTM5MA==/bs-mathematics",
+        "department": "Department of Mathematics",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (MATHEMATICS)",
+        "url": "https://ul.edu.pk/program-detail/MjAxOQ==/post-adp-mathematics",
+        "department": "Department of Mathematics",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Physics",
+        "url": "https://ul.edu.pk/program-detail/MTk1OA==/bs-physics",
+        "department": "Department of Physics",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Zoology",
+        "url": "https://ul.edu.pk/program-detail/MTM5MQ==/bs-zoology",
+        "department": "Department of Zoology",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (ZOOLOGY)",
+        "url": "https://ul.edu.pk/program-detail/MjAyMA==/post-adp-zoology",
+        "department": "Department of Zoology",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "BS Botany",
+        "url": "https://ul.edu.pk/program-detail/MTM4Nw==/bs-botany",
+        "department": "Department of Botany",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (BOTANY)",
+        "url": "https://ul.edu.pk/program-detail/MjAxNw==/post-adp-botany",
+        "department": "Department of Botany",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
+      },
+      {
+        "name": "POST-ADP (BIOTECHNOLOGY)",
+        "url": "https://ul.edu.pk/program-detail/MjA2Mw==/post-adp-biotechnology",
+        "department": "Department of Biotechnology",
+        "faculty": "Faculty of Natural Sciences",
+        "campus": "Confirm with department (Layyah campuses)"
       }
-    ]
+    ],
+    "department_locations_critical": {
+      "Department of Computer Science": "Main Campus - Faculty of Computing and Engineering building (NOT City Campus)",
+      "Department of Information Technology": "Main Campus - Faculty of Computing and Engineering building",
+      "Department of Computer Engineering": "Main Campus - Faculty of Computing and Engineering building",
+      "E-Rozgaar Program": "Main Campus - E-Rozgaar Lab, 1st Floor, Computing building"
+    },
+    "aliases": {
+      "BS IT": "BSCS - Information Technology",
+      "BS Information Technology": "BSCS - Information Technology",
+      "BSCS": "BS Computer Science",
+      "BSAI": "BSCS - Artificial Intelligence",
+      "BSDS": "BSCS - Data Science",
+      "BS International Relations": "BS Internatinal Relations"
+    }
   },
   "fee_structure": {
-    "important_notice": "The fee structure for Session 2025 is applicable only to newly admitted students for Session 2025. Fee is subject to change as per university policy. Always confirm with the Accounts Section before paying.",
-    "session": "2025",
-    "fee_groups": {
-      "Group A": {
-        "programs": ["BS Computer Science", "BS Information Technology"],
-        "note": "Higher fee tier for computing programs"
-      },
-      "Group B": {
-        "programs": ["BBA", "BS Chemistry", "BS Physics", "BS Mathematics", "BS Botany", "BS Zoology", "BS Microbiology", "BS Poultry Sciences", "BS Environmental Sciences", "DVM"],
-        "note": "Science, business and veterinary programs"
-      },
-      "Group C": {
-        "programs": ["BSc Hons Agriculture", "BS Food Science & Technology", "BS Agricultural Biotechnology", "BS Public Administration & Governance"],
-        "note": "Agriculture and related programs"
-      },
-      "Group D": {
-        "programs": ["BS English", "BS Economics", "BS Psychology", "BS Sociology", "BS Education", "BS Sports Sciences", "BS International Relations"],
-        "note": "Arts, humanities and social science programs"
-      },
-      "Group E": {
-        "programs": ["BS Islamic Studies", "BS Urdu", "B.Ed (Hons)"],
-        "note": "Language and religious studies programs"
-      }
+    "important_notice": "Official fee amounts are on the university Fee Structure page and can change by session/shift. Always confirm before payment.",
+    "fee_structure_url": "https://ul.edu.pk/page/Fee-Structure",
+    "how_to_check_updated_fees": [
+      "Open https://ul.edu.pk/page/Fee-Structure",
+      "Select Category (program group)",
+      "Select Shift",
+      "Select Admission Year",
+      "Click Search to view the current fee for that program"
+    ],
+    "contact_accounts": "Accounts Section - City Campus | info@ul.edu.pk | +92-0606-920247",
+    "how_to_pay": "Bank Challan in designated bank branches / as instructed at admission.",
+    "known_fees": {
+      "erozgaar_each_course": "Rs. 7,000 (discounted from Rs. 10,000)"
     },
-    "exact_amounts_note": "Exact per-semester amounts are published on the official website in PDF format. Visit ul.edu.pk/page/Fee-Structure or contact the Accounts Section at info@ul.edu.pk / +92-0606-920247 for the exact current fee chart.",
-    "how_to_pay": "Bank Challan deposited in designated bank branches, or as specified by the university at time of admission.",
-    "fee_structure_url": "https://ul.edu.pk/page/Fee-Structure"
+    "note_for_assistant": "Do not invent exact semester fee numbers. Direct users to https://ul.edu.pk/page/Fee-Structure. Mention E-Rozgaar Rs. 7000 when asked about E-Rozgaar."
   },
   "admissions": {
-    "session_2025_26": {
-      "open_date": "June 01, 2025",
-      "last_date": "July 15, 2025",
-      "merit_list_announcement": "July 2025 (on university website and notice board)",
-      "interviews": "First week of August 2025",
-      "final_merit_list": "After interviews, August 2025",
-      "admission_schedule_url": "https://ul.edu.pk/page/Admission-Schedule"
+    "official_pages": {
+      "admission_schedule": "https://ul.edu.pk/page/Admission-Schedule",
+      "how_to_apply": "https://ul.edu.pk/page/How-to-Apply",
+      "eligibility": "https://ul.edu.pk/page/Eligibility-Criteria",
+      "fee_structure": "https://ul.edu.pk/page/Fee-Structure",
+      "public_notices": "https://ul.edu.pk/page/public-notices"
     },
     "eligibility_criteria": {
-      "minimum_marks": "50% in Intermediate (HSSC/FSc/FA/ICS/I.Com or equivalent)",
-      "entry_test": "Required for BS programs. Conducted by the University.",
-      "ranking_basis": "FSc or equivalent (2-year certificate) from an HEC-recognized board",
-      "nationality": "Pakistani national"
-    },
-    "previous_merit_reference": {
-      "BS Computer Science": "Closing merit approx. 86% (Session 2024 — for reference only)",
-      "BS Chemistry": "Closing merit approx. 89.69% (Session 2024 — for reference only)",
-      "note": "Closing merit varies each year based on applicants. These figures are from the previous session."
+      "minimum_marks": "Typically 50% in Intermediate (HSSC/FSc/FA/ICS/I.Com or equivalent) - confirm on Eligibility Criteria page",
+      "nationality": "Pakistani national (foreign applicants: contact admissions)"
     },
     "how_to_apply": [
-      "Step 1: Visit the official admission portal at eportal.ul.edu.pk/admissions",
+      "Step 1: Visit the official admission portal / eportal at eportal.ul.edu.pk or follow How-to-Apply on ul.edu.pk",
       "Step 2: Select your desired Program Category",
       "Step 3: Register using your Email and CNIC number",
-      "Step 4: Fill in your personal information, academic details, and program preferences",
+      "Step 4: Fill personal information, academic details, and program preferences",
       "Step 5: Upload scanned copies of required documents",
       "Step 6: Pay the application fee via Bank Challan",
       "Step 7: Submit the application and note your Application ID",
-      "Step 8: Check the university website and notice board for merit lists",
-      "Step 9: If selected, complete enrollment by paying the semester fee within the given deadline"
+      "Step 8: Check https://ul.edu.pk and public notices for merit lists",
+      "Step 9: If selected, complete enrollment by paying the semester fee within the deadline"
     ],
     "required_documents": [
       "Matriculation (SSC) Certificate and Detailed Marks Sheet",
       "Intermediate (HSSC) Certificate and Detailed Marks Sheet",
       "CNIC / B-Form (attested copy)",
       "Two recent passport-size photographs",
-      "Domicile Certificate (Punjab domicile preferred)",
+      "Domicile Certificate",
       "Character Certificate from previous institution",
       "Migration Certificate (if previously enrolled elsewhere)",
       "HEC equivalency certificate (for foreign qualifications)"
     ],
-    "special_quotas": [
-      "Open Merit",
-      "Women / Female Quota",
-      "Disabled / Special Persons Quota",
-      "Foreign Nationals Quota (if applicable)"
-    ],
     "contact_for_admissions": {
-      "portal": "https://eportal.ul.edu.pk/admissions",
+      "portal": "https://eportal.ul.edu.pk",
       "phone": "+92-0606-920247",
       "email": "info@ul.edu.pk",
-      "visit": "City Campus, Katchehry Road, Layyah — Monday to Friday, 8:00 AM to 4:00 PM"
+      "visit": "City Campus, Katchehry Road, Layyah - Monday to Friday office hours"
     }
   },
   "scholarships": [
     {
+      "name": "University Scholarship Facility",
+      "provider": "University of Layyah",
+      "eligibility": "Talented and deserving students - see https://ul.edu.pk/page/Scholarships",
+      "apply_at": "https://ul.edu.pk/page/Scholarships"
+    },
+    {
       "name": "HEC Need-Based Scholarships (NBS)",
       "provider": "Higher Education Commission (HEC) Pakistan",
-      "eligibility": "Pakistani students with financial need enrolled in HEC-recognized institutions. Minimum 60% academic record.",
-      "amount": "Full tuition fee coverage + monthly stipend",
+      "eligibility": "Pakistani students with financial need enrolled in HEC-recognized institutions",
       "apply_at": "https://scholarship.hec.gov.pk"
-    },
-    {
-      "name": "Ehsaas Undergraduate Scholarship",
-      "provider": "Government of Pakistan",
-      "eligibility": "Students from lower-income families (means-tested via NSER database). Merit-cum-need.",
-      "amount": "Monthly stipend + tuition fee",
-      "apply_at": "https://scholarship.hec.gov.pk"
-    },
-    {
-      "name": "Prime Minister Fee Reimbursement Scheme",
-      "provider": "Government of Pakistan",
-      "eligibility": "Students from low-income families enrolled in recognized universities",
-      "amount": "Tuition fee reimbursement",
-      "apply_at": "HEC portal"
     },
     {
       "name": "Punjab Educational Endowment Fund (PEEF)",
       "provider": "Government of Punjab",
       "eligibility": "Punjab domicile holders with financial need and good academic record",
-      "amount": "Varies — tuition and stipend support",
       "apply_at": "https://www.peef.org.pk"
-    },
-    {
-      "name": "University of Layyah Internal Merit Scholarship",
-      "provider": "University of Layyah",
-      "eligibility": "Students who secure top positions / distinctions in their batch at UL",
-      "amount": "Partial to full fee waiver",
-      "apply_at": "Automatically awarded based on academic performance each semester"
     }
   ],
+  "campus_facilities": {
+    "overview": "Medical, Library, Transport, and Scholarship facilities are highlighted on https://ul.edu.pk",
+    "medical": "On-campus medical services with qualified staff for routine and emergency care - https://ul.edu.pk/page/Medical",
+    "library": "Modern library supporting students and faculty - https://ul.edu.pk/page/Facilities",
+    "transport": "8+ university buses with city routes and City↔Main campus schedule - see transport section",
+    "faculty_hostel": "Faculty hostel information - https://ul.edu.pk/page/faculty-hostel",
+    "day_care": "Day Care Centre formally inaugurated at the University of Layyah",
+    "libraries": "Central Library at City Campus; library in Faculty of Computing and Engineering building at Main Campus",
+    "computing_labs": "Computing Lab 1, Lab 2, Lab 3, E-Rozgaar Lab, DLD Lab - Faculty of Computing and Engineering building, Main Campus",
+    "computing_faculty_campus": "Faculty of Computing & Engineering is located at MAIN CAMPUS"
+  },
   "academic_system": {
     "system": "Semester System",
     "degree_structure": {
       "BS": "4 Years (8 Semesters)",
-      "MS_MPhil": "2 Years (4 Semesters)",
-      "PhD": "3–5 Years (6+ Semesters)",
-      "DVM": "5 Years",
+      "B_Sc_Hons": "4 Years",
+      "M_Sc_Hons": "2 Years (typical)",
       "B_Ed_Hons": "4 Years",
-      "B_Ed_1_5": "1.5 Years"
+      "B_Ed_1_5": "1.5 Years",
+      "POST_ADP": "Top-up pathway for Associate Degree holders",
+      "Diploma": "Livestock Assistant Diploma and E-Rozgaar short courses"
     },
     "assessment_breakdown": {
       "mid_semester_examination": "30 Marks",
-      "sessional_work": "Quizzes, Assignments, Presentations, Homework — 20 Marks",
+      "sessional_work": "Quizzes, Assignments, Presentations - 20 Marks",
       "final_examination": "50 Marks",
-      "total": "100 Marks per course",
-      "note": "Assessment breakdown follows HEC-standard Uniform Examination Policy"
+      "total": "100 Marks per course"
     },
     "grading_system": {
       "scale": "4.0 GPA Scale",
-      "grades": [
-        { "grade": "A", "marks": "85-100", "gpa": 4.0 },
-        { "grade": "A-", "marks": "80-84", "gpa": 3.7 },
-        { "grade": "B+", "marks": "75-79", "gpa": 3.3 },
-        { "grade": "B", "marks": "70-74", "gpa": 3.0 },
-        { "grade": "B-", "marks": "65-69", "gpa": 2.7 },
-        { "grade": "C+", "marks": "60-64", "gpa": 2.3 },
-        { "grade": "C", "marks": "55-59", "gpa": 2.0 },
-        { "grade": "C-", "marks": "50-54", "gpa": 1.7 },
-        { "grade": "D", "marks": "45-49", "gpa": 1.0 },
-        { "grade": "F", "marks": "0-44", "gpa": 0.0 }
-      ],
-      "minimum_passing_gpa": "1.0 (Grade D) per course",
-      "minimum_cgpa_to_continue": "2.0 (students below this are placed on academic probation)",
-      "maximum_duration_BS": "6 years to complete a 4-year BS degree",
-      "semester_freeze": "Freezing of first two semesters of BS is not allowed"
+      "minimum_cgpa_to_continue": "2.0 (students below this are typically placed on academic probation)",
+      "attendance_policy": "Minimum 75% attendance required per course to sit final exams"
     }
   },
   "examination_guidelines": {
     "attendance_policy": {
       "minimum_attendance": "75% of total lectures per course per semester",
-      "consequence": "Students with less than 75% attendance in a course will be debarred from appearing in the final examination of that course",
-      "medical_leave": "Must submit a doctor's certificate to the department within 3 working days of returning"
+      "consequence": "Students with less than 75% attendance may be debarred from the final examination of that course"
     },
     "exam_rules": [
-      "Students must carry their University ID Card to all examinations — no ID means no entry",
-      "Mobile phones and electronic devices are strictly prohibited in the examination hall",
-      "No student is allowed to enter the examination hall 30 minutes after the exam has started",
-      "Students must maintain complete silence during examinations",
-      "Any form of cheating, copying, or unfair means results in immediate cancellation of the exam and disciplinary action",
-      "Assignments and coursework must be submitted by the announced deadline; late submissions may receive reduced marks or zero",
-      "Mid-semester exams are typically held in Week 8–9 of each semester",
-      "Final exams are held at the end of each semester as per the university examination schedule"
-    ],
-    "controller_of_examinations": {
-      "location": "City Campus, Admin Block",
-      "email": "info@ul.edu.pk",
-      "note": "Position under recruitment as of 2025"
-    }
-  },
-  "campus_facilities": {
-    "city_campus": [
-      "Administrative Block",
-      "Academic Teaching Halls and Classrooms",
-      "Computer Labs",
-      "Science Laboratories",
-      "Central Library with digital resources",
-      "Cafeteria",
-      "Prayer Hall / Mosque",
-      "Sports Facilities",
-      "Parking Area",
-      "Medical / First Aid Room",
-      "Auditorium",
-      "Guest House",
-      "Wi-Fi Campus"
-    ],
-    "main_campus_under_construction": [
-      "New Academic Buildings",
-      "Student Dormitories / Hostels (under construction)",
-      "VC Residence",
-      "Sports Complex",
-      "Additional Labs and Research Facilities"
-    ],
-    "hostels": "Limited hostel facility available. Contact Student Affairs for availability.",
-    "transport": "Transport routes available for select areas. Contact Student Affairs for current route details."
+      "Carry University ID Card to all examinations",
+      "Mobile phones and electronic devices prohibited in the examination hall",
+      "No entry typically allowed 30 minutes after exam start",
+      "Cheating or unfair means results in cancellation and disciplinary action"
+    ]
   },
   "student_life": {
+    "audience_roles": {
+      "visitors": "Get campus locations/maps, contact info, program overview, visit timings, and how to reach both campuses.",
+      "prospective_students": "Get admissions steps, eligibility, fees, scholarships, and program recommendations.",
+      "current_students": "Get rules, attendance, exams, facilities, transport, societies, and office contacts."
+    },
     "conduct_rules": [
-      "Maintain a respectful and professional environment at all times",
-      "Dress code: Formal or semi-formal attire expected on campus",
-      "University ID card must be carried at all times on campus",
-      "Students are responsible for the care and upkeep of university property",
-      "Ragging of any form is strictly prohibited and punishable under university regulations and the law",
-      "Smoking and use of any prohibited substance is not allowed on university premises",
-      "Mobile phones must be on silent or switched off during classes and examinations"
-    ],
-    "student_societies": [
-      "Literary & Debating Society",
-      "CS & IT Society",
-      "Science Society",
-      "Agriculture Society",
-      "Sports Club",
-      "Cultural Society",
-      "Business Club",
-      "Social Welfare Society"
+      "Maintain a respectful and professional environment",
+      "University ID card must be carried on campus",
+      "Ragging is strictly prohibited",
+      "Smoking and prohibited substances are not allowed on premises"
     ],
     "student_support": [
       "Student Affairs Office for general queries and grievances",
-      "Academic advisor assigned per department",
       "Library access for research and self-study",
-      "Career counseling sessions"
+      "Career / skills pathways including E-Rozgaar",
+      "Medical and transport facilities"
     ]
   },
-  "events_and_activities": {
-    "annual_events": [
-      "Orientation Week for new students at the start of each semester",
-      "Annual Sports Week",
-      "Science & Technology Fair",
-      "Annual Cultural Festival",
-      "Convocation Ceremony (for graduating students)",
-      "Career Fair and Job Expo",
-      "Alumni Reunion",
-      "International Education Day events",
-      "World Environment Day activities (Faculty of Agriculture)"
-    ],
-    "regular_activities": [
-      "Weekly seminars and guest lectures by industry experts",
-      "Inter-departmental debates and competitions",
-      "Research paper presentations",
-      "Community service and social welfare initiatives",
-      "Workshops on professional skills and entrepreneurship"
-    ],
-    "upcoming_events_note": "For current event schedules, check the university website ul.edu.pk or the official Facebook page: facebook.com/universityoflayah"
+  "announcements": {
+    "source": "https://ul.edu.pk",
+    "public_notices_url": "https://ul.edu.pk/page/public-notices",
+    "tender_notice_url": "https://ul.edu.pk/page/Tender-Notice",
+    "last_synced_note": "Full academic scrape 2026-08-14T14:30:03.016Z; stories from homepage.",
+    "latest_stories": [
+      {
+        "title": "MOU Between University of Layyah and UET",
+        "url": "https://ul.edu.pk/story/MOU+Between+University+of+Layyah+and+UET+/4067"
+      },
+      {
+        "title": "Formally Inauguration of Day Care Center",
+        "url": "https://ul.edu.pk/story/Formally+Inauguration+of+Day+Care+Center/4174"
+      },
+      {
+        "title": "5th UL Syndicate Meeting PHEC",
+        "url": "https://ul.edu.pk/story/5th+UL+Syndicate+Meeting+PHEC/4064"
+      },
+      {
+        "title": "Visit of Prof. Dr. Saeed Buzdar, VC Thal University Bhakkar",
+        "url": "https://ul.edu.pk/story/Visit+of+Prof.+Dr.+Saeed+Buzdar%2C+VC+Thal+University+Bhakkar/4048"
+      }
+    ]
   },
   "contact_information": {
     "main_phone": "+92-0606-920247",
+    "phone_alt": "+92-0606-920238 / +92-0606-920239",
     "email": "info@ul.edu.pk",
     "website": "https://ul.edu.pk",
     "eportal": "https://eportal.ul.edu.pk",
-    "city_campus_address": "Katchehry Road, Layyah, Punjab, Pakistan — 31200",
+    "city_campus_address": "Katchehry Road, Layyah, Punjab, Pakistan - 31200",
     "main_campus_address": "Karor Road (Hafiz Abad), Layyah, Punjab, Pakistan",
-    "office_hours": "Monday to Friday: 8:00 AM – 4:00 PM",
+    "office_hours": "Monday to Friday (typical university office hours; confirm for holidays)",
     "facebook": "https://www.facebook.com/universityoflayah",
     "key_office_contacts": {
-      "admissions": "Visit eportal.ul.edu.pk/admissions or call +92-0606-920247",
-      "fee_payments": "Accounts Section — City Campus",
-      "examination": "Examination Cell — City Campus",
-      "student_affairs": "Student Affairs Office — City Campus",
-      "oric": "Office of Research, Innovation & Commercialization — Director: Dr. Zeshan Hassan"
+      "general": "info@ul.edu.pk | +92-0606-920247",
+      "admissions": "Visit eportal / How-to-Apply pages or call +92-0606-920247",
+      "fee_payments": "Accounts Section - City Campus",
+      "examination": "Examination Cell - City Campus",
+      "student_affairs": "Student Affairs Office - City Campus",
+      "erozgaar": "https://erozgaar.ul.edu.pk"
     }
+  },
+  "visitor_guide": {
+    "who_this_helps": [
+      "Visitors",
+      "Parents",
+      "Prospective students",
+      "Current students"
+    ],
+    "how_to_visit": [
+      "Primary contact point: City Campus on Katchehry Road, Layyah",
+      "Ask reception / Student Affairs for department locations",
+      "Main Campus is ~5 km away on Karor Road (Hafiz Abad)",
+      "Use Google Maps links in the campuses section for directions"
+    ],
+    "suggested_questions": [
+      "Where is the Computer Science department?",
+      "List all faculties and programs",
+      "Who is the dean of Computing & Engineering?",
+      "Show bus timings and routes",
+      "Where are Computing Lab 1 and E-Rozgaar Lab?",
+      "Where is the Central Library?",
+      "How do I check updated fee structure for BS Computer Science?",
+      "Who is program incharge of BSAI?"
+    ]
+  },
+  "department_locations": {
+    "important": "Faculty of Computing & Engineering (including Computer Science) is at MAIN CAMPUS, not City Campus.",
+    "locations": [
+      {
+        "department": "Department of Computer Science",
+        "campus": "Main Campus",
+        "building": "Faculty of Computing and Engineering building",
+        "programs": [
+          "BSCS",
+          "BSAI"
+        ]
+      },
+      {
+        "department": "Department of Information Technology",
+        "campus": "Main Campus",
+        "building": "Faculty of Computing and Engineering building",
+        "programs": [
+          "BS IT",
+          "BSDS"
+        ]
+      },
+      {
+        "department": "Department of Computer Engineering",
+        "campus": "Main Campus",
+        "building": "Faculty of Computing and Engineering building",
+        "programs": [
+          "B.Sc Computer Engineering"
+        ]
+      }
+    ]
+  },
+  "teaching_staff": {
+    "note": "Staff extracted from official department, faculty, and program (Program Incharge) pages on https://ul.edu.pk.",
+    "source": "https://ul.edu.pk",
+    "scraped_at": "2026-08-14T14:30:03.016Z",
+    "by_faculty": {
+      "Faculty of Computing & Engineering": {
+        "campus": "Main Campus",
+        "dean": "Dr. Muhammad Amjad",
+        "url": "https://ul.edu.pk/faculty-detail/MTIwNA==/faculty-of-computing-engineering",
+        "departments": [
+          {
+            "department": "Department of Computer Engineering",
+            "url": "https://ul.edu.pk/department-detail/MTk1MA==/department-of-computer-engineering",
+            "campus": "Main Campus",
+            "staff": [
+              {
+                "name": "Engr. Dr. Muhammad Faheem Khalil Paracha",
+                "designation": "Lecturer",
+                "discipline": "Computer Engineering",
+                "email": "faheemparacha.uettaxila@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjg1/engr-dr-muhammad-faheem-khalil-paracha"
+              },
+              {
+                "name": "Faria Malik",
+                "designation": "Lecturer",
+                "email": "fariamalik0022@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjEx/faria-malik"
+              },
+              {
+                "name": "Amjad Riaz",
+                "designation": "Lecturer",
+                "email": "engr.amjadriaz@yahoo.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjkz/amjad-riaz"
+              },
+              {
+                "name": "Muhammad Bilal",
+                "designation": "Lecturer",
+                "email": "bilalmirani125@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjk1/muhammad-bilal"
+              },
+              {
+                "name": "Rameez Farooq",
+                "designation": "Lecturer",
+                "email": "rameezfarooq9@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjk0/rameez-farooq"
+              },
+              {
+                "name": "Ghulam Qadir",
+                "designation": "Lecturer",
+                "discipline": "Computer Engineering",
+                "email": "qadirsahib14@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTU1/ghulam-qadir"
+              }
+            ]
+          },
+          {
+            "department": "Department of Computer Science",
+            "url": "https://ul.edu.pk/department-detail/MTIzNw==/department-of-computer-science",
+            "campus": "Main Campus",
+            "staff": [
+              {
+                "name": "Abdul Qayoom",
+                "designation": "Assistant Professor",
+                "discipline": "Computer Science",
+                "email": "aqayumbuzdar@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjky/abdul-qayoom"
+              },
+              {
+                "name": "Faisal Hafeez",
+                "designation": "Visiting Lecturer",
+                "email": "faisalhafeezfaisal786@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez"
+              },
+              {
+                "name": "Muhammad Asif Aziz",
+                "designation": "Visiting Lecturer",
+                "email": "asifaziz4855@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjEw/muhammad-asif-aziz"
+              },
+              {
+                "name": "Muhammad Shakeel",
+                "designation": "Visiting Lecturer",
+                "email": "ms352230@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTUw/muhammad-shakeel"
+              },
+              {
+                "name": "Dr. ABDULQAYOOM",
+                "role": "Program Incharge",
+                "program": "BS Computer Science"
+              },
+              {
+                "name": "Dr. Ashir Javeed",
+                "role": "Program Incharge",
+                "qualification": "Ph.D. in Software Engineering from the University of Electronic Science and Technology of China",
+                "program": "BS Computer Science"
+              }
+            ]
+          },
+          {
+            "department": "Department of Information Technology",
+            "url": "https://ul.edu.pk/department-detail/MTk1MQ==/department-of-information-technology",
+            "campus": "Main Campus",
+            "staff": [
+              {
+                "name": "Dr. Nasrullah",
+                "designation": "Assistant Professor",
+                "role": "Program Incharge",
+                "discipline": "Information Technology",
+                "email": "nasrullah.ce@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjk5/dr-nasrullah",
+                "qualification": "PhD - Software Engineering Chongqing University, China MS – Computer Engineering University of Engineering and Technology- Taxila (CASE)",
+                "program": "BSCS Information Technology"
+              },
+              {
+                "name": "Faisal Hafeez",
+                "designation": "Visiting Lecturer",
+                "email": "faisalhafeezfaisal786@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez"
+              },
+              {
+                "name": "Dr. M. Rehan Abbas",
+                "designation": "Assistant Professor",
+                "role": "Program Incharge",
+                "qualification": "PhD- Computer Science · University of Azad Jammu and Kashmir Muzaffarabad.",
+                "program": "BSCS Information Technology"
+              }
+            ]
+          },
+          {
+            "department": "E-Rozgaar Program",
+            "url": "https://ul.edu.pk/department-detail/MjAxNA==/e-rozgaar-program",
+            "campus": "Main Campus",
+            "staff": [
+              {
+                "name": "Dr. Muhammad Ali",
+                "designation": "Assistant Professor",
+                "email": "alibuzdar@bzu.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+              }
+            ]
+          }
+        ]
+      },
+      "Faculty of Veterinary and Animal Sciences": {
+        "campus": "Confirm with department (Layyah campuses)",
+        "dean": "Prof. Dr. Muhammad Asif Raza",
+        "url": "https://ul.edu.pk/faculty-detail/MTIwOQ==/faculty-of-veterinary-and-animal-sciences",
+        "departments": [
+          {
+            "department": "Department of Biosciences",
+            "url": "https://ul.edu.pk/department-detail/MTIxNw==/department-of-biosciences",
+            "staff": [
+              {
+                "name": "Prof. Dr. Muhammad Asif Raza",
+                "designation": "Dean",
+                "discipline": "Veterinary Sciences",
+                "email": "asif.raza@mnsuam.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+              },
+              {
+                "name": "Dr. Muhammad Ali",
+                "designation": "Assistant Professor",
+                "email": "alibuzdar@bzu.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+              }
+            ]
+          },
+          {
+            "department": "Department of Clinical Sciences",
+            "url": "https://ul.edu.pk/department-detail/MTI0MQ==/department-of-clinical-sciences",
+            "staff": [
+              {
+                "name": "Prof. Dr. Muhammad Asif Raza",
+                "designation": "Dean",
+                "discipline": "Veterinary Sciences",
+                "email": "asif.raza@mnsuam.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+              },
+              {
+                "name": "Dr. Muhammad Ali",
+                "designation": "Assistant Professor",
+                "email": "alibuzdar@bzu.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+              }
+            ]
+          },
+          {
+            "department": "Department of Livestock and Poultry Sciences",
+            "url": "https://ul.edu.pk/department-detail/MTI0Mg==/department-of-livestock-and-poultry-sciences",
+            "staff": [
+              {
+                "name": "Prof. Dr. Muhammad Asif Raza",
+                "designation": "Dean",
+                "discipline": "Veterinary Sciences",
+                "email": "asif.raza@mnsuam.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+              },
+              {
+                "name": "Dr. Muhammad Ali",
+                "designation": "Assistant Professor",
+                "email": "alibuzdar@bzu.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+              }
+            ]
+          },
+          {
+            "department": "Department of Pathobiology",
+            "url": "https://ul.edu.pk/department-detail/MTI0Mw==/department-of-pathobiology",
+            "staff": [
+              {
+                "name": "Prof. Dr. Muhammad Asif Raza",
+                "designation": "Dean",
+                "discipline": "Veterinary Sciences",
+                "email": "asif.raza@mnsuam.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+              },
+              {
+                "name": "Dr. Muhammad Ali",
+                "designation": "Assistant Professor",
+                "email": "alibuzdar@bzu.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+              }
+            ]
+          }
+        ]
+      },
+      "Faculty of Agricultural Sciences and Technology": {
+        "campus": "Confirm with department (Layyah campuses)",
+        "dean": null,
+        "url": "https://ul.edu.pk/faculty-detail/MTIwNQ==/faculty-of-agricultural-sciences-and-technology",
+        "departments": [
+          {
+            "department": "Faculty of Agricultural Sciences and Technology",
+            "url": "https://ul.edu.pk/department-detail/MTQxNQ==/faculty-of-agricultural-sciences-and-technology",
+            "staff": []
+          },
+          {
+            "department": "Department of Plant Production & Biotechnology",
+            "url": "https://ul.edu.pk/department-detail/MTIxMA==/department-of-plant-production-biotechnology",
+            "staff": [
+              {
+                "name": "Dr. Zeshan Hassan",
+                "designation": "Associate Professor",
+                "email": "zeshan.hassan@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MzE=/dr-zeshan-hassan"
+              }
+            ]
+          },
+          {
+            "department": "Department of Entomology & Food Science",
+            "url": "https://ul.edu.pk/department-detail/MTIxMw==/department-of-entomology-food-science",
+            "staff": [
+              {
+                "name": "Dr. Azhar Abbas Khan",
+                "designation": "Associate Professor (Entomology)",
+                "discipline": "Entomology",
+                "email": "azharkhan@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+              },
+              {
+                "name": "Dr. Muhammad Faisal Shahzad",
+                "designation": "Assistant Professor (Entomology)",
+                "discipline": "Entomology",
+                "email": "faisal.shahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjk3/dr-muhammad-faisal-shahzad"
+              }
+            ]
+          },
+          {
+            "department": "Department of Horticulture & Plant Pathology",
+            "url": "https://ul.edu.pk/department-detail/MTIxNg==/department-of-horticulture-plant-pathology",
+            "staff": [
+              {
+                "name": "Dr. Umbreen Shahzad",
+                "designation": "Associate Professor",
+                "email": "umbreenshahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+              },
+              {
+                "name": "Dr. Tahira Abbas",
+                "designation": "Associate Professor",
+                "email": "tahiraabbas@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjY=/dr-tahira-abbas"
+              },
+              {
+                "name": "Dr. Waqas Ahmad",
+                "designation": "Assistant Professor",
+                "email": "waqas@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MzA1/dr-waqas-ahmad"
+              }
+            ]
+          }
+        ]
+      },
+      "Faculty of Management, Humanities & Social Sciences": {
+        "campus": "Confirm with department (Layyah campuses)",
+        "dean": null,
+        "url": "https://ul.edu.pk/faculty-detail/MTIwNw==/faculty-of-management-humanities-social-sciences",
+        "departments": [
+          {
+            "department": "Department of Behavioral Sciences",
+            "url": "https://ul.edu.pk/department-detail/MTIyMA==/department-of-behavioral-sciences",
+            "staff": [
+              {
+                "name": "Dr. Umbreen Shahzad",
+                "designation": "Associate Professor",
+                "email": "umbreenshahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+              }
+            ]
+          },
+          {
+            "department": "Department of Islamic Studies and Languages",
+            "url": "https://ul.edu.pk/department-detail/MTIyMQ==/department-of-islamic-studies-and-languages",
+            "staff": [
+              {
+                "name": "Dr. Sadia Anjum",
+                "designation": "Assistant Professor",
+                "email": "sadiaanjum@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+              }
+            ]
+          },
+          {
+            "department": "Department of Economics & Business Administration",
+            "url": "https://ul.edu.pk/department-detail/MTIzMg==/department-of-economics-business-administration",
+            "staff": [
+              {
+                "name": "Dr. Sadia Anjum",
+                "designation": "Assistant Professor",
+                "email": "sadiaanjum@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+              },
+              {
+                "name": "Rameez Tariq",
+                "designation": "Visiting Lecturer",
+                "email": "rameeztariq20@yahoo.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mzk=/rameez-tariq"
+              },
+              {
+                "name": "Dr. Muhammad Asghar",
+                "designation": "Assistant Professor (Economics)",
+                "discipline": "Economics",
+                "email": "masghar@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjg2/dr-muhammad-asghar"
+              },
+              {
+                "name": "Dr. Uqba Saeed Ahmad",
+                "designation": "Assistant Professor",
+                "email": "uqbaahmed@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MjU2/dr-uqba-saeed-ahmad"
+              }
+            ]
+          }
+        ]
+      },
+      "Faculty of Natural Sciences": {
+        "campus": "Confirm with department (Layyah campuses)",
+        "dean": null,
+        "url": "https://ul.edu.pk/faculty-detail/MTIwOA==/faculty-of-natural-sciences",
+        "departments": [
+          {
+            "department": "Department of Chemistry",
+            "url": "https://ul.edu.pk/department-detail/MTIzNg==/deparmtent-of-chemistry",
+            "staff": [
+              {
+                "name": "Dr. Umbreen Shahzad",
+                "designation": "Associate Professor",
+                "email": "umbreenshahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+              },
+              {
+                "name": "Iqra Ahmad Malik",
+                "designation": "Visiting Lecturer",
+                "email": "iqraahmedmalik23@gmail.com",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAy/iqra-ahmad-malik"
+              }
+            ]
+          },
+          {
+            "department": "Department of Mathematics",
+            "url": "https://ul.edu.pk/department-detail/MTIzOA==/department-of-mathematics",
+            "staff": [
+              {
+                "name": "Dr. Umbreen Shahzad",
+                "designation": "Associate Professor",
+                "email": "umbreenshahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+              }
+            ]
+          },
+          {
+            "department": "Department of Physics",
+            "url": "https://ul.edu.pk/department-detail/MTIzOQ==/department-of-physics",
+            "staff": []
+          },
+          {
+            "department": "Department of Zoology",
+            "url": "https://ul.edu.pk/department-detail/MTI0MA==/department-of-zoology",
+            "staff": [
+              {
+                "name": "Dr. Umbreen Shahzad",
+                "designation": "Associate Professor",
+                "email": "umbreenshahzad@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+              }
+            ]
+          },
+          {
+            "department": "Department of Botany",
+            "url": "https://ul.edu.pk/department-detail/MTIzNQ==/department-of-botany",
+            "staff": [
+              {
+                "name": "Dr. Azhar Abbas Khan",
+                "designation": "Associate Professor (Entomology)",
+                "discipline": "Entomology",
+                "email": "azharkhan@ul.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+              },
+              {
+                "name": "Amir Shahbaz",
+                "designation": "Visiting Lecturer",
+                "email": "ashahbaz@bs.qau.edu.pk",
+                "profile_url": "https://ul.edu.pk/staff-profile/NjY=/amir-shahbaz"
+              }
+            ]
+          },
+          {
+            "department": "Department of Biotechnology",
+            "url": "https://ul.edu.pk/department-detail/NDUzMA==/department-of-biotechnology",
+            "staff": []
+          }
+        ]
+      }
+    },
+    "all_staff": [
+      {
+        "name": "Dr. Muhammad Amjad",
+        "designation": "Dean (Electrical Engineering)",
+        "unit": "Faculty of Computing & Engineering",
+        "email": "muhammad.amjad@iub.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk2/dr-muhammad-amjad"
+      },
+      {
+        "name": "Engr. Dr. Muhammad Faheem Khalil Paracha",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "faheemparacha.uettaxila@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjg1/engr-dr-muhammad-faheem-khalil-paracha",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Faria Malik",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "fariamalik0022@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjEx/faria-malik",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Amjad Riaz",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "engr.amjadriaz@yahoo.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjkz/amjad-riaz",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Muhammad Bilal",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "bilalmirani125@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk1/muhammad-bilal",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Rameez Farooq",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "rameezfarooq9@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk0/rameez-farooq",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Ghulam Qadir",
+        "designation": "Lecturer",
+        "unit": "Department of Computer Engineering",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "qadirsahib14@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTU1/ghulam-qadir",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Abdul Qayoom",
+        "designation": "Assistant Professor",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "aqayumbuzdar@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjky/abdul-qayoom",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Faisal Hafeez",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "faisalhafeezfaisal786@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Muhammad Asif Aziz",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "asifaziz4855@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjEw/muhammad-asif-aziz",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Muhammad Shakeel",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "ms352230@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTUw/muhammad-shakeel",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Dr. ABDULQAYOOM",
+        "role": "Program Incharge",
+        "program": "BS Computer Science",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Dr. Ashir Javeed",
+        "role": "Program Incharge",
+        "qualification": "Ph.D. in Software Engineering from the University of Electronic Science and Technology of China",
+        "program": "BS Computer Science",
+        "unit": "Department of Computer Science",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Dr. Nasrullah",
+        "designation": "Assistant Professor",
+        "role": "Program Incharge",
+        "qualification": "PhD - Software Engineering Chongqing University, China MS – Computer Engineering University of Engineering and Technology- Taxila (CASE)",
+        "program": "BSCS Information Technology",
+        "unit": "Department of Information Technology",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "nasrullah.ce@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk5/dr-nasrullah",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Faisal Hafeez",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Information Technology",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "faisalhafeezfaisal786@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAz/faisal-hafeez",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Dr. M. Rehan Abbas",
+        "designation": "Assistant Professor",
+        "role": "Program Incharge",
+        "qualification": "PhD- Computer Science · University of Azad Jammu and Kashmir Muzaffarabad.",
+        "program": "BSCS Information Technology",
+        "unit": "Department of Information Technology",
+        "faculty": "Faculty of Computing & Engineering",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Dr. Muhammad Ali",
+        "designation": "Assistant Professor",
+        "unit": "E-Rozgaar Program",
+        "faculty": "Faculty of Computing & Engineering",
+        "email": "alibuzdar@bzu.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali",
+        "campus": "Main Campus"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean (Veterinary Sciences)",
+        "unit": "Faculty of Veterinary and Animal Sciences",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean",
+        "unit": "Department of Biosciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+      },
+      {
+        "name": "Dr. Muhammad Ali",
+        "designation": "Assistant Professor",
+        "unit": "Department of Biosciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "alibuzdar@bzu.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean",
+        "unit": "Department of Clinical Sciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+      },
+      {
+        "name": "Dr. Muhammad Ali",
+        "designation": "Assistant Professor",
+        "unit": "Department of Clinical Sciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "alibuzdar@bzu.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean",
+        "unit": "Department of Livestock and Poultry Sciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+      },
+      {
+        "name": "Dr. Muhammad Ali",
+        "designation": "Assistant Professor",
+        "unit": "Department of Livestock and Poultry Sciences",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "alibuzdar@bzu.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+      },
+      {
+        "name": "Prof. Dr. Muhammad Asif Raza",
+        "designation": "Dean",
+        "unit": "Department of Pathobiology",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "asif.raza@mnsuam.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU5/prof-dr-muhammad-asif-raza"
+      },
+      {
+        "name": "Dr. Muhammad Ali",
+        "designation": "Assistant Professor",
+        "unit": "Department of Pathobiology",
+        "faculty": "Faculty of Veterinary and Animal Sciences",
+        "email": "alibuzdar@bzu.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/OQ==/dr-muhammad-ali"
+      },
+      {
+        "name": "Dr. Zeshan Hassan",
+        "designation": "Associate Professor",
+        "unit": "Department of Plant Production & Biotechnology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "zeshan.hassan@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MzE=/dr-zeshan-hassan"
+      },
+      {
+        "name": "Dr. Azhar Abbas Khan",
+        "designation": "Associate Professor (Entomology)",
+        "unit": "Department of Entomology & Food Science",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "azharkhan@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+      },
+      {
+        "name": "Dr. Muhammad Faisal Shahzad",
+        "designation": "Assistant Professor (Entomology)",
+        "unit": "Department of Entomology & Food Science",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "faisal.shahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjk3/dr-muhammad-faisal-shahzad"
+      },
+      {
+        "name": "Dr. Umbreen Shahzad",
+        "designation": "Associate Professor",
+        "unit": "Department of Horticulture & Plant Pathology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "umbreenshahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+      },
+      {
+        "name": "Dr. Tahira Abbas",
+        "designation": "Associate Professor",
+        "unit": "Department of Horticulture & Plant Pathology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "tahiraabbas@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjY=/dr-tahira-abbas"
+      },
+      {
+        "name": "Dr. Waqas Ahmad",
+        "designation": "Assistant Professor",
+        "unit": "Department of Horticulture & Plant Pathology",
+        "faculty": "Faculty of Agricultural Sciences and Technology",
+        "email": "waqas@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MzA1/dr-waqas-ahmad"
+      },
+      {
+        "name": "Dr. Umbreen Shahzad",
+        "designation": "Associate Professor",
+        "unit": "Department of Behavioral Sciences",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "umbreenshahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+      },
+      {
+        "name": "Dr. Sadia Anjum",
+        "designation": "Assistant Professor",
+        "unit": "Department of Islamic Studies and Languages",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "sadiaanjum@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+      },
+      {
+        "name": "Dr. Sadia Anjum",
+        "designation": "Assistant Professor",
+        "unit": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "sadiaanjum@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTE=/dr-sadia-anjum"
+      },
+      {
+        "name": "Rameez Tariq",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "rameeztariq20@yahoo.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mzk=/rameez-tariq"
+      },
+      {
+        "name": "Dr. Muhammad Asghar",
+        "designation": "Assistant Professor (Economics)",
+        "unit": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "masghar@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjg2/dr-muhammad-asghar"
+      },
+      {
+        "name": "Dr. Uqba Saeed Ahmad",
+        "designation": "Assistant Professor",
+        "unit": "Department of Economics & Business Administration",
+        "faculty": "Faculty of Management, Humanities & Social Sciences",
+        "email": "uqbaahmed@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MjU2/dr-uqba-saeed-ahmad"
+      },
+      {
+        "name": "Dr. Umbreen Shahzad",
+        "designation": "Associate Professor",
+        "unit": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "umbreenshahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+      },
+      {
+        "name": "Iqra Ahmad Malik",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Chemistry",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "iqraahmedmalik23@gmail.com",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAy/iqra-ahmad-malik"
+      },
+      {
+        "name": "Dr. Umbreen Shahzad",
+        "designation": "Associate Professor",
+        "unit": "Department of Mathematics",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "umbreenshahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+      },
+      {
+        "name": "Dr. Umbreen Shahzad",
+        "designation": "Associate Professor",
+        "unit": "Department of Zoology",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "umbreenshahzad@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/MTAw/dr-umbreen-shahzad"
+      },
+      {
+        "name": "Dr. Azhar Abbas Khan",
+        "designation": "Associate Professor (Entomology)",
+        "unit": "Department of Botany",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "azharkhan@ul.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/Mjc=/dr-azhar-abbas-khan"
+      },
+      {
+        "name": "Amir Shahbaz",
+        "designation": "Visiting Lecturer",
+        "unit": "Department of Botany",
+        "faculty": "Faculty of Natural Sciences",
+        "email": "ashahbaz@bs.qau.edu.pk",
+        "profile_url": "https://ul.edu.pk/staff-profile/NjY=/amir-shahbaz"
+      }
+    ]
+  },
+  "laboratories": {
+    "faculty_of_computing_and_engineering_building": {
+      "campus": "Main Campus",
+      "labs": [
+        {
+          "name": "Computing Lab 1",
+          "location": "Faculty of Computing and Engineering building, Ground Floor, Main Campus"
+        },
+        {
+          "name": "Computing Lab 2",
+          "location": "Faculty of Computing and Engineering building, 1st Floor, Main Campus"
+        },
+        {
+          "name": "Computing Lab 3",
+          "location": "Faculty of Computing and Engineering building, Ground Floor, Main Campus"
+        },
+        {
+          "name": "E-Rozgaar Lab",
+          "location": "Faculty of Computing and Engineering building, 1st Floor, Main Campus"
+        },
+        {
+          "name": "DLD Lab",
+          "location": "Faculty of Computing and Engineering building, 1st Floor, Main Campus"
+        }
+      ]
+    }
+  },
+  "libraries": {
+    "university_central_library": {
+      "name": "University Central Library",
+      "campus": "City Campus",
+      "location": "City Campus, Katchehry Road, Layyah"
+    },
+    "computing_faculty_library": {
+      "name": "Library - Faculty of Computing and Engineering building",
+      "campus": "Main Campus",
+      "location": "Faculty of Computing and Engineering building, Main Campus"
+    }
+  },
+  "transport": {
+    "fleet": "University of Layyah operates 8+ student buses",
+    "office": "Transport Section, University of Layyah",
+    "schedule_ref": "Transport / 55 / 2023",
+    "schedule_dated": "16/09/2023",
+    "effective_from": "15.09.2023 (confirm current session updates with Transport Section)",
+    "drivers_rotation": [
+      "Haq Nawaz",
+      "Mazhar Mehmood"
+    ],
+    "city_routes": {
+      "route_01": {
+        "departure": "08:00 AM from City Campus",
+        "stops": [
+          "City Campus",
+          "Sugar Mill Gate",
+          "Chungi No. 10 Phatak",
+          "Khan De Hati",
+          "Canal Colony Gate",
+          "Highway Colony Gate",
+          "Eid Gah Chok",
+          "Mastana Hotel",
+          "Aslam Mor",
+          "Sadar Bazar",
+          "Railway Phatak",
+          "Layyah Minor Pul",
+          "TDA Chok",
+          "Lari Ada",
+          "City Campus (Return)"
+        ]
+      },
+      "route_02": {
+        "departure": "08:00 AM from City Campus",
+        "stops": [
+          "City Campus",
+          "Lari Ada",
+          "Affor Store",
+          "Faiz Chok",
+          "Bhata Mor",
+          "Railway Phatak",
+          "Kalma Chok Bypass",
+          "Chungi No. 06",
+          "Top Chok",
+          "Zakriya Academy",
+          "GPO",
+          "Thana City",
+          "Aslam Mor",
+          "Sadar Bazar",
+          "Railway Phatak",
+          "Layyah Minor Pul",
+          "TDA Chok",
+          "Lari Ada",
+          "City Campus (Return)"
+        ]
+      }
+    },
+    "inter_campus_and_city_schedule": [
+      {
+        "from": "City Campus",
+        "time": "06:30 AM",
+        "route": "Layyah City Routes"
+      },
+      {
+        "from": "City Campus",
+        "time": "07:30 AM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "07:45 AM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "08:00 AM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "08:15 AM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "09:00 AM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "09:20 AM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "10:30 AM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "11:15 AM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "11:00 AM",
+        "route": "Layyah City Routes (For Evening)"
+      },
+      {
+        "from": "City Campus",
+        "time": "11:45 AM",
+        "route": "To Main Campus",
+        "note": "Printed notice may show 11:45 pm; treated as 11:45 AM"
+      },
+      {
+        "from": "Main Campus",
+        "time": "12:20 PM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "12:45 PM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "01:10 PM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "01:30 PM",
+        "route": "Layyah City Routes"
+      },
+      {
+        "from": "City Campus",
+        "time": "03:00 PM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "03:30 PM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "04:00 PM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "Main Campus",
+        "time": "04:30 PM",
+        "route": "To City Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "05:00 PM",
+        "route": "To Main Campus"
+      },
+      {
+        "from": "City Campus",
+        "time": "05:15 PM",
+        "route": "Layyah City Routes"
+      },
+      {
+        "from": "Main Campus",
+        "time": "06:00 PM",
+        "route": "To City Campus"
+      }
+    ],
+    "transport_page": "https://ul.edu.pk/page/Transport"
+  },
+  "live_website_data": {
+    "scraped_at": "2026-08-14T14:30:03.016Z",
+    "source": "https://ul.edu.pk",
+    "stats": {
+      "faculties": 5,
+      "departments": 21,
+      "programs": 56,
+      "students": 5462
+    },
+    "hierarchy_totals": {
+      "faculties": 5,
+      "departments": 20,
+      "programs": 56
+    },
+    "official_pages": {
+      "vision": {
+        "url": "https://ul.edu.pk/page/vision",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "contact": {
+        "url": "https://ul.edu.pk/contact",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "admissions": {
+        "url": "https://ul.edu.pk/admissions",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "fee_structure": {
+        "url": "https://ul.edu.pk/page/Fee-Structure",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "how_to_apply": {
+        "url": "https://ul.edu.pk/page/How-to-Apply",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "eligibility": {
+        "url": "https://ul.edu.pk/page/Eligibility-Criteria",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "admission_schedule": {
+        "url": "https://ul.edu.pk/page/Admission-Schedule",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "scholarships": {
+        "url": "https://ul.edu.pk/page/Scholarships",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "facilities": {
+        "url": "https://ul.edu.pk/page/Facilities",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "transport": {
+        "url": "https://ul.edu.pk/page/Transport",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "medical": {
+        "url": "https://ul.edu.pk/page/Medical",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "academic_calendar": {
+        "url": "https://ul.edu.pk/academic-calendar",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      },
+      "public_notices": {
+        "url": "https://ul.edu.pk/page/public-notices",
+        "title": "UNIVERSITY OF LAYYAH",
+        "excerpt": "UNIVERSITY OF LAYYAH Home Academics Faculty of Computing & Engineering Department of Computer Engineering B.Sc Computer Engineering Department of Computer Science BS Computer Science BSCS - Artificial Intelligence Department of Information Technology BSCS - Information Technology BSCS - Data Science E-Rozgaar Program Freelancing & Soft Skills SEO & Digital Marketing Graphic Design YouTube Automation Faculty of Veterinary and Animal Sciences Department of Biosciences Department of Clinical Sciences Livestock Assistant Diploma Department of Livestock and Poultry Sciences BS Poultry Sciences BS Dairy Technology Department of Pathobiology BS Microbiology POST-ADP (MICROBIOLOGY) Faculty of Agricultural Sciences and Technology Faculty of Agricultural Sciences and Technology B.Sc. (Hons) Agricult"
+      }
+    },
+    "note": "Faculties/departments/programs/staff mirror the official website structure."
   }
 }
