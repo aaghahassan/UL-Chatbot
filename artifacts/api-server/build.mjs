@@ -13,7 +13,14 @@ const artifactDir = path.dirname(fileURLToPath(import.meta.url));
 async function buildAll() {
   const distDir = path.resolve(artifactDir, "dist");
   await rm(distDir, { recursive: true, force: true });
-  const isVercel = process.env.VERCEL === "1";
+  const isVercel =
+    process.argv.includes("--vercel") ||
+    process.env.VERCEL === "1" ||
+    Boolean(process.env.VERCEL_ENV);
+
+  if (isVercel) {
+    console.log("Building Vercel API handler only (skipping local dist/index.mjs)");
+  }
 
   if (!isVercel) {
   await esbuild({
@@ -148,6 +155,9 @@ if (!process.env.PORT) process.env.PORT = '8080';
     logLevel: "info",
     minify: isVercel,
     sourcemap: isVercel ? false : "linked",
+    logOverride: {
+      "output-file-is-larger-than-1mb": "silent",
+    },
     external: [
       "*.node",
       "@electric-sql/pglite",
