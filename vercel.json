@@ -8,7 +8,7 @@
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "functions": {
-    "api/index.ts": {
+    "api/index.js": {
       "maxDuration": 10,
       "includeFiles": "{artifacts/api-server/dist/vercel-handler.mjs,artifacts/api-server/data/**}"
     }
