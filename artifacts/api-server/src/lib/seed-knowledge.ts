@@ -49,7 +49,10 @@ export async function seedKnowledgeBase(options?: { force?: boolean }): Promise<
     const existing = await db.select().from(knowledgeSections).limit(1);
 
     if (existing.length > 0 && !force) {
-      // Still refresh from JSON so code updates apply without admin editing
+      if (process.env.VERCEL === "1") {
+        logger.info("Knowledge base already present — skipping seed on Vercel.");
+        return;
+      }
       logger.info("Knowledge base exists — upserting from official JSON snapshot.");
     }
 

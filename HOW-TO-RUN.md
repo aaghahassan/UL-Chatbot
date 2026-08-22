@@ -136,6 +136,27 @@ Chat header shows the active provider (Cerebras / Groq / offline).
 
 ---
 
+## Deploy on Vercel (login + AI Chat)
+
+Vercel can host the website **and** the API together. Neon stays the database.
+
+1. In Vercel, set **Root Directory** to the folder that contains `pnpm-workspace.yaml` (the inner `UOL-Assistant` folder). Do not set it to `artifacts/ul-ai-assistant`.
+2. Framework: **Other**. Install command is already `pnpm install`.
+3. **Settings → Environment Variables** (Production):
+
+```text
+DATABASE_URL=postgresql://...-pooler...neon.tech/neondb?sslmode=require
+AI_PROVIDER=local
+```
+
+Use the same Neon **pooled** URI as on your laptop. Do not add a credit card.
+
+4. Redeploy. Open the Vercel URL (not localhost). Sign up once, then Chat with AI.
+
+First chat after a pause can take a few seconds while Neon wakes. Hobby plans cap each API request at 10 seconds, which is enough for the university knowledge answers.
+
+---
+
 ## Common fixes
 
 | Issue | Fix |

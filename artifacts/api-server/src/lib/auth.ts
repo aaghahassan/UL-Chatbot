@@ -155,7 +155,10 @@ function cookieOptions(): CookieOptions {
   return {
     httpOnly: true,
     sameSite: "lax",
-    secure: process.env.COOKIE_SECURE === "1" || process.env.COOKIE_SECURE === "true",
+    secure:
+      process.env.VERCEL === "1" ||
+      process.env.COOKIE_SECURE === "1" ||
+      process.env.COOKIE_SECURE === "true",
     path: "/",
     maxAge: SESSION_MS,
   };

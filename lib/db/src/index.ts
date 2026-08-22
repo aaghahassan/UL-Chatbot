@@ -74,6 +74,11 @@ function createDb(): AppDb {
   const databaseUrl = resolveDatabaseUrl();
 
   if (isPglite(databaseUrl)) {
+    if (process.env.VERCEL === "1") {
+      throw new Error(
+        "Vercel cannot use the laptop PGlite file. Set DATABASE_URL in Vercel to your Neon connection string.",
+      );
+    }
     const dataDir =
       databaseUrl === "pglite"
         ? path.resolve(process.cwd(), ".data/ul-pglite")
@@ -85,7 +90,7 @@ function createDb(): AppDb {
 
   pgPool = new Pool({
     connectionString: databaseUrl,
-    max: 5,
+    max: process.env.VERCEL === "1" ? 1 : 5,
     idleTimeoutMillis: 20_000,
     connectionTimeoutMillis: 20_000,
     allowExitOnIdle: true,
