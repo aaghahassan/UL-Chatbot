@@ -118,8 +118,8 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-gray-50/60">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">Everything You Need</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-on-pale mb-3">Everything You Need</h2>
+            <p className="text-muted-foreground text-on-pale max-w-xl mx-auto">
               One AI assistant that knows everything about University of Layyah
             </p>
           </div>

@@ -182,3 +182,33 @@
     line-height: 2;
   }
 }
+
+.dark .assistant-markdown {
+  color: #ffffff !important;
+  --tw-prose-body: #ffffff;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #ffffff;
+  --tw-prose-bullets: hsl(var(--secondary));
+  --tw-prose-quotes: #ffffff;
+  --tw-prose-quote-borders: hsl(var(--secondary));
+  --tw-prose-captions: #ffffff;
+  --tw-prose-kbd: #ffffff;
+  --tw-prose-code: #ffffff;
+  --tw-prose-th: #ffffff;
+  --tw-prose-td: #ffffff;
+  --tw-prose-lead: #ffffff;
+  --tw-prose-links: hsl(38 85% 50%);
+}
+
+.dark .assistant-markdown :where(p, li, h1, h2, h3, h4, strong, em, td, th, blockquote) {
+  color: #ffffff !important;
+}
+
+.dark .assistant-markdown a {
+  color: hsl(38 85% 50%) !important;
+}
+
+.dark .text-on-pale {
+  color: #000000 !important;
+}

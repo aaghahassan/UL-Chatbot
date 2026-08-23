@@ -63,11 +63,11 @@ export default function CampusesPage() {
             <MapPin className="h-3.5 w-3.5" />
             Accurate campus locations
           </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-3">Both Campuses</h1>
-          <p className="text-muted-foreground">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-foreground text-on-pale mb-3">Both Campuses</h1>
+          <p className="text-muted-foreground text-on-pale">
             City Campus on Katchehry Road and Main Campus on Karor Road (Hafiz Abad), about 5 km apart.
           </p>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground text-on-pale">
             <span className="inline-flex items-center gap-1.5"><Phone className="h-4 w-4" /> +92-0606-920247</span>
             <span className="inline-flex items-center gap-1.5"><Mail className="h-4 w-4" /> info@ul.edu.pk</span>
           </div>

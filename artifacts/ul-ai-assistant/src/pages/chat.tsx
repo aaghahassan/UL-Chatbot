@@ -574,7 +574,7 @@ export default function ChatPage() {
                           {msg.role === "user" ? (
                             <p className="text-sm leading-relaxed">{msg.content}</p>
                           ) : (
-                            <div className="prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1.5 prose-ul:my-1.5 prose-ul:list-disc prose-ul:pl-5 prose-ol:my-1.5 prose-ol:list-decimal prose-ol:pl-5 prose-li:my-0.5 prose-li:marker:text-secondary prose-strong:text-foreground prose-a:text-primary prose-table:text-sm">
+                            <div className="assistant-markdown prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground dark:prose-headings:text-white prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1.5 dark:prose-p:text-white prose-ul:my-1.5 prose-ul:list-disc prose-ul:pl-5 prose-ol:my-1.5 prose-ol:list-decimal prose-ol:pl-5 prose-li:my-0.5 dark:prose-li:text-white prose-li:marker:text-secondary prose-strong:text-foreground dark:prose-strong:text-white prose-a:text-primary dark:prose-a:text-primary prose-table:text-sm">
                               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                                 {msg.content}
                               </ReactMarkdown>
@@ -609,7 +609,7 @@ export default function ChatPage() {
                       <div className="max-w-[85%] md:max-w-[75%]">
                         <div className={`px-4 py-3 rounded-2xl shadow-sm bg-card border border-l-4 border-l-secondary text-foreground rounded-tl-sm ${isRtl ? "font-urdu" : ""}`} dir={isRtl ? "rtl" : "ltr"}>
                           {streamingText ? (
-                            <div className="prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1.5 prose-ul:my-1.5 prose-ul:list-disc prose-ul:pl-5 prose-ol:my-1.5 prose-ol:list-decimal prose-ol:pl-5 prose-li:my-0.5 prose-li:marker:text-secondary prose-strong:text-foreground">
+                            <div className="assistant-markdown prose prose-sm max-w-none prose-headings:font-bold prose-headings:text-foreground dark:prose-headings:text-white prose-headings:mt-3 prose-headings:mb-1 prose-h2:text-base prose-h3:text-sm prose-p:leading-relaxed prose-p:my-1.5 dark:prose-p:text-white prose-ul:my-1.5 prose-ul:list-disc prose-ul:pl-5 prose-ol:my-1.5 prose-ol:list-decimal prose-ol:pl-5 prose-li:my-0.5 dark:prose-li:text-white prose-li:marker:text-secondary prose-strong:text-foreground dark:prose-strong:text-white prose-a:text-primary dark:prose-a:text-primary">
                               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                                 {streamingText}
                               </ReactMarkdown>
